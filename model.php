@@ -10,22 +10,19 @@
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <img src="LogoWear.PNG" alt="WearYou" style="width:40px;" class="rounded-pill">
+            <img src="LogoWear.PNG" alt="WearYou" style="width:100px;" class="rounded-pill">
         </a>
     </div>
 </nav>
 <ul class="nav nav-tabs">
     <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
+        <a class="nav-link active" href="#">Vêtements</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link active" href="#">Soldes</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+        <a class="nav-link active" href="#">Vendeurs phare</a>
     </li>
 </ul>
 </html>
