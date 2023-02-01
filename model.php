@@ -16,13 +16,13 @@
 <div>
     <ul class="nav nav-tabs">
         <li class="nav-item">
-            <a class="nav-link active" href="vetements.ch">Vêtements</a>
+            <a class="nav-link active" href="vetements.html">Vêtements</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" href="soldes.ch">Soldes</a>
+            <a class="nav-link active" href="soldes.html">Soldes</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" href="vendeurs.ch">Vendeurs phare</a>
+            <a class="nav-link active" href="vendeurs.html">Vendeurs phare</a>
         </li>
     </ul>
 </div>
