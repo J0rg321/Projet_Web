@@ -1,9 +1,13 @@
-<html>
-<?php
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Model</title>
+</head>
 
-?>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<body>
 <nav class="navbar navbar-expand-sm navbar-dark">
     <div class="container-fluid">
             <img src="LogoWear.PNG" alt="WearYou" style="width:100px;" class="rounded-pill">
@@ -22,4 +26,5 @@
         </li>
     </ul>
 </div>
+</body>
 </html>
