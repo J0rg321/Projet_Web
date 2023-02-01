@@ -13,7 +13,7 @@
             <img src="LogoWear.PNG" alt="WearYou" style="width:100px;" class="rounded-pill">
     </div>
 </nav>
-<div>
+<div id="navigation">
     <ul class="nav nav-tabs">
         <li class="nav-item">
             <a class="nav-link active" href="vetements.html">Vêtements</a>
