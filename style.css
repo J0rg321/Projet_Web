@@ -1,9 +1,5 @@
-body{
-    background-color: rosybrown;
-}
-
 #navigation{
     width: 300px;
     margin: auto;
-    border: 3px solid #4287f5;
+    border: 3px solid firebrick;;
 }

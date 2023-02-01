@@ -10,7 +10,7 @@
 <body>
 <nav class="navbar navbar-expand-sm navbar-dark">
     <div class="container-fluid">
-            <img src="LogoWear.PNG" alt="WearYou" style="width:100px;" class="rounded-pill">
+            <img src="LogoWear.PNG" alt="WearYou" style="width:100px" class="rounded-pill">
     </div>
 </nav>
 <div id="navigation">
