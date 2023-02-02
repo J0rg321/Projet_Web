@@ -1,5 +1,25 @@
-.navigation{
+.MenuBotton{
+    background-color: black;
+}
+#SearchAndPanierAndCompte{
+    float: right;
+}
+#Menu{
+    background-color: darkgray;
+    width : auto;
+}
+.NavBotton{
+    background-color: dimgrey;
+    border-width: 10px;
+    border-radius: 10px;
     width: 300px;
-    margin: auto;
-    border: 3px solid firebrick;;
+    height: 300px;
+    text-align: center;
+
+}
+#Compte{
+    border-radius: 50%;
+}
+#Panier{
+    border-radius: 50%;
 }
