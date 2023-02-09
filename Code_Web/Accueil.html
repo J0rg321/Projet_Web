@@ -16,7 +16,7 @@
             <nav class="navbar navbar-expand-sm navbar-dark">
                 <div id="logo">
                     <a href="Accueil.html">
-                    <img  src="Images/LogoWear.PNG" alt="WearYou"  style="width:70px" class="rounded-pill">
+                        <img  src="Images/LogoWear.PNG" alt="WearYou"  style="width:70px" class="rounded-pill">
                     </a>
                 </div>
                 <div class="WearYou">
@@ -54,6 +54,51 @@
                 <img class="icon" src="Images/account.png" alt="WearYou" style="width:100px">
             </div>
         </td>
+    </tr>
+</table>
+<table id="milieuTable">
+    <tr>
+        <td>
+            <h2><strong>Catégories</strong></h2>
+        </td>
+    </tr>
+    <tr>
+    <td id="choixCat">
+        <form id="radioButton">
+            <div>
+                <input type="radio" id="tshirt" name="categorie" value="tshirt">
+                <label for="tshirt">T-shirt</label>
+            </div>
+            <div>
+                <input type="radio" id="pantalong" name="categorie" value="pantalong">
+                <label for="Tshirt">Pantalong</label>
+            </div>
+            <div>
+                <input type="radio" id="robe" name="categorie" value="robe">
+                <label for="robe">Robe</label>
+            </div>
+            <div>
+                <input type="radio" id="jupe" name="categorie" value="jupe">
+                <label for="jupe">Jupe</label>
+            </div>
+            <div>
+                <input class="radioButton" type="radio" id="chemise" name="categorie" value="chemise">
+                <label for="chemise">Chemise</label>
+            </div>
+        </form>
+    </td>
+    <tr id="listeCategories">
+    <td>
+        <form>
+        <select name="Couleurs" id="couleur">
+            <option value="rouge">Rouge</option>
+            <option value="vert">Vert</option>
+            <option value="blanc">Blanc</option>
+            <option value="noir">Noir</option>
+            <option value="violet">Violet</option>
+        </select>
+        </form>
+    </td>
     </tr>
 </table>
 </body>

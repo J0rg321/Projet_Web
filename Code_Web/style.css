@@ -1,27 +1,27 @@
-
-.nav-link {
-    color: black;
-    width: 250px;
-    justify-content: center;
-}
-
-.nav-link:hover{
+.nav-link:link,.nav-link:visited {
     color: white;
     background-color: sienna;
+    width: 250px;
+    justify-content: center;
+    border: solid;
+}
+.nav-link:hover{
+    color: white;
+    background-color: #b54a16;
     width: 250px;
     justify-content: center;
 }
 #menuTable{
     background-color: #ffb27e;
     width: 100%;
-    border-bottom: sienna;
     border-bottom: solid;
+    display: flex;
 }
 body{
     background-color: #ffc19f;
 }
 .icon{
-max-height: 40px;
+    max-height: 40px;
     max-width: 40px;
 }
 .btn-primary{
@@ -43,7 +43,41 @@ max-height: 40px;
     width: 100px;
     height: 50px;
 }
-
 #logo{
     width: max-content;
+}
+#milieuTable{
+    display: flex;
+    width: 13%;
+}
+input[name="categorie"] {
+    accent-color: saddlebrown;
+}
+#choixCat{
+    border-width: 10px;
+}
+#listeCategories{
+    display: flex;
+    border-top: solid;
+    justify-content: center;
+}
+#couleur[value="rouge"] {
+    background: red;
+    color: white;
+                         }
+
+select option[value= »2″] {
+    background: #107C11;
+    color: white;
+}
+
+select option[value= »3″] {
+    background: #E70009;
+    color: white;
+}
+
+select option[value= »4″] {
+    background: black;
+    color: white;
+}
 }
