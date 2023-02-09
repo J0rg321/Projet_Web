@@ -15,7 +15,7 @@
     background-color: #ffb27e;
     width: 100%;
     border-bottom: sienna;
-    border-bottom-width: 30px;
+    border-bottom: solid;
 }
 body{
     background-color: #ffc19f;
@@ -23,4 +23,27 @@ body{
 .icon{
 max-height: 40px;
     max-width: 40px;
+}
+.btn-primary{
+    background-color: #b66536;
+    border-color: #b66536;
+}
+.btn-primary:hover{
+    background-color: #b6571e;
+    border-color: #b6571e;
+}
+.WearYou{
+    padding-top: 10px;
+    vertical-align: middle;
+    background-color: #b66536;
+    color: white;
+    border: solid;
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+}
+
+#logo{
+    width: max-content;
 }
