@@ -1,21 +1,26 @@
-.MenuBotton{
-    background-color: white;
-}
-#SearchAndPanierAndCompte{
-    float: right;
-}
-#Menu{
-    width : auto;
-}
-.NavBotton{
-    width: 300px;
-    height: 300px;
-    text-align: center;
 
+.nav-link {
+    color: black;
+    width: 250px;
+    justify-content: center;
 }
-#Compte{
-    border-radius: 50%;
+
+.nav-link:hover{
+    color: white;
+    background-color: sienna;
+    width: 250px;
+    justify-content: center;
 }
-#Panier{
-    border-radius: 50%;
+#menuTable{
+    background-color: #ffb27e;
+    width: 100%;
+    border-bottom: sienna;
+    border-bottom-width: 30px;
+}
+body{
+    background-color: #ffc19f;
+}
+.icon{
+max-height: 40px;
+    max-width: 40px;
 }
