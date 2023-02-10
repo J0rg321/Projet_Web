@@ -59,7 +59,7 @@
 <table id="milieuTable">
     <tr>
         <td>
-            <h2><strong>Catégories</strong></h2>
+            <h2 id="textCat"><strong>Catégories</strong></h2>
         </td>
     </tr>
     <tr>
@@ -87,18 +87,41 @@
             </div>
         </form>
     </td>
+    </tr>
     <tr id="listeCategories">
-    <td>
-        <form>
-        <select name="Couleurs" id="couleur">
-            <option value="rouge">Rouge</option>
-            <option value="vert">Vert</option>
-            <option value="blanc">Blanc</option>
-            <option value="noir">Noir</option>
-            <option value="violet">Violet</option>
-        </select>
-        </form>
-    </td>
+        <td>
+            <form>
+            <select name="Couleurs" id="couleur">
+                <option value="rouge">Rouge</option>
+                <option value="vert">Vert</option>
+                <option value="blanc">Blanc</option>
+                <option value="noir">Noir</option>
+                <option value="violet">Violet</option>
+            </select>
+            </form>
+        </td>
+    </tr>
+    <tr id="taillesCategories">
+        <td>
+            <form>
+                <select name="Tailles" id="tailles">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+            </form>
+        </td>
+    </tr>
+    <tr id="prixMaxTab">
+        <td>
+            <form>
+                <label for="prixMax">Prix Maximum</label>
+                <input type="number" id="prixMax" name="prixMax"
+                       min="10" max="100">
+            </form>
+        </td>
     </tr>
 </table>
 </body>
