@@ -4,18 +4,22 @@
     width: 250px;
     justify-content: center;
     border: solid;
+    position: absolute;
 }
 .nav-link:hover{
     color: white;
     background-color: #b54a16;
     width: 250px;
     justify-content: center;
+    position: absolute;
 }
 #menuTable{
     background-color: #ffb27e;
     width: 100%;
     border-bottom: solid;
-    display: flex;
+    position: relative;
+    width: 100%;
+    height:60px;
 }
 body{
     background-color: #ffc19f;
@@ -23,18 +27,20 @@ body{
 .icon{
     max-height: 40px;
     max-width: 40px;
+    position: absolute;
 }
 .btn-primary{
     background-color: #b66536;
     border-color: #b66536;
+    position: absolute;
 }
 .btn-primary:hover{
     background-color: #b6571e;
     border-color: #b6571e;
+    position: absolute;
 }
 .WearYou{
     padding-top: 10px;
-    vertical-align: middle;
     background-color: #b66536;
     color: white;
     border: solid;
@@ -42,15 +48,22 @@ body{
     text-align: center;
     width: 100px;
     height: 50px;
+    position: absolute;
 }
 body{
     font-family: Bahnschrift;
 }
 .WearYou>p{
     font-family: Georgia, serif;
+    position: absolute;
 }
 #logo{
     width: max-content;
+    position: absolute;
+    display: flex;
+}
+#dansMenuTab{
+    margin: 20px;
 }
 #milieuTable{
     display: flex;
