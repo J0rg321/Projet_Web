@@ -1,0 +1,30 @@
+#menu{
+    background-color: #ffb27e;
+    width: 100%;
+    border: solid;
+    border-color: #ffb27e;
+    border-bottom: solid;
+}
+#menu>div{
+    margin: 17px;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    border-color: #b66536;
+
+}
+#WearYou{
+    background-color: #b66536;
+    color: white;
+    border: solid;
+    width: 20%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#WearYou>p{
+    margin: auto;
+}
