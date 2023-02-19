@@ -6,7 +6,7 @@
     border-bottom: solid;
 }
 #menu>div{
-    margin: 17px;
+    margin: 9px;
     width: 20%;
     display: flex;
     flex-direction: row;
@@ -17,8 +17,8 @@
     background-color: #b66536;
     color: white;
     border: solid;
-    width: 20%;
-    height: 100%;
+    width: 35%;
+    height: 1.3cm;
     border-radius: 10px;
     text-align: center;
     display: flex;
@@ -27,4 +27,5 @@
 }
 #WearYou>p{
     margin: auto;
+    display: flex;
 }
