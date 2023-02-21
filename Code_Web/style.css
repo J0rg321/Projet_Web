@@ -136,10 +136,10 @@ input[name="categorie"] {
     float: right;
 }
 #menu{
-    background-color: #ffb27e;
+    background-color: #b66536;
     width: 100%;
     border: solid;
-    border-color: #ffb27e;
+    border-color: #b66536;
     border-bottom: solid;
 }
 .NavBotton{
@@ -149,9 +149,10 @@ input[name="categorie"] {
 
 }
 #Compte{
-    border-radius: 50%;
+    filter: invert(100%);
+    border: solid;
 }
 #Panier{
-    border-radius: 50%;
->>>>>>> parent of 0d2d9cb (Modification style page d'accueil)
+
+    border: solid;
 }
