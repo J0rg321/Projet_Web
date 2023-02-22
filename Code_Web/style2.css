@@ -1,31 +1,99 @@
-#menu{
-    background-color: #ffb27e;
-    width: 100%;
-    border: solid;
-    border-color: #ffb27e;
-    border-bottom: solid;
-}
+
 #menu>div{
     margin: 9px;
     width: 20%;
     display: flex;
     flex-direction: row;
     border-color: #b66536;
+}
+#container {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 2.0rem;
+    position: relative;
+    width: 100%;
+    background-color: #b66536;
+    width: 100%;
+    border: solid;
+    border-color: #b66536;
+    border-bottom: solid;
+}
+#row {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+}
+
+.nav-link:link,.nav-link:visited {
+    color: white;
+    background-color: #b66536;
+    width: 250px;
+    justify-content: center;
+    border: solid;
 
 }
-#WearYou{
-    background-color: #b66536;
+.nav-link:hover{
     color: white;
-    border: solid;
-    width: 35%;
-    height: 1.3cm;
-    border-radius: 10px;
-    text-align: center;
-    display: flex;
-    margin-top: auto;
-    margin-bottom: auto;
+    background-color: #b54a16;
+    width: 250px;
+    justify-content: center;
 }
-#WearYou>p{
-    margin: auto;
-    display: flex;
+#logo{
+    display: block;
+    flex: 1 1 auto;
+    margin-left: 0;
+    max-width: 100%;
+    width: 100%;
 }
+.navigation{
+    display: block;
+    flex: 1 1 auto;
+    margin-left: 0;
+    max-width: 100%;
+    width: 100%;
+}
+#search{
+    display: block;
+    flex: 1 1 auto;
+    margin-left: 0;
+    max-width: 100%;
+    width: 100%;
+}
+#panier{
+    display: block;
+    flex: 1 1 auto;
+    margin-left: 0;
+    max-width: 100%;
+    width: 100%;
+    filter: invert(100%);
+}
+#compte{
+    display: block;
+    flex: 1 1 auto;
+    margin-left: 0;
+    max-width: 100%;
+    width: 100%;
+}
+body{
+    background-color: #ffc19f;
+}
+.btn-primary{
+    background-color: #b66536;
+    border-color: #b66536;
+}
+.btn-primary:hover{
+    background-color: #b6571e;
+    border-color: #b6571e;
+}
+
+
+
+
+
+
+
+
+
+
+

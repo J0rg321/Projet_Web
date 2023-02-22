@@ -61,6 +61,7 @@ body{
     width: max-content;
     position: absolute;
     display: flex;
+
 }
 #dansMenuTab{
     margin: 20px;
