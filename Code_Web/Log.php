@@ -13,3 +13,9 @@ $logHeader = "Temps du log / création\t\t\tNom utilisateur";//affiche les entê
 
 
 echo setFullPath("stockage des logins.log") . "<br>"; //test pour détection du fichier
+
+
+function setFullPath($Nom)//mettre le dossier en question
+{
+    return getcwd() . "\\" . $Nom; //le double back slash fait en sorte de rajouter un back slash entre le dossier et le fichier
+}
