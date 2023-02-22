@@ -19,3 +19,4 @@ function setFullPath($Nom)//mettre le dossier en question
 {
     return getcwd() . "\\" . $Nom; //le double back slash fait en sorte de rajouter un back slash entre le dossier et le fichier
 }
+
