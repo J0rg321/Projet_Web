@@ -93,9 +93,11 @@ body{
 .navbar{
     background-color: #b66536;
 }
-
-
-
+div {
+    width: 300px;
+    margin: auto;
+    border: 3px solid black;
+}
 
 
 
