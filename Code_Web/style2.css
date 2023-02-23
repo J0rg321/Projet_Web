@@ -13,7 +13,6 @@
     position: relative;
     width: 100%;
     background-color: #b66536;
-    width: 100%;
     border: solid;
     border-color: #b66536;
     border-bottom: solid;
@@ -92,6 +91,13 @@ body{
 }
 .navbar{
     background-color: #b66536;
+}
+.icon{
+    filter: invert(100%);
+    max-width: 2cm;
+}
+.bouton{
+    font-size: 22px;
 }
 
 
