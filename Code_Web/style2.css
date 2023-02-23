@@ -89,7 +89,7 @@ body{
 .container-fluid{
     background-color: #b66536;
 }
-.navbar {
+.navbar{
     background-color: #b66536;
 }
 .icon{
@@ -100,12 +100,6 @@ body{
     font-size: 22px;
 }
 
-div {
-    width: 300px;
-    margin: auto;
-    border: 3px solid black;
-}
->>>>>>> cd17ba384bbe518cacf1fa1b3225fece725958fe
 
 
 
