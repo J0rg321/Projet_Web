@@ -1,158 +1,123 @@
+
+#menu>div{
+    margin: 9px;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    border-color: #b66536;
+}
+#container {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 2.0rem;
+    position: relative;
+    width: 100%;
+    background-color: #b66536;
+    border: solid;
+    border-color: #b66536;
+    border-bottom: solid;
+}
+#row {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+}
+
 .nav-link:link,.nav-link:visited {
     color: white;
-    background-color: sienna;
+    background-color: #b66536;
     width: 250px;
     justify-content: center;
-    border: solid;
-    position: absolute;
+
 }
 .nav-link:hover{
     color: white;
     background-color: #b54a16;
     width: 250px;
     justify-content: center;
-    position: absolute;
 }
-#menuTable{
-    background-color: #ffb27e;
+#logo{
+    display: block;
+    flex: 1 1 auto;
+    margin-left: 0;
+    max-width: 100%;
     width: 100%;
-    border-bottom: solid;
-    position: relative;
+}
+.navigation{
+    display: block;
+    flex: 1 1 auto;
+    margin-left: 0;
+    max-width: 100%;
     width: 100%;
-    height:60px;
+}
+#search{
+    display: block;
+    flex: 1 1 auto;
+    margin-left: 0;
+    max-width: 100%;
+    width: 100%;
+}
+#panier{
+    display: block;
+    flex: 1 1 auto;
+    margin-left: 0;
+    max-width: 100%;
+    width: 100%;
+    filter: invert(100%);
+
+}
+#compte {
+    display: block;
+    flex: 1 1 auto;
+    margin-left: 0;
+    max-width: 100%;
+    width: 100%;
+    filter: invert(100%);
 }
 body{
     background-color: #ffc19f;
 }
-.icon{
-    max-height: 40px;
-    max-width: 40px;
-    position: absolute;
-}
 .btn-primary{
     background-color: #b66536;
     border-color: #b66536;
-    position: absolute;
 }
 .btn-primary:hover{
     background-color: #b6571e;
     border-color: #b6571e;
-    position: absolute;
 }
-.WearYou{
-    padding-top: 10px;
+.container-fluid{
     background-color: #b66536;
-    color: white;
-    border: solid;
-    border-radius: 10px;
-    text-align: center;
-    width: 100px;
-    height: 50px;
-    position: absolute;
 }
-body{
-    font-family: Bahnschrift;
-}
-.WearYou>p{
-    font-family: Georgia, serif;
-    position: absolute;
-}
-#logo{
-    width: max-content;
-    position: absolute;
-    display: flex;
-
-}
-#dansMenuTab{
-    margin: 20px;
-}
-#milieuTable{
-    display: flex;
-    width: 13%;
-    border: solid;
-    height: 100%;
-}
-input[name="categorie"] {
-    accent-color: saddlebrown;
-}
-#choixCat{
-    margin: 12px;
-    display: flex;
-}
-#listeCategories, #taillesCategories{
-    display: flex;
-    border-top: solid;
-    justify-content: center;
-}
-#couleur,#tailles {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: saddlebrown;
-    color: white;
-    overflow: hidden;
-    border-radius: 15px;
-    margin: 20px;
-    text-align: center;
-    }
-#couleur:hover,#tailles:hover{
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: saddlebrown;
-    color: white;
-    overflow: hidden;
-    border-radius: .25em;
-    text-align: center;
-}
-#tailles,#tailles:hover,#couleur,#couleur:hover{
-    margin : 0px;
-    margin-top : 30px;
-    margin-bottom : 30px;
-}
-#prixMax{
-    width: 30%;
-    height: 50%;
-}
-#prixMaxTab{
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-top: solid;
-    border-bottom: solid;
-    width: 100%;
-}
-#textCat{
-    text-align: center;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;}
-
-.MenuBotton{
-    background-color: white;
-}
-#SearchAndPanierAndCompte{
-    float: right;
-}
-#menu{
+.navbar{
     background-color: #b66536;
-    width: 100%;
-    border: solid;
-    border-color: #b66536;
-    border-bottom: solid;
 }
-.NavBotton{
-    width: 300px;
-    height: 300px;
-    text-align: center;
-}
-#Compte{
+.icon{
     filter: invert(100%);
-    border: solid;
+    max-width: 2cm;
 }
-#Panier{
 
-    border: solid;
+/*moi a. */
+div{
+    width: 300px;
+    margin: auto;
+}
+
+#boutons {
+    text-align: center;
+    font-size: 22px;
+    padding: 15px;
+}
+h1 {
+    text-align: center;
+    color: saddlebrown;
+    margin: auto;
+    padding: 30px;
+}
+#mdp{
+    padding-top: 10px;
+    padding-right: 1px;
+}
+#mail{
+    padding-top: 6px;
 }
