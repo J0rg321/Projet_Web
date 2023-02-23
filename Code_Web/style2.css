@@ -100,7 +100,11 @@ body{
     font-size: 22px;
 }
 
-
+div {
+    width: 300px;
+    margin: auto;
+    border: 3px solid black;
+}
 
 
 

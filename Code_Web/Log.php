@@ -7,16 +7,17 @@
  * Project : Projet_Web
  */
 
-$fichierLog = "stockage des logins.log";//définition du fichier de log
-$fileFullPath = setFullPath($fichierLog);//définition du chemin entier jusqu'au fichier
-$logHeader = "Temps du log / création\t\t\tNom utilisateur";//affiche les entêtes du fichier
 
-
-echo setFullPath("stockage des logins.log") . "<br>"; //test pour détection du fichier
-
-
-function setFullPath($Nom)//mettre le dossier en question
-{
-    return getcwd() . "\\" . $Nom; //le double back slash fait en sorte de rajouter un back slash entre le dossier et le fichier
+// Vérifier si le formulaire est soumis
+if (isset($_POST['submit'])) {
+    /* récupérer les données du formulaire en utilisant
+       la valeur des attributs name comme clé
+      */
+    $nom = $_POST['nom'];
+    $age = $_POST['age'];
+    $adresse = $_POST['adresse'];
+    // afficher le résultat
+    echo '<h3>Informations récupérées en utilisant GET</h3>';
+    echo 'Nom : ' . $nom . ' Age : ' . $age . ' Adresse : ' . $adresse;
+    exit;
 }
-
