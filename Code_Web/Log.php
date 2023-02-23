@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
     $age = $_POST['age'];
     $adresse = $_POST['adresse'];
     // afficher le résultat
-    echo '<h3>Informations récupérées en utilisant GET</h3>';
+    echo '<h3>Informations récupérées en utilisant la méthode POST</h3>';
     echo 'Nom : ' . $nom . ' Age : ' . $age . ' Adresse : ' . $adresse;
     exit;
 }
