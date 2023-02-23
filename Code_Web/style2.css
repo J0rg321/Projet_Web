@@ -29,13 +29,19 @@
     background-color: #b66536;
     width: 250px;
     justify-content: center;
-
+    border-width: 10px;
+    border-color: white;
 }
 .nav-link:hover{
     color: white;
     background-color: #b54a16;
     width: 250px;
     justify-content: center;
+    border: 1px solid;
+}
+.nav-item{
+    background-color: #b6571e;
+    border-color: white;
 }
 #logo{
     display: block;
@@ -84,7 +90,7 @@ body{
 }
 .btn-primary:hover{
     background-color: #b6571e;
-    border-color: #b6571e;
+    border-color: white;
 }
 .container-fluid{
     background-color: #b66536;
@@ -98,7 +104,14 @@ body{
 }
 .bouton{
     font-size: 22px;
+    text-align: center;
 }
+.search{
+    margin-right: 100px;
+}
+
+
+
 
 
 
