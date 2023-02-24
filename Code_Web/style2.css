@@ -23,14 +23,14 @@
 .nav-link:link,.nav-link:visited {
     color: white;
     background-color: #b66536;
-    width: 500px;
+    width: 400px;
     justify-content: center;
     transition: 300ms;
 }
 .nav-link:hover{
     color: white;
     background-color: #b54a16;
-    width: 500px;
+    width: 400px;
     justify-content: center;
     border: 1px solid;
     padding: 10px;
@@ -45,7 +45,7 @@
 #logo{
     display: block;
     flex: 1 1 auto;
-    margin-left: 0;
+    margin-right: 10px;
     max-width: 100%;
     width: 100%;
 }
@@ -66,7 +66,6 @@
 #panier{
     display: block;
     flex: 1 1 auto;
-    margin-left: 0;
     max-width: 100%;
     width: 100%;
     filter: invert(100%);
@@ -116,15 +115,15 @@ body{
 }
 .search{
     margin-right: 100px;
-    background-color:rgba(255,255,255, 0.3) !important;
+    background-color: blue;
 }
-.accueil, vetements{
+.accueil, .vetements{
     margin-right: 10px;
 }
 .form-control{
     border-color: white;
     background-color: #b66536;
-    color: green;
+
 }
 .d-flex{
     padding-left: 10px;
