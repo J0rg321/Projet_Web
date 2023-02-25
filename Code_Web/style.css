@@ -11,14 +11,11 @@
 
 #container {
     margin: 0 auto;
-    max-width: 100%;
     padding: 0 2.0rem;
     width: 100%;
     height: 13.6%;
     background-color: #3C3C3C;
     top: 0;
-    position: fixed;
-    z-index: auto;
 }
 
 #row {
@@ -265,16 +262,20 @@ body {
 }
 
 .categories {
-    height: 86.4%;
-    width: 20%;
+    width: 100%;
     color: black;
-    top: 0px;
     left: 0;
     background-color: rgba(255, 255, 255, 0.5);;
     padding: 20px;
-    padding-top: 15px;
-    position: fixed;
-    top:13.6%;
+    height: 100%;
+    text-align:justify;
+}
+
+.NavBarAndCategories{
+    width: 100%;
+    height: 13.6%;
+    background-color: #3C3C3C;
+    position : fixed;
 }
 
 
@@ -285,13 +286,14 @@ input[name="categorie"] {
 }
 
 .vetementCat {
-    padding-bottom: 20px;
+    padding-bottom: 6px;
+    padding-left: 10px;
 }
 
 .couleurCat {
     border-top: solid;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     border-color: #FF6766;
     padding-left: 32%;
 }
@@ -302,8 +304,8 @@ input[name="categorie"] {
 
 .tailleCat {
     border-top: solid;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     border-color: #FF6766;
     padding-left: 32%;
 }
@@ -313,63 +315,31 @@ input[name="categorie"] {
 }
 .prixCat{
     border-top: solid;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     border-color: #FF6766;
+    padding-left: 32%;
 }
-
-/*RANGE*/
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-.range input{
-    -webkit-appearance:none;
-    width:70%;
-    height:4px;
-    border-radius:5px;
-    background-color:#FF6766;
-    outline:none;
+.btnCat{
+    border-top: solid;
+    padding-top: 20px;
+    padding-bottom: 6px;
+    border-color: #FF6766;
+    padding-left: 0%;
 }
-.range input::-webkit-slider-thumb{
-    -webkit-appearance:none;
-    width:40px;
-    height:20px;
-    border-radius:100%;
-    background-color:#FF6766;
+.boutonCat{
+    width: 2.6cm;
+    position: center;
 }
-.range span{
-    position:absolute;
-    margin-left:14px;
-    width:54px;
-    height:30px;
-    background-color:#222;
-    color:#fff;
-    border-radius:3px;
-    text-align:center;
-    line-height:30px;
-}
-.range span:before{
-    content:'';
-    position:absolute;
-    border-right:9px solid transparent;
-    border-left:9px solid transparent;
-    border-bottom:12px solid #222;
-    left:-10px;
-    top:50%;
-    transform:translateY(-50%) rotate(-90deg);
-}
-
-
-
-
 
 .ESSAY{
     width: 20cm;
     height: 7cm;
     background-color: green;
-    position: relative;
     border: solid;
     padding: 20px;
-    left: 10cm;
+    position: static;
+    left: 10%;
+    left: 10%;
     top: 10cm;
 }
