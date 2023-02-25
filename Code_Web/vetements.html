@@ -7,54 +7,146 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Range.js">
 
 </head>
 <body>
-<table id="menuTable">
-    <tr>
-        <td>
-            <nav class="navbar navbar-expand-sm navbar-dark">
-                <div class="logo">
-                    <a href="Vêtements.html">
-                        <img  src="Images/LogoWear.PNG" alt="WearYou"  style="width:70px" class="rounded-pill">
-                    </a>
-                </div>
-                <div class="WearYou">
-                    <p>WearYou</p>
+<div>
+    <div id="container">
+        <div div="row">
+            <nav class="navbar navbar-expand-lg bg-brown">
+                <div class="container-fluid d-flex justify-content-between">
+                    <div>
+                        <a href="Accueil.html">
+                            <img src="Images/LogoWear.PNG" alt="WearYou" style="width:100px" class="rounded-pill">
+                        </a>
+                    </div>
+                    <div>
+                        <div class="navbar-nav me-auto mb-1 mb-lg-0">
+                            <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+                                <div class="box-1">
+                                    <a href="Accueil.html">
+                                        <div class="btn btn-one">
+                                            <span>ACCUEIL</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="box-1">
+                                    <a href="vetements.html">
+                                        <div class="btn btn-one">
+                                            <span>VETEMENTS</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <div class="search-box">
+                                    <button class="btn-search"><img src="Images/loupe.png" class="loupe"></button>
+                                    <input type="text" class="input-search" placeholder="Rechercher">
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <div class="col-6">
+                            <a href="Cart.html">
+                                <img class="nav-link icon" src="Images/trolley.png" aria-current="page"
+                                     style="width:100px">
+                            </a>
+                        </div>
+                        <div class="col-6 account">
+                            <a href="Login.html">
+                                <img class="nav-link icon" src="Images/account.png" alt="WearYou" aria-current="page">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </nav>
-        </td>
-        <td>
-            <div class="navigation">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a class="nav-link" href="Accueil.html">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="vetements.html">Vêtements</a>
-                    </li>
-                </ul>
+        </div>
+    </div>
+</div>
+<div>
+    <div id="" class="categories">
+        <h2 style="text-align: center"><strong>Catégories</strong></h2>
+        <div class="vetementCat">
+            <p style="text-align: center">Vêtement</p>
+            <form id="radioButton">
+                <div>
+                    <input type="radio" id="tshirt" name="categorie" value="tshirt">
+                    <label for="tshirt">T-shirt</label>
+                </div>
+                <div>
+                    <input type="radio" id="pantalong" name="categorie" value="pantalong">
+                    <label for="Tshirt">Pantalong</label>
+                </div>
+                <div>
+                    <input type="radio" id="robe" name="categorie" value="robe">
+                    <label for="robe">Robe</label>
+                </div>
+                <div>
+                    <input type="radio" id="jupe" name="categorie" value="jupe">
+                    <label for="jupe">Jupe</label>
+                </div>
+                <div>
+                    <input class="radioButton" type="radio" id="chemise" name="categorie" value="chemise">
+                    <label for="chemise">Chemise</label>
+                </div>
+            </form>
+        </div>
+        <form>
+            <div class="couleurCat">
+                <p>Couleur</p>
+                <select name="Couleurs" id="couleur">
+                    <option value="rouge">Rouge</option>
+                    <option value="vert">Vert</option>
+                    <option value="blanc">Blanc</option>
+                    <option value="noir">Noir</option>
+                    <option value="violet">Violet</option>
+                </select>
             </div>
-        </td>
-        <td>
-            <div id="search">
-                <form class="d-flex">
-                    <input class="form-control me-2" type="text" placeholder="Search">
-                    <button class="btn btn-primary" type="button">Search</button>
-                </form>
+            <div class="tailleCat">
+                <p>Taille</p>
+                <select name="tailles" id="taille">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
             </div>
-        </td>
-        <td>
-            <div >
-                <img class="icon" href="Cart.html"src="Images/trolley.png" alt="WearYou" style="width:100px">
+            <div class="prixCat">
+                <p style="text-align: center">Prix max.</p>
+                <div class='range'>
+                    <input type="range" min='0' max='100' step='1'/>
+                    <span>50</span>
+                </div>
+                <div>
+                    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+                    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+                            integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+                            crossorigin="anonymous"></script>
+                    <script type="text/javascript">
+                        $(function () {
+                            $('.range input').on('mousemove', function () {
+                                var getValRange = $(this).val();
+                                $('.range span').text(getValRange);
+                            });
+                        });
+                    </script>
+                </div>
             </div>
-        </td>
-        <td>
-            <div >
-                <img class="icon" href="Login.html" src="Images/account.png" alt="WearYou" style="width:100px">
-            </div>
-        </td>
-    </tr>
-</table>
+            <input type = "submit" name = "submit" value = "Submit" />
+            <input type = "reset" name = "reset"  value = "Reset" />
+        </form>
+    </div>
+</div>
+<div>
+    <div class="ESSAY">hEYYYYYYYYYYYYYYYY</div>
+    <div class="ESSAY">hEYYYYYYYYYYYYYYYY</div>
+    <div class="ESSAY">hEYYYYYYYYYYYYYYYY</div>
+    <div class="ESSAY">hEYYYYYYYYYYYYYYYY</div>
+    <div class="ESSAY">hEYYYYYYYYYYYYYYYY</div>
+    <div class="ESSAY">hEYYYYYYYYYYYYYYYY</div>
+</div>
 </body>
 </html>
