@@ -69,7 +69,7 @@
 <div class="div_centre">
     <h1>Veuillez vous logger : </h1>
     <form action="Log.php" method="post">
-        <div style="border:3px solid white" margin="5px" ;>
+        <div style="border:3px solid white" margin="5px">
             <div id="mail">
                 E-mail : <input type="email" name="email" placeholder="e-mail" required/>
             </div>
