@@ -6,6 +6,9 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -54,7 +57,7 @@
                         </a>
                     </div>
                     <div class="col-6 account">
-                        <a href="Login.html">
+                        <a href="Login.php">
                             <img class="nav-link icon" src="Images/account.png" alt="WearYou" aria-current="page">
                         </a>
                     </div>
@@ -66,7 +69,7 @@
 <div class="div_centre">
     <h1>Veuillez vous logger : </h1>
     <form action="Log.php" method="post">
-        <div style="border:3px solid #b54a16" margin="5px" ;>
+        <div style="border:3px solid white" margin="5px">
             <div id="mail">
                 E-mail : <input type="email" name="email" placeholder="e-mail" required/>
             </div>
