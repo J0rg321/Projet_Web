@@ -107,13 +107,19 @@ body {
 }
 
 .div_centre {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color:  white;
+    font-size: 30px;
+    padding: 500px;
 }
 
+.div_centre>h1 {
+    font-size: 50px;
+    text-align: center;
+}
 * {
     box-sizing: border-box;
 }
