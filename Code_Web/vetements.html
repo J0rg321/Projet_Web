@@ -6,78 +6,80 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-<div>
-    <div id="container">
-        <div div="row">
-            <nav class="navbar navbar-expand-lg bg-brown">
-                <div class="container-fluid d-flex justify-content-between">
-                    <div>
-                        <a href="Accueil.html">
-                            <img src="Images/LogoWear.PNG" alt="WearYou" style="width:100px" class="rounded-pill">
-                        </a>
-                    </div>
-                    <div>
-                        <div class="navbar-nav me-auto mb-1 mb-lg-0">
-                            <ul class="navbar-nav me-auto mb-1 mb-lg-0">
-                                <div class="box-1">
-                                    <a href="Accueil.html">
-                                        <div class="btn btn-one">
-                                            <span>ACCUEIL</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="box-1">
-                                    <a href="vetements.html">
-                                        <div class="btn btn-one">
-                                            <span>VÊTEMENTS</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </ul>
-                            <form class="d-flex" role="search">
-                                <div class="search-box">
-                                    <button class="btn-search"><img src="Images/loupe.png" class="loupe"></button>
-                                    <input type="text" class="input-search" placeholder="Rechercher">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <div class="col-6">
-                            <a href="Cart.html">
-                                <img class="nav-link icon" src="Images/trolley.png" aria-current="page"
-                                     style="width:100px">
+    <div>
+        <div id="container">
+            <div div="row">
+                <nav class="navbar navbar-expand-lg bg-brown">
+                    <div class="container-fluid d-flex justify-content-between">
+                        <div>
+                            <a href="Accueil.html">
+                                <img src="Images/LogoWear.PNG" alt="WearYou" style="width:100px" class="rounded-pill">
                             </a>
                         </div>
-                        <div class="col-6 account">
-                            <a href="Login.html">
-                                <img class="nav-link icon" src="Images/account.png" alt="WearYou"
-                                     aria-current="page">
-                            </a>
+                        <div>
+                            <div class="navbar-nav me-auto mb-1 mb-lg-0">
+                                <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+                                    <div class="box-1">
+                                        <a href="Accueil.html">
+                                            <div class="btn btn-one">
+                                                <span>ACCUEIL</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="box-1">
+                                        <a href="vetements.html">
+                                            <div class="btn btn-one">
+                                                <span>VÊTEMENTS</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </ul>
+                                <form class="d-flex" role="search">
+                                    <div class="search-box">
+                                        <button class="btn-search"><img src="Images/loupe.png" class="loupe"></button>
+                                        <input type="text" class="input-search" placeholder="Rechercher">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <div class="col-6">
+                                <a href="Cart.html">
+                                    <img class="nav-link icon" src="Images/trolley.png" aria-current="page"
+                                         style="width:100px">
+                                </a>
+                            </div>
+                            <div class="col-6 account">
+                                <a href="Login.html">
+                                    <img class="nav-link icon" src="Images/account.png" alt="WearYou"
+                                         aria-current="page">
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
     </div>
-</div>
-<div id="mySidebar" class="sidebar">
     <div style="  position: fixed; height: 100%; overflow: auto;">
         <div id="" class="categories">
             <form id="Categories">
                 <h2 style="text-align: center"><strong>Catégories</strong></h2>
                 <div class="vetementCat">
-                    <p style="text-align: center; font-size: 20px"><strong>Vêtement</strong></p>
+                    <p style="text-align: center"><strong>Vêtement</strong></p>
                     <div>
                         <input type="radio" id="tshirt" name="categorie" value="tshirt">
                         <label for="tshirt">T-shirt</label>
                     </div>
                     <div>
-                        <input type="radio" id="pantalong" name="categorie" value="pantalon">
+                        <input type="radio" id="pantalong" name="categorie" value="pantalong">
                         <label for="Tshirt">Pantalong</label>
                     </div>
                     <div>
@@ -94,7 +96,7 @@
                     </div>
                 </div>
                 <div class="couleurCat">
-                    <p style="font-size: 20px"><strong>Couleur</strong></p>
+                    <p><strong>Couleur</strong></p>
                     <select name="Couleurs" id="couleur">
                         <option value="rouge">Rouge</option>
                         <option value="vert">Vert</option>
@@ -104,7 +106,7 @@
                     </select>
                 </div>
                 <div class="tailleCat">
-                    <p style="font-size: 20px"><strong>Taille</strong></p>
+                    <p><strong>Taille</strong></p>
                     <select name="tailles" id="taille">
                         <option value="S">S</option>
                         <option value="M">M</option>
@@ -113,7 +115,7 @@
                     </select>
                 </div>
                 <div class="prixCat">
-                    <p style="font-size: 20px"><strong>Prix min.</strong></p>
+                    <p><strong>Prix min.</strong></p>
                     <input type="number" id="prixMax" name="tentacles" min="10" max="100">
                 </div>
                 <div class="btnCat">
@@ -123,22 +125,6 @@
             </form>
         </div>
     </div>
-</div>
-<div id="main">
-    <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>
-</div>
-
-<script>
-    function openNav() {
-        document.getElementById("mySidebar").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
-    }
-
-    function closeNav() {
-        document.getElementById("mySidebar").style.width = "0";
-        document.getElementById("main").style.marginLeft= "0";
-    }
-</script>
 
 </body>
 </html>
