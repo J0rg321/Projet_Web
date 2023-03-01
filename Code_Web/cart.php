@@ -51,12 +51,12 @@
                 </div>
                 <div class="d-flex justify-content-end">
                     <div class="col-6">
-                        <a href="Cart.html">
-                            <img class="nav-link icon" src="Images/trolley.png" aria-current="page" style="width:100px">
+                        <a href="cart.php">
+                            <img class="nav-link icon" src="Images/trolley.png" aria-current="page" style="width:100px" alt="cart de shopping">
                         </a>
                     </div>
                     <div class="col-6 account">
-                        <a href="Login.html">
+                        <a href="Login.php">
                             <img class="nav-link icon" src="Images/account.png" alt="WearYou" aria-current="page">
                         </a>
                     </div>
@@ -65,6 +65,9 @@
         </nav>
     </div>
 </div>
+<footer>
+<a>jogjipggf</a>
+</footer>
 </body>
 </html>
 <?php
