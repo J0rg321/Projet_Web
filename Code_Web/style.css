@@ -152,12 +152,12 @@ body {
     font-weight: 100;
 }
 
-.btn-primary{
+.btn-primary {
     position: absolute;
     margin: 20px;
 }
 
-.formLogin{
+.formLogin {
     position: relative;
     padding: 10px;
 }

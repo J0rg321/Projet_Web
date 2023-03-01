@@ -75,12 +75,10 @@
             </div>
             <div id="mdp">
                 Mot de passe : <input type="password" id="password" name="mdp" placeholder="mot de passe"/>
-                <div id="btn">
                     <button type="submit" class="btn-primary">Envoyer</button>
                     <button type="reset" class="btn-primary">Réinitialiser</button>
-                </div>
     </form>
-</div>
+
 </body>
 </html>
 <?php
