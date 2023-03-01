@@ -1,13 +1,15 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 
 footer{
-    position: fixed;
+    position:absolute;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: ;
+    height: 30px;
+    background-color: red;
     color: white;
     text-align: center;
+    top: 100%;
 }
 
 #menu > div {
