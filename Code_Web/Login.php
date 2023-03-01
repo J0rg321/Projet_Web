@@ -52,7 +52,7 @@
                 </div>
                 <div class="d-flex justify-content-end">
                     <div class="col-6">
-                        <a href="Cart.html">
+                        <a href="cart.php">
                             <img class="nav-link icon" src="Images/trolley.png" aria-current="page" style="width:100px">
                         </a>
                     </div>
