@@ -65,6 +65,10 @@
         </nav>
     </div>
 </div>
+<footer>
+    fdssssss
+
+</footer>
 </body>
 </html>
 <?php
