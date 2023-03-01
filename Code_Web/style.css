@@ -68,8 +68,8 @@
 }
 
 body {
-    background-color: #35717c;
-    font-family: "Times New Roman" !important;
+    background-color: #354A21;
+    font-family: "Roboto Condensed" !important;
 }
 
 
@@ -85,7 +85,7 @@ body {
     max-width: 2cm;
     border-radius: 50%;
     padding: 5px;
-    background-color: #35717c;
+    background-color: #354A21;
 }
 
 .account {
@@ -132,7 +132,7 @@ body {
     outline: none;
     border-radius: 25px;
     transition: all .5s ease-in-out;
-    background-color: #35717c;
+    background-color: #354A21;
     padding-right: 40px;
     color: #fff;
 }
@@ -232,7 +232,7 @@ body {
 
 .btn-one:hover span {
     letter-spacing: 2px;
-    color: #35717c;
+    color: #354A21;
 }
 
 .btn-one:hover::before {
@@ -259,7 +259,7 @@ body {
 
 .categories {
     width: 100%;
-    color: #35717c;
+    color: #354A21;
     left: 0;
     background-color: rgba(255, 255, 255, 0.5);;
     padding: 20px;
@@ -271,7 +271,7 @@ body {
 /*---------------------Catégories--------------------------*/
 
 input[name="categorie"] {
-    accent-color: #35717c;
+    accent-color: #354A21;
 }
 
 .vetementCat {
@@ -284,7 +284,7 @@ input[name="categorie"] {
     border-top: solid;
     padding-top: 6px;
     padding-bottom: 6px;
-    border-color: #35717c;
+    border-color: #354A21;
     padding-left: 32%;
     font-size: 20px;
 }
@@ -297,7 +297,7 @@ input[name="categorie"] {
     border-top: solid;
     padding-top: 6px;
     padding-bottom: 6px;
-    border-color: #35717c;
+    border-color: #354A21;
     padding-left: 32%;
     font-size: 20px;
 }
@@ -309,7 +309,7 @@ input[name="categorie"] {
     border-top: solid;
     padding-top: 6px;
     padding-bottom: 6px;
-    border-color: #35717c;
+    border-color: #354A21;
     padding-left: 32%;
     font-size: 20px;
 }
@@ -317,7 +317,7 @@ input[name="categorie"] {
     border-top: solid;
     padding-top: 20px;
     padding-bottom: 6px;
-    border-color: #35717c;
+    border-color: #354A21;
     padding-left: 0%;
     font-size: 20px;
 }
