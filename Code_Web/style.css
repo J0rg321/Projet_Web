@@ -31,7 +31,7 @@
 }
 
 .logo{
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 .navigation {
@@ -277,6 +277,7 @@ input[name="categorie"] {
 .vetementCat {
     padding-bottom: 6px;
     padding-left: 10px;
+    font-size: 16px;
 }
 
 .couleurCat {
@@ -285,6 +286,7 @@ input[name="categorie"] {
     padding-bottom: 6px;
     border-color: #35717c;
     padding-left: 32%;
+    font-size: 16px;
 }
 #color{
     width: 50%;
@@ -297,6 +299,7 @@ input[name="categorie"] {
     padding-bottom: 6px;
     border-color: #35717c;
     padding-left: 32%;
+    font-size: 16px;
 }
 #taille{
     width: 50%;
@@ -308,6 +311,7 @@ input[name="categorie"] {
     padding-bottom: 6px;
     border-color: #35717c;
     padding-left: 32%;
+    font-size: 16px;
 }
 .btnCat{
     border-top: solid;
@@ -315,10 +319,15 @@ input[name="categorie"] {
     padding-bottom: 6px;
     border-color: #35717c;
     padding-left: 0%;
+    font-size: 16px;
 }
 .boutonCat{
     width: 2.6cm;
     position: center;
+    font-size: 16px;
+}
+option{
+    font-size: 13px;
 }
 
 /*-----------Slider------------*/
