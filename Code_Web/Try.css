@@ -89,13 +89,6 @@ body {
 }
 
 
-.loupe {
-    width: 40px;
-    position: absolute;
-    left: 1.47cm;
-    bottom: 2.5mm;
-
-}
 
 .div_centre {
     position: fixed;
@@ -520,6 +513,16 @@ option{
     top: 0;
 }
 
+
+.bi { /*remplace btn-search*/
+    width: 40px;
+    position: absolute;
+    left: 1.47cm;
+    bottom: 4.5mm;
+
+}
+
+
 .mainVetements{
-position
+
 }
