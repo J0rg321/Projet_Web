@@ -73,11 +73,10 @@
         <i class="bi bi-emoji-smile"></i>
     </h4>
     <h6>Retrouvez nos réseau sociaux ci-dessous</h6>
-    <div id="rs">
-        <i class="bi bi-twitter"></i>
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-youtube"></i>
-        <i class="bi bi-facebook"></i>
+        <div><i class="bi bi-twitter"></i> <a href="https://twitter.com/?lang=">Twitter</a></div>
+        <div><i class="bi bi-instagram"> <a href=https://www.instagram.com/>Instagram</a></i></div>
+        <div><i class="bi bi-youtube"> <a href=https://www.youtube.com/>Youtube</a></i></div>
+        <div><i class="bi bi-facebook"> <a href=https://fr-fr.facebook.com/>Facebook</a></i></div>
 </footer>
 </body>
 </html>
