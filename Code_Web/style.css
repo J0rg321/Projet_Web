@@ -11,8 +11,13 @@ footer{
     text-align: center;
     top: 100%;
 }
-footer >#rs > svg{
-    width: 300px;
+#bienvenu{
+    padding: 15px;
+    
+}
+#rs{
+    margin: 30px;
+    
 }
 #menu > div {
     margin: 9px;
