@@ -22,6 +22,11 @@ footer{
     flex-direction: row;
     border-color: #3C3C3C;;
 }
+#titre{
+    color: #dddddd;
+    margin: 50px;
+    text-decoration: underline;
+}
 
 #container {
     margin: 0 auto;

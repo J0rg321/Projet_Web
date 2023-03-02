@@ -68,15 +68,17 @@
         </nav>
     </div>
 </div>
+<h1 id="titre">Voici le contenu de votre panier :</h1>
+<div></div>
 <footer>
     <h4 id="bienvenu">Bienvenu(e)s sur WearYou
         <i class="bi bi-emoji-smile"></i>
     </h4>
     <h6>Retrouvez nos réseau sociaux ci-dessous</h6>
-        <div><i class="bi bi-twitter"></i> <a href="https://twitter.com/?lang=">Twitter</a></div>
-        <div><i class="bi bi-instagram"> <a href=https://www.instagram.com/>Instagram</a></i></div>
-        <div><i class="bi bi-youtube"> <a href=https://www.youtube.com/>Youtube</a></i></div>
-        <div><i class="bi bi-facebook"> <a href=https://fr-fr.facebook.com/>Facebook</a></i></div>
+    <div><i class="bi bi-twitter"></i> <a href="https://twitter.com/?lang=">Twitter - WearYou</a></div>
+    <div><i class="bi bi-instagram"> <a href=https://www.instagram.com/>Instagram - WearYou</a></i></div>
+    <div><i class="bi bi-youtube"> <a href=https://www.youtube.com/>Youtube - WearYou</a></i></div>
+    <div><i class="bi bi-facebook"> <a href=https://fr-fr.facebook.com/>Facebook - WearYou</a></i></div>
 </footer>
 </body>
 </html>
