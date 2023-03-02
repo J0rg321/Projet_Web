@@ -74,10 +74,10 @@
     </h4>
     <h6>Retrouvez nos réseau sociaux ci-dessous</h6>
     <div id="rs">
-        <p><i class="bi bi-twitter"></i></p>
-        <p><i class="bi bi-instagram"></i></p>
-        <p><i class="bi bi-tiktok"></i></p>
-    </div>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-youtube"></i>
+        <i class="bi bi-facebook"></i>
 </footer>
 </body>
 </html>
