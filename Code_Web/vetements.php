@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Try.css">
 </head>
 <body>
 <div style="position: fixed; background-color: transparent; width: 100%">
@@ -138,6 +138,27 @@
 </div>
 <div class="mainVetements">
     <div class="marginVetements">
+        <div class="vetements">
+            <img src="Images/Vêtements/Jupe_jean/Jupe%201.jpg">
+            <p>Prix : <?php ?></p>
+            <p>Prix : <?php ?></p>
+            <p>Prix : <?php ?></p>
+            <p>Prix : <?php ?></p>
+        </div>
+        <div class="vetements">
+            <img src="Images/Vêtements/Jupe_jean/Jupe%201.jpg">
+            <p>Prix : <?php ?></p>
+            <p>Prix : <?php ?></p>
+            <p>Prix : <?php ?></p>
+            <p>Prix : <?php ?></p>
+        </div>
+        <div class="vetements">
+            <img src="Images/Vêtements/Jupe_jean/Jupe%201.jpg">
+            <p>Prix : <?php ?></p>
+            <p>Prix : <?php ?></p>
+            <p>Prix : <?php ?></p>
+            <p>Prix : <?php ?></p>
+        </div>
         <div class="vetements">
             <img src="Images/Vêtements/Jupe_jean/Jupe%201.jpg">
             <p>Prix : <?php ?></p>

@@ -535,7 +535,7 @@ option{
 
 }
 footer{
-    position:absolute;
+    position:static;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -544,8 +544,4 @@ footer{
     color: white;
     text-align: center;
     top: 100%;
-}
-
-#bienvenu{
-    padding: 15px;
 }
