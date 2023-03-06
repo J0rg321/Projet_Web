@@ -522,7 +522,7 @@ option{
 
 }
 .mainVetements{
-    position: absolute;
+    position: static;
     width: 100%;
     padding-top: 13.6%;
 
@@ -533,4 +533,19 @@ option{
     margin-right: auto;
     height: 100%;
 
+}
+footer{
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #082f09;
+    color: white;
+    text-align: center;
+    top: 100%;
+}
+
+#bienvenu{
+    padding: 15px;
 }
