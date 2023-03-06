@@ -73,20 +73,20 @@
 
     <div class="mySlides fade">
         <div class="numbertext">1 / 3</div>
-        <img src="img_nature_wide.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
+        <img src="Casquette 1.jpg" style="width:100%">
+        <div class="text">Item n01</div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">2 / 3</div>
         <img src="img_snow_wide.jpg" style="width:100%">
-        <div class="text">Caption Two</div>
+        <div class="text">Item n02</div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">3 / 3</div>
         <img src="img_mountains_wide.jpg" style="width:100%">
-        <div class="text">Caption Three</div>
+        <div class="text">Item n03</div>
     </div>
 
     <a class="prev" onclick="plusSlides(-1)">❮</a>
