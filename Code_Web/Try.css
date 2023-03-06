@@ -521,8 +521,16 @@ option{
     bottom: 4.5mm;
 
 }
-
-
 .mainVetements{
+    position: absolute;
+    width: 100%;
+    padding-top: 13.6%;
+
+}
+.marginVetements{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
 
 }
