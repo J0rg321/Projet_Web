@@ -73,19 +73,19 @@
 
     <div class="mySlides fade">
         <div class="numbertext">1 / 3</div>
-        <img src="Casquette 1.jpg" style="width:100%">
+        <img class="empl" src="Images/Vêtements/Casquette_noire/Casquette 1.jpg" style="width:100%">
         <div class="text">Item n01</div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">2 / 3</div>
-        <img src="img_snow_wide.jpg" style="width:100%">
+        <img src="Images/Vêtements/Pantalon_jean/Pantalon 3.jpg" style="width:100%">
         <div class="text">Item n02</div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">3 / 3</div>
-        <img src="img_mountains_wide.jpg" style="width:100%">
+        <img src="Images/Vêtements/Robe_Rose_Claire/Robe 3.jpg" style="width:100%">
         <div class="text">Item n03</div>
     </div>
 
