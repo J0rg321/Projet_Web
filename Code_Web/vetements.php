@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Vêtement</title>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,8 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Try.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div style="position: fixed; background-color: transparent; width: 100%">
@@ -160,6 +158,5 @@
     <div><i class="bi bi-youtube"> <a href=https://www.youtube.com/>Youtube - WearYou</a></i></div>
     <div><i class="bi bi-facebook"> <a href=https://fr-fr.facebook.com/>Facebook - WearYou</a></i></div>
 </footer>
-
 </body>
 </html>
