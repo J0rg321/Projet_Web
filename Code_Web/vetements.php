@@ -138,47 +138,18 @@
 </div>
 <div class="mainVetements">
     <div class="marginVetements">
-
         <div class="vetements">
             <img src="Images/Vêtements/Jupe_jean/Jupe%201.jpg">
+            <p>Prix : <?php ?></p>
+            <p>Prix : <?php ?></p>
+            <p>Prix : <?php ?></p>
+            <p>Prix : <?php ?></p>
         </div>
-        <div class="vetements">
-            <img src="Images/Vêtements/Jupe_jean/Jupe%201.jpg">
-        </div>
-        <div class="vetements">
-            <img src="Images/Vêtements/Jupe_jean/Jupe%201.jpg">
-        </div>
-        <div class="vetements">
-            <img src="Images/Vêtements/Jupe_jean/Jupe%201.jpg">
-        </div>
-        <div class="vetements">
-            <img src="Images/Vêtements/Jupe_jean/Jupe%201.jpg">
-        </div>
-        <div class="vetements">
-            <img src="Images/Vêtements/Jupe_jean/Jupe%201.jpg">
-        </div>
-        <div class="vetements">
-            <img src="Images/Vêtements/Jupe_jean/Jupe%201.jpg">
-        </div>
-        <div class="vetements">
-            <img src="Images/Vêtements/Jupe_jean/Jupe%201.jpg">
-        </div>
-        <div class="vetements">
-            <img src="Images/Vêtements/Jupe_jean/Jupe%201.jpg">
-        </div>
-        <div class="vetements">
-            <img src="Images/Vêtements/Jupe_jean/Jupe%201.jpg">
-        </div>
-        <div class="vetements">
-            <img src="Images/Vêtements/Jupe_jean/Jupe%201.jpg">
-        </div>
-        <div class="vetements">
-            <img src="Images/Vêtements/Jupe_jean/Jupe%201.jpg">
-        </div>
-
-
     </div>
+
 </div>
+</div>
+
 
 </body>
 </html>
