@@ -60,7 +60,7 @@
                         </a>
                     </div>
                     <div class="col-6 account">
-                        <a href="Login.php">
+                        <a href="C:\GitHub\Projet_Web\Code_Web\Login.php">
                             <img class="nav-link icon" src="Images/account.png" alt="WearYou" aria-current="page">
                         </a>
                     </div>
@@ -81,3 +81,5 @@
 </footer>
 </body>
 </html>
+
+<?php
