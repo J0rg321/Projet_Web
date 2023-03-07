@@ -1,3 +1,7 @@
+<?php ob_start();
+$title="RentASnow - Snows";
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -139,34 +143,26 @@
 <div class="mainVetements">
     <div class="marginVetements">
         <div class="vetements">
-            <img src="Images/Vêtements/Jupe_jean/Jupe%201.jpg">
-            <p>Prix : <?php ?></p>
-            <p>Prix : <?php ?></p>
-            <p>Prix : <?php ?></p>
-            <p>Prix : <?php ?></p>
-        </div>
-        <div class="vetements">
-            <img src="Images/Vêtements/Jupe_jean/Jupe%201.jpg">
-            <p>Prix : <?php ?></p>
-            <p>Prix : <?php ?></p>
-            <p>Prix : <?php ?></p>
-            <p>Prix : <?php ?></p>
-        </div>
-        <div class="vetements">
-            <img src="Images/Vêtements/Jupe_jean/Jupe%201.jpg">
-            <p>Prix : <?php ?></p>
-            <p>Prix : <?php ?></p>
-            <p>Prix : <?php ?></p>
-            <p>Prix : <?php ?></p>
-        </div>
-        <div class="vetements">
-            <img src="Images/Vêtements/Jupe_jean/Jupe%201.jpg">
-            <p>Prix : <?php ?></p>
-            <p>Prix : <?php ?></p>
-            <p>Prix : <?php ?></p>
-            <p>Prix : <?php ?></p>
-        </div>
+
+    <div class="span12" id="divMain">
+        <?php foreach ($snows as $snow) : ?>
+            <div class="thumbnail">
+                <a href="index.php?action=Snow" href="view/content/images/<?= $snow['code']; ?>.jpg" target="blank"><img src="<?= $snow['photo']; ?>" alt="<?= $snow['code']; ?>" ></a>
+                <p><strong><a href="index.php?action=Snow"><?= $snow['code']; ?></a></strong></p>
+                <p><strong>Tille : </strong><?= $snow['taille']; ?></p>
+                <p><strong>Couleur : </strong><?= $snow['couleur']; ?></p>
+                <p><strong>Prix : </strong><?= $snow['prix']; ?> cm</p>
+                <p><strong>Genre :</strong> CHF <?= $snow['genre']; ?>.- / jour</p>
+            </div>
+        <?php endforeach ?>
     </div>
+
+<?php
+$content = ob_get_clean();
+require "";
+?>
+        </div>
+</div>
 
 </div>
 <footer>
