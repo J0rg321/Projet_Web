@@ -13,7 +13,7 @@
 
 </head>
 <body>
-<?= $arrow ?>
+<?= $arrow; ?>
 <div id="container">
     <div div="row">
         <nav class="navbar navbar-expand-lg bg-brown">
@@ -69,8 +69,8 @@
             </div>
         </nav>
     </div>
-    <?= $categories; ?>
 </div>
+<?= $categories; ?>
 <?= $content; ?>
 <footer>
     <h4 id="bienvenu">Bienvenu(e)s sur WearYou

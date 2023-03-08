@@ -1,7 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 
 footer {
-    position: static;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -9,6 +8,9 @@ footer {
     background-color: #082f09;
     color: white;
     text-align: center;
+    top: 100%;
+    position:absolute;
+
 }
 
 #bienvenu {
@@ -294,6 +296,21 @@ body {
     transform: scale(0.1, 1);
 }
 
+
+/*---------------------Catégories--------------------------*/
+
+.btn-fleche {
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+}
+
+#offcanvas, .offcanvas-start, .w-25 , .offcanvas{
+    opacity: 80%;
+}
+
+
 .categories {
     width: 100%;
     color: #354A21;
@@ -301,10 +318,8 @@ body {
     background-color: rgba(255, 255, 255, 0.5);;
     padding: 20px;
     height: 100%;
-    text-align: justify;
+    text-align:justify;
 }
-
-/*---------------------Catégories--------------------------*/
 
 .mobile-container {
     max-width: 480px;
@@ -828,3 +843,31 @@ label {
 option {
     font-size: 20px;
 }
+.bi-search { /*remplace btn-search*/
+    width: 40px;
+    position: absolute;
+    left: 1.47cm;
+    bottom: 4.5mm;
+
+}
+.mainVetements{
+    position: static;
+    width: 100%;
+    padding-top: 13.6%;
+
+}
+.marginVetements{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    display: flex;
+
+}
+.vetements{
+    flex: 1;
+    padding: 1em;
+    border: solid;
+}
+
+

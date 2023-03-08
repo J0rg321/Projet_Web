@@ -1,5 +1,7 @@
 <?php
 ob_start();
+$categories = '';
+$arrow = '';
 ?>
     <div class="div_centre">
         <h1>Veuillez vous logger : </h1>
@@ -10,9 +12,12 @@ ob_start();
                 </div>
                 <div id="mdp">
                     Mot de passe : <input type="password" id="password" name="mdp" placeholder="mot de passe"/>
-                    <button type="submit" class="btn-primary">Envoyer</button>
-                    <button type="reset" class="btn-primary">Réinitialiser</button>
+                    <div id="btn">
+                        <button type="submit" class="btn-primary">Envoyer</button>
+                        <button type="reset" class="btn-primary">Réinitialiser</button>
+                    </div>
                 </div>
+            </div>
         </form>
     </div>
 

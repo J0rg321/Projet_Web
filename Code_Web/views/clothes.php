@@ -1,11 +1,11 @@
-<?php ob_start() ?>
-<div style="position: fixed; background-color: transparent; width: 100%">
-  <?php $arrow = ob_get_clean() ?>
+<?php ob_start() ;
+$arrow = '<div style="position: fixed; background-color: transparent; width: 100%">'
+?>
 
-  <?php ob_start(); ?>
+
     <div class="col min-vh-100 p-4">
         <button class="btn-fleche float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
-            <img style="width: 30px" src="Images/fleche.png">
+            <img style="width: 30px" src="../statics/images/fleche.png">
             <p style="color: white; ">Catégories</p>
         </button>
     </div>
