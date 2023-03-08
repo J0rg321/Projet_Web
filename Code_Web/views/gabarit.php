@@ -18,7 +18,7 @@
         <nav class="navbar navbar-expand-lg bg-brown">
             <div class="container-fluid d-flex justify-content-between">
                 <div>
-                    <a class="logo" href="Accueil.html">
+                    <a class="logo" href="accueil.php">
                         <img src="Images/LogoWear.PNG" alt="WearYou" style="width:100px" class="rounded-pill">
                     </a>
                 </div>
@@ -26,7 +26,7 @@
                     <div class="navbar-nav me-auto mb-1 mb-lg-0">
                         <ul class="navbar-nav me-auto mb-1 mb-lg-0">
                             <div class="box-1">
-                                <a href="Accueil.html">
+                                <a href="accueil.php">
                                     <div class="btn btn-one">
                                         <span>ACCUEIL</span>
                                     </div>
@@ -60,7 +60,7 @@
                         </a>
                     </div>
                     <div class="col-6 account">
-                        <a href="C:\GitHub\Projet_Web\Code_Web\Login.php">
+                        <a href="Login.php">
                             <img class="nav-link icon" src="Images/account.png" alt="WearYou" aria-current="page">
                         </a>
                     </div>
