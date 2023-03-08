@@ -2,6 +2,7 @@
 ob_start();
 $categories = '';
 $arrow = '';
+$title="Login";
 ?>
     <div class="div_centre">
         <h1>Veuillez vous logger : </h1>

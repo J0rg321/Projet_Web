@@ -1,5 +1,6 @@
 <?php ob_start() ;
-$arrow = '<div style="position: fixed; background-color: transparent; width: 100%">'
+$arrow = '<div style="position: fixed; background-color: transparent; width: 100%">';
+$title = "Vêtements";
 ?>
 
 

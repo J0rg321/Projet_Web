@@ -1,5 +1,6 @@
 <?php
 ob_start();
+$title="Creation de compte";
 ?>
     <div class="div_centre">
         <h1>Bonjour, veuillez créer votre compte : </h1>
