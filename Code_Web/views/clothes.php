@@ -1,7 +1,3 @@
-<?php ob_start();
-$title="RentASnow - Snows";
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
