@@ -9,17 +9,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../statics/styles/style.css" >
 
 </head>
 <body>
+<?= $arrow ?>
 <div id="container">
     <div div="row">
         <nav class="navbar navbar-expand-lg bg-brown">
             <div class="container-fluid d-flex justify-content-between">
                 <div>
                     <a class="logo" href="accueil.php">
-                        <img src="Images/LogoWear.PNG" alt="WearYou" style="width:100px" class="rounded-pill">
+                        <img src="../statics/images/logo.PNG" alt="WearYou" style="width:100px" class="rounded-pill">
                     </a>
                 </div>
                 <div>
@@ -56,19 +57,21 @@
                 <div class="d-flex justify-content-end">
                     <div class="col-6">
                         <a href="cart.php">
-                            <img class="nav-link icon" src="Images/trolley.png" aria-current="page" style="width:100px">
+                            <img class="nav-link icon" src="../statics/images/trolley.png" aria-current="page" style="width:100px">
                         </a>
                     </div>
                     <div class="col-6 account">
                         <a href="Login.php">
-                            <img class="nav-link icon" src="Images/account.png" alt="WearYou" aria-current="page">
+                            <img class="nav-link icon" src="../statics/images/account.png" alt="WearYou" aria-current="page">
                         </a>
                     </div>
                 </div>
             </div>
         </nav>
     </div>
+    <?= $categories; ?>
 </div>
+<?= $content; ?>
 <footer>
     <h4 id="bienvenu">Bienvenu(e)s sur WearYou
         <i class="bi bi-emoji-smile"></i>
