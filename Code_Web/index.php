@@ -1,27 +1,34 @@
 <?php
 
 session_start();
-require "controller/navigation.php";
-require "controller/Snow.php";
+require "controllers/navigation.php";
 
-if (isset($_GET['action'])) {
-  $action = $_GET['action'];
-  switch ($action) {
-	case 'accueil' :
-	  accueil();
-	  break;
-	case 'vetements' :
-	  vetements();
 
-	case 'cart' :
-	  cart();
+/*if (isset($_GET['action'])) {*/
 
-	case 'compte' :
-	  compte();
 
-	default :
-	  accueil();
-  }
-} else {
-  home();
+$action = $_GET['action'];
+switch ($action) {
+  case 'home' :
+	home();
+	break;
+  case 'clothes' :
+	clothes();
+
+  case 'cart' :
+	cart();
+
+  case 'login' :
+	login();
+
+  case 'create' :
+	create();
+
+  default :
+	home();
 }
+
+
+/*} else {
+  home();
+}*/
