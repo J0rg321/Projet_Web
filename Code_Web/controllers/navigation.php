@@ -3,29 +3,15 @@
 function home(){
   require "views/home.php";
 }
-
-function lost(){
-  require "view/lost.php";
+function clothes(){
+  require "views/clothes.php";
 }
-
-
-
-
-case 'home' :
-	home();
-	break;
-  case 'clothes' :
-	clothes();
-
-  case 'cart' :
-	cart();
-
-  case 'login' :
-	login();
-
-  case 'create' :
-	create();
-
-  default :
-	home();
+function cart(){
+  require "views/cart.php";
+}
+function login(){
+  require "views/login.php";
+}
+function create(){
+  require "views/create.php";
 }
