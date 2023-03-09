@@ -1,19 +1,32 @@
 <?php
 ob_start();
-$title="Creation de compte";
+$title = "Creation de compte";
+$categories = '';
 ?>
     <div class="div_centre">
-        <h1>Bonjour, veuillez créer votre compte : </h1>
-        <form action=".json" method="post">
-            <div class="formLogin" style="border:3px solid white" margin="5px">
-                <div id="mail">
-                    E-mail : <input type="email" name="email" placeholder="e-mail" required/>
-                </div>
-                <div id="mdp">
-                    Mot de passe : <input type="password" id="password" name="mdp" placeholder="mot de passe"/>
-                    <button type="submit" class="btn-primary">Envoyer</button>
-                    <button type="reset" class="btn-primary">Réinitialiser</button>
-                </div>
+        <h1>Veuillez vous logger : </h1>
+        <form action="create_data.php" method="post">
+            <div class="form-group">
+                <label for="pseudo">Pseudo *</label>
+                <input type="text" id="pseudo" aria-describedby="pseudoHelp" placeholder="Enter pseudo"
+                       class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="userName">User Name *</label>
+                <input type="text" id="userName" aria-describedby="userNameHelp" placeholder="Enter user name"
+                       class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail">Email address *</label>
+                <input type="email" id="inputEmail" aria-describedby="emailHelp" placeholder="firstname@domain.ch"
+                       class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword">Password *</label>
+                <input type="password" id="inputPassword" placeholder="Password" class="form-control" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
 

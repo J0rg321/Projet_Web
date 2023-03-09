@@ -67,6 +67,12 @@ $title = "Vêtements";
         </form>
     </div>
 </div>
-<?php $categories = ob_get_clean();
+<?php
+
+
+
+
+
+ $categories = ob_get_clean();
 require "gabarit.php";
 ?>
