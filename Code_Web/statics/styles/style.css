@@ -158,12 +158,6 @@ body {
     letter-spacing: 2px;
     font-weight: 100;
 }
-
-.btn-primary {
-    position: fixed;
-    margin: 20px;
-}
-
 .formLogin {
     position: relative;
     padding: 10px;
@@ -533,7 +527,29 @@ body {
     bottom: 2.5mm;
 
 }
-
+#envoi{
+    width: 60px;
+    display: block;
+    padding: 15px;
+    text-align: center;
+    color: #082f09;
+    position: relative;
+}
+#reini{
+    width: 60px;
+    display: block;
+    padding: 15px;
+    text-align: center;
+    position: center;
+}
+.green {
+    background-color: #082f09;
+    border: #082f09;
+    color: white;
+}.green :hover span{
+     background-color: #082f09;
+     border: #082f09;
+ }
 .div_centre {
     position: fixed;
     top: 50%;
@@ -627,14 +643,6 @@ body {
 
 
 /*BOUTONS*/
-
-.btn {
-    line-height: 50px;
-    height: 60px;
-    width: 300px;
-    cursor: pointer;
-    font-size: 20px;
-}
 
 .btn-search {
     line-height: 50px;
