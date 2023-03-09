@@ -26,8 +26,12 @@ $categories = '';
                 <input type="password" id="inputPassword" placeholder="Votre mot de passe" class="form-control"
                        required>
             </div>
-            <div id="envoi"> <button type="submit" class="btn btn-primary">Envoyer</button> </div>
-                <button type="reset" class="btn btn-primary">Réinitialiser</button>
+            <div id="envoi">
+                <button type="submit" class="btn green">Envoyer</button>
+            </div>
+            <div id="reini">
+                <button type="reset" class="btn green">Réinitialiser</button>
+            </div>
 
         </form>
     </div>
