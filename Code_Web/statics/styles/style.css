@@ -174,7 +174,7 @@ body {
 }
 
 .btn-primary {
-    position: absolute;
+    position: fixed;
     margin: 20px;
 }
 
@@ -868,6 +868,10 @@ option {
     flex: 1;
     padding: 1em;
     border: solid;
+}
+.bi-facebook,.bi-instagram, .bi-twitter, .bi-youtube{
+    margin-right: 10px !important;
+
 }
 
 

@@ -14,16 +14,16 @@ switch ($action) {
 	break;
   case 'clothes' :
 	clothes();
-
+	break;
   case 'cart' :
 	cart();
-
+	break;
   case 'login' :
 	login();
-
+	break;
   case 'create' :
 	create();
-
+	break;
   default :
 	home();
 }

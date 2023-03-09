@@ -1,6 +1,6 @@
 <?php
 ob_start();
-$categories = '';
+$categories = '</div>';
 $arrow = '';
 $title="Login";
 ?>

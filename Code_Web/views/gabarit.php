@@ -9,32 +9,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../statics/styles/style.css" >
 
 </head>
 <body>
-<?= $arrow; ?>
+<div style="position: fixed; background-color: transparent; width: 100%">
 <div id="container">
     <div div="row">
         <nav class="navbar navbar-expand-lg bg-brown">
             <div class="container-fluid d-flex justify-content-between">
                 <div>
-                    <a class="logo" href="accueil.php">
+                    <a class="logo" href="../index.php/?action=home">
                         <img src="../statics/images/logo.PNG" alt="WearYou" style="width:100px" class="rounded-pill">
-                    </a>
+                    </>
                 </div>
                 <div>
                     <div class="navbar-nav me-auto mb-1 mb-lg-0">
                         <ul class="navbar-nav me-auto mb-1 mb-lg-0">
                             <div class="box-1">
-                                <a href="accueil.php">
+                                <a href="../index.php/?action=home">
                                     <div class="btn btn-one">
                                         <span>ACCUEIL</span>
                                     </div>
                                 </a>
                             </div>
                             <div class="box-1">
-                                <a href="vetements.php">
+                                <a href="../index.php/?action=clothes">
                                     <div class="btn btn-one">
                                         <span>VÊTEMENTS</span>
                                     </div>
@@ -56,12 +58,12 @@
                 </div>
                 <div class="d-flex justify-content-end">
                     <div class="col-6">
-                        <a href="cart.php">
+                        <a href="../index.php/?action=cart">
                             <img class="nav-link icon" src="../statics/images/trolley.png" aria-current="page" style="width:100px">
                         </a>
                     </div>
                     <div class="col-6 account">
-                        <a href="Login.php">
+                        <a href="../index.php/?action=login">
                             <img class="nav-link icon" src="../statics/images/account.png" alt="WearYou" aria-current="page">
                         </a>
                     </div>
@@ -78,9 +80,9 @@
     </h4>
     <h6>Retrouvez nos réseau sociaux ci-dessous</h6>
     <div><i class="bi bi-twitter"></i> <a href="https://twitter.com/?lang=">Twitter - WearYou</a></div>
-    <div><i class="bi bi-instagram"> <a href=https://www.instagram.com/>Instagram - WearYou</a></i></div>
-    <div><i class="bi bi-youtube"> <a href=https://www.youtube.com/>Youtube - WearYou</a></i></div>
-    <div><i class="bi bi-facebook"> <a href=https://fr-fr.facebook.com/>Facebook - WearYou</a></i></div>
+    <div><i class="bi bi-instagram"></i> <a href=https://www.instagram.com/>Instagram - WearYou</a></i></div>
+    <div><i class="bi bi-youtube"></i> <a href=https://www.youtube.com/>Youtube - WearYou</a></i></div>
+    <div><i class="bi bi-facebook"></i> <a href=https://fr-fr.facebook.com/>Facebook - WearYou</a></i></div>
 </footer>
 </body>
 </html>
