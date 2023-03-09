@@ -5,7 +5,7 @@ $categories = '';
 ?>
     <div class="div_centre">
         <h1>Veuillez vous logger : </h1>
-        <form action="create_data.php" method="post">
+        <form action="C:\GitHub\Projet_Web\Code_Web\statics\js\user.json" method="post">
             <div class="form-group">
                 <label for="pseudo">Pseudo *</label>
                 <input type="text" id="pseudo" aria-describedby="pseudoHelp" placeholder="Enter pseudo"
@@ -29,8 +29,6 @@ $categories = '';
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
-
-
 <?php
 $content = ob_get_clean();
 require "gabarit.php";
