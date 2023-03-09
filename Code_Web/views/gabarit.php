@@ -80,6 +80,7 @@
   <?= $categories; ?>
   <?= $content; ?>
 </div>
+</body>
 <footer>
     <h4 id="bienvenu">Bienvenu(e)s sur WearYou
         <i class="bi bi-emoji-smile"></i>
@@ -90,7 +91,7 @@
     <div><i class="bi bi-youtube"></i> <a href=https://www.youtube.com/>Youtube - WearYou</a></i></div>
     <div><i class="bi bi-facebook"></i> <a href=https://fr-fr.facebook.com/>Facebook - WearYou</a></i></div>
 </footer>
-</body>
+
 </html>
 
 <?php
