@@ -1,4 +1,5 @@
- {
+
+  {
     "articleName": "Casquette noire",
     "id": 1,
     "size": "unique",
@@ -86,4 +87,3 @@
     "price": 39.95,
     "gender": "mixte"
   }
-]
