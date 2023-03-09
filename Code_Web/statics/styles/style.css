@@ -90,7 +90,7 @@ body {
     background-color: #354A21;
     font-family: "Roboto Condensed" !important;
     min-width: 100%;
-    p
+    position : relative;
 }
 
 
