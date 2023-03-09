@@ -1,7 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 
 footer {
-    left: 0;
     bottom: 0;
     width: 100%;
     height: 200px;
@@ -9,6 +8,8 @@ footer {
     color: white;
     text-align: center;
     position:absolute;
+    display: table-row;
+
 }
 
 #bienvenu {
@@ -89,6 +90,8 @@ footer {
 body {
     background-color: #354A21;
     font-family: "Roboto Condensed" !important;
+    min-width: 100%;
+    display: table;
 }
 
 
