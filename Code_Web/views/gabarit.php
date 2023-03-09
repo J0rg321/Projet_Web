@@ -80,6 +80,7 @@
   <?= $categories; ?>
   <?= $content; ?>
 </div>
+
 <footer>
     <h4 id="bienvenu">Bienvenu(e)s sur WearYou
         <i class="bi bi-emoji-smile"></i>

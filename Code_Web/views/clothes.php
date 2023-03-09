@@ -67,12 +67,13 @@ $title = "Vêtements";
         </form>
     </div>
 </div>
-
+<div class="main" style="position: static">
 
 <div style="border:solid; height: 10cm; width: 100%;"></div>
 <div style="border:solid; height: 10cm; width: 100%;"></div>
 <div style="border:solid; height: 10cm; width: 100%;"></div>
 
+</div>
 
 
 <?php
