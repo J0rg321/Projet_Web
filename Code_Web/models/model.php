@@ -16,7 +16,7 @@
 <div id="navigation">
     <ul class="nav nav-tabs">
         <li class="nav-item">
-            <a class="nav-link active" href="vetements.html">Vêtements</a>
+            <a class="nav-link active" href="clothes.php">Vêtements</a>
         </li>
         <li class="nav-item">
             <a class="nav-link active" href="soldes.html">Soldes</a>

@@ -1,0 +1,115 @@
+{
+"data":[
+{
+    "articleName": "Casquette noire",
+    "attributes" :{
+        "id": "1",
+        "size": "unique",
+        "color": "black",
+        "price": 9.90,
+        "gender": "mixte"
+    }
+},
+{
+    "articleName": "Jupe en jean",
+    "attributes":{
+        "id": "2",
+        "size": "S,M,L,XL",
+        "color": "bleue foncée",
+        "price": 15.95,
+        "gender": "mixte"
+    }
+},
+{
+    "articleName": "Jupe noire",
+    "attributes":{
+        "id": "3",
+        "size": "S,M,L,XL",
+        "color": "noire",
+        "price": 15.95,
+        "gender": "mixte"
+    }
+},
+{
+"articleName": "Pantalon bleu",
+"attributes":{
+    "id": "4",
+    "size": "S,M,L,XL",
+    "color": "bleu foncé",
+    "price": 19.95,
+    "gender": "mixte"
+}
+},
+{
+    "articleName": "Pantalon_noir",
+"attributes":{
+    "id": "5",
+    "size": "S,M,L,XL",
+    "color": "noir",
+    "price": 19.95,
+    "gender": "mixte"
+}
+},
+{
+    "articleName": "Pull_noir",
+    "attributes":{
+        "id": "6",
+        "size": "S,M,L,XL",
+        "color": "noir",
+        "price": 14.95,
+        "gender": "mixte"
+    }
+},
+{
+    "articleName": "Robe_bleue",
+    "attributes":{
+        "id": "7",
+        "size": "S,M,L,XL",
+        "color": "bleu clair",
+        "price": 25.95,
+        "gender": "mixte"
+}
+},
+{
+    "articleName": "Robe_rose",
+    "attributes":{
+        "id": "8",
+        "size": "S,M,L,XL",
+        "color": "rose clair",
+        "price": 25.95,
+        "gender": "mixte"
+    }
+
+},
+{
+    "articleName": "Tshirt_kaki",
+"attributes":{
+    "id": "9",
+    "size": "S,M,L,XL",
+    "color": "kaki",
+    "price": 12.95,
+    "gender": "mixte"
+}
+},
+{
+    "articleName": "Veste_jean",
+"attributes":{
+    "id": "10",
+    "size": "S,M,L,XL",
+    "color": "bleu",
+    "price": 39.95,
+    "gender": "mixte"   
+}
+},
+{
+    "articleName": "Veste_rose",
+"attributes":{
+    "id": 11,
+    "size": "S,M,L,XL",
+    "color": "rose",
+    "price": 39.95,
+    "gender": "mixte"
+}
+}
+]
+}

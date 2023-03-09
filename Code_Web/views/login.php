@@ -6,7 +6,7 @@ $title="Login";
 ?>
     <div class="div_centre">
         <h1>Veuillez vous logger : </h1>
-        <form action="Log.php" method="post">
+        <form action="C:\GitHub\Projet_Web\Code_Web\models\log.php" method="post">
             <div class="formLogin" style="border:3px solid white" margin="5px">
                 <div id="mail">
                     E-mail : <input type="email" name="email" placeholder="e-mail" required/>
