@@ -1,14 +1,14 @@
-<?php ob_start() ;
+<?php ob_start();
 $title = "Vêtements";
 ?>
 
 
-    <div class="col min-vh-100 p-4">
-        <button class="btn-fleche float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
-            <img style="width: 30px" src="../statics/images/fleche.png">
-            <p style="color: white; ">Catégories</p>
-        </button>
-    </div>
+<div class="col min-vh-100 p-4">
+    <button class="btn-fleche float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
+        <img style="width: 30px" src="../statics/images/fleche.png">
+        <p style="color: white; ">Catégories</p>
+    </button>
+</div>
 </div>
 <div class="offcanvas offcanvas-start w-25" id="offcanvas">
     <div id="" class="categories">
@@ -67,12 +67,64 @@ $title = "Vêtements";
         </form>
     </div>
 </div>
+
+
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+<div style="border:solid; height: 10cm; width: 100%;"></div>
+
+
 <?php
-
-
-
-
-
- $categories = ob_get_clean();
+$categories = ob_get_clean();
 require "gabarit.php";
 ?>

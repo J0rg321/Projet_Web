@@ -2,10 +2,9 @@
 ob_start();
 $categories = '';
 $arrow = '';
-$title="Panier";
+$title = "Panier";
 ?>
-<div id="container"
-<h1 id="titre">Voici le contenu de votre panier :</h1>
+    <h1 id="titre">Voici le contenu de votre panier :</h1>
 
 <?php
 $content = ob_get_clean();
