@@ -4,6 +4,7 @@ $categories = '';
 $arrow = '';
 $title="Panier";
 ?>
+<div id="container"
 <h1 id="titre">Voici le contenu de votre panier :</h1>
 
 <?php
