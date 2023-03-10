@@ -67,11 +67,37 @@ $title = "Vêtements";
         </form>
     </div>
 </div>
-<div class="main" style="position: static">
+<div class="main" style="position: static; margin-left :10%; margin-right :10%; ">
 
-<div style="border:solid; height: 10cm; width: 100%;"></div>
-<div style="border:solid; height: 10cm; width: 100%;"></div>
-<div style="border:solid; height: 10cm; width: 100%;"></div>
+    <div style="border:solid; height: 10cm; width: 100%;">
+
+    </div>
+    <div style="border:solid; color: grey; height: 10cm; width: 100%;">
+	  <?php
+
+
+	  // chemin d'accès à votre fichier JSON
+	  $file = 'data.json';
+	  // mettre le contenu du fichier dans une variable
+	  $data = file_get_contents($file);
+	  // décoder le flux JSON
+	  $obj = json_decode($data, true);
+	  // accéder à l'élément approprié
+
+
+	  for ($i = 1; $i <= 10; $i++) {
+		$imagesVetements = 'Casquette_noire';
+?>
+          <img src="../statics/images/Vêtements/<?php $imagesVetements ?>/1.jpg ">
+
+        <?php
+		echo "<img src='../statics/images/Vêtements/<?php $imagesVetements ?>/1.jpg'";
+		echo $obj[$i]['articleName'].'<br>'."taille : ".$obj[$i]['size'].'<br>'."Couleur : ".$obj[$i]['color'].'<br>'."Genre : ".$obj[$i]['gender'].'<br>'."Prix : ".$obj[$i]['price']. " CHF";
+	  }
+
+	  ?>
+    </div>
+    <div style="border:solid; height: 10cm; width: 100%;"></div>
 
 </div>
 
