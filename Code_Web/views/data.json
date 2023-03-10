@@ -72,15 +72,6 @@
         "gender": "mixte"
     },
     {
-        "id": 9,
-        "articleName": "T-shirt kaki",
-        "articleImg": "T-shirt_kaki",
-        "size": "S,M,L,XL",
-        "color": "kaki",
-        "price": 12.95,
-        "gender": "mixte"
-    },
-    {
         "id": 10,
         "articleName": "Veste jean",
         "articleImg": "Veste_jean",
