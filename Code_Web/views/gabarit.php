@@ -77,7 +77,6 @@
             </nav>
         </div>
     </div>
-  <?= $categories; ?>
   <?= $content; ?>
 </div>
 

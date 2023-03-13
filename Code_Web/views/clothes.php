@@ -85,24 +85,25 @@ $title = "Vêtements";
   // accéder à l'élément approprié
 
 
-  for ($i = 0; $i <= 9; $i++) {
+  for ($i = 0;
+	   $i <= 9;
+	   $i++) {
   $imagesVetements = $obj[$i]['articleImg'];
   ?>
-    <div class="vetement block">
+    <div class="vetement">
 	  <?php
-	  echo "<img style='height: 500px; margin: 5px;' src='../statics/images/Vêtements/$imagesVetements/1.jpg'";
+	  echo '<div id="imageVet">';
+	  echo "<img class='img' style='height: 500px; margin: 5px;' src='../statics/images/Vêtements/$imagesVetements/1.jpg'";
+	  echo '</div> <div id="specsVet"';
 	  echo $obj[$i]['articleName'] . '<br>' . "taille : " . $obj[$i]['size'] . '<br>' . "Couleur : " . $obj[$i]['color'] . '<br>' . "Genre : " . $obj[$i]['gender'] . '<br>' . "Prix : " . $obj[$i]['price'] . " CHF";
-	  echo '</div>';
-  }; ?>
+	  echo '</div></div>';
+	  }; ?>
 
 
+    </div>
 
 
-
-</div>
-
-
-<?php
-$categories = ob_get_clean();
-require "gabarit.php";
-?>
+  <?php
+  $content = ob_get_clean();
+  require "gabarit.php";
+  ?>
