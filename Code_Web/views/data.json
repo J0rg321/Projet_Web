@@ -1,115 +1,93 @@
-{
-  "data":[
+[
     {
-      "articleName": "Casquette noire",
-      "attributes" :{
-        "id": "1",
+        "id": 1,
+        "articleName": "Casquette noire",
+        "articleImg": "Casquette_noire",
         "size": "unique",
         "color": "black",
         "price": 9.90,
         "gender": "mixte"
-      }
     },
     {
-      "articleName": "Jupe en jean",
-      "attributes":{
-        "id": "2",
+        "id": 2,
+        "articleName": "Jupe en jean",
+        "articleImg": "Jupe_en_jean",
         "size": "S,M,L,XL",
         "color": "bleue foncée",
         "price": 15.95,
         "gender": "mixte"
-      }
     },
     {
-      "articleName": "Jupe noire",
-      "attributes":{
-        "id": "3",
+        "id": 3,
+        "articleName": "Jupe noire",
+        "articleImg": "Jupe_noire",
         "size": "S,M,L,XL",
         "color": "noire",
         "price": 15.95,
         "gender": "mixte"
-      }
     },
     {
-      "articleName": "Pantalon bleu",
-      "attributes":{
-        "id": "4",
+        "id": 4,
+        "articleName": "Pantalon bleu",
+        "articleImg": "Pantalon_bleu",
         "size": "S,M,L,XL",
         "color": "bleu foncé",
         "price": 19.95,
         "gender": "mixte"
-      }
     },
     {
-      "articleName": "Pantalon_noir",
-      "attributes":{
-        "id": "5",
+        "id": 5,
+        "articleName": "Pantalon noir",
+        "articleImg": "Pantalon_noir",
         "size": "S,M,L,XL",
         "color": "noir",
         "price": 19.95,
         "gender": "mixte"
-      }
     },
     {
-      "articleName": "Pull_noir",
-      "attributes":{
-        "id": "6",
+        "id": 6,
+        "articleName": "Pull noir",
+        "articleImg": "Pull_noir",
         "size": "S,M,L,XL",
         "color": "noir",
         "price": 14.95,
         "gender": "mixte"
-      }
     },
     {
-      "articleName": "Robe_bleue",
-      "attributes":{
-        "id": "7",
+        "id": 7,
+        "articleName": "Robe bleue",
+        "articleImg": "Robe_bleue",
         "size": "S,M,L,XL",
         "color": "bleu clair",
         "price": 25.95,
         "gender": "mixte"
-      }
     },
     {
-      "articleName": "Robe_rose",
-      "attributes":{
-        "id": "8",
+        "id": 8,
+        "articleName": "Robe rose",
+        "articleImg": "Robe_rose",
         "size": "S,M,L,XL",
         "color": "rose clair",
         "price": 25.95,
         "gender": "mixte"
-      }
-
     },
     {
-      "articleName": "Tshirt_kaki",
-      "attributes":{
-        "id": "9",
-        "size": "S,M,L,XL",
-        "color": "kaki",
-        "price": 12.95,
-        "gender": "mixte"
-      }
-    },
-    {
-      "articleName": "Veste_jean",
-      "attributes":{
-        "id": "10",
+        "id": 10,
+        "articleName": "Veste jean",
+        "articleImg": "Veste_jean",
         "size": "S,M,L,XL",
         "color": "bleu",
         "price": 39.95,
         "gender": "mixte"
-      }
     },
     {
-      "articleName": "Veste_rose",
-      "attributes":{
         "id": 11,
+        "articleName": "Veste rose",
+        "articleImg": "Veste_rose",
         "size": "S,M,L,XL",
         "color": "rose",
         "price": 39.95,
         "gender": "mixte"
-      }
     }
-  ]
-}
+]
+
