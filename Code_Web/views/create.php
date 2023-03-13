@@ -31,7 +31,18 @@ $categories = '';
             </div>
             <div id="reini">
                 <button type="reset" class="btn green">Réinitialiser</button>
+
             </div>
+
+            <form method="post" action="https://www.foo.com" enctype="multipart/form-data">
+                <div>
+                    <label for="file">Choisir un fichier</label>
+                    <input type="file" id="file" name="myFile">
+                </div>
+                <div>
+                    <button>Envoyer le fichier</button>
+                </div>
+            </form>
 
         </form>
     </div>
