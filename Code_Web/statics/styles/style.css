@@ -865,6 +865,7 @@ option {
     width: 40%;
     margin: 5%;
     box-sizing: border-box;
+    background-color: initial;
 
 }
 
@@ -876,12 +877,13 @@ option {
 #specsVet{
     margin: 5%;
     box-sizing: border-box;
+    color: black; 
 }
 
 .main {
     position: static;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
