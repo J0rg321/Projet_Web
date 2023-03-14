@@ -3,6 +3,7 @@ ob_start();
 $title = "Creation de compte";
 $categories = '';
 $users = file_get_contents("users.json");
+
 function writedata()
 { //création d'une fonction pour écrire les données du form dans le .json
 
