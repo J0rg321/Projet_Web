@@ -17,6 +17,7 @@ $title="Login";
                         <button type="submit" class="btn-primary">Envoyer</button>
                         <button type="reset" class="btn-primary">Réinitialiser</button>
                     </div>
+                    <h5><a href="create.php">Créer un compte</a></h5>
                 </div>
             </div>
         </form>
