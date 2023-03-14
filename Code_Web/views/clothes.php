@@ -5,8 +5,8 @@ $title = "Vêtements";
 
 <div class="col min-vh-100 p-4">
     <button class="btn-fleche float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
-        <img style="width: 30px" src="../statics/images/fleche.png">
-        <p style="color: white; ">Catégories</p>
+        <img style="width: 30px; filter: invert(100%)" src="../statics/images/fleche.png">
+        <p style="color: black; ">Catégories</p>
     </button>
 </div>
 </div>
@@ -95,12 +95,13 @@ $title = "Vêtements";
 	  echo '<div id="imageVet">';
 	  echo "<img class='img' style='height: 500px; margin: 5px;' src='../statics/images/Vêtements/$imagesVetements/1.jpg'";
 	  echo '</div> <div id="specsVet"';
-	  echo $obj[$i]['articleName'] . '<br>' . "taille : " . $obj[$i]['size'] . '<br>' . "Couleur : " . $obj[$i]['color'] . '<br>' . "Genre : " . $obj[$i]['gender'] . '<br>' . "Prix : " . $obj[$i]['price'] . " CHF";
-	  echo '</div></div>';
+	  echo $obj[$i]['id'] . '<br>' .'<strong>'.$obj[$i]['articleName'].'</strong>'. '<br>' . "taille : " . $obj[$i]['size'] . '<br>' . "Couleur : " . $obj[$i]['color'] . '<br>' . "Genre : " . $obj[$i]['gender'] . '<br>' . "Prix : " . $obj[$i]['price'] . " CHF";
+	  echo "<div class='panierVet'><img src='../statics/images/trolley.png'>";
+      echo '</div></div> </div></div>';
 	  }; ?>
 
 
-    </div>
+
 
 
   <?php
