@@ -85,7 +85,7 @@ body {
 }
 
 .icon {
-    max-width: 2cm;
+    width: 4cm;
     border-radius: 50%;
     border-color: white;
     transition: 300ms;
@@ -93,7 +93,7 @@ body {
 }
 
 .icon:hover {
-    max-width: 2cm;
+    max-width: 4cm;
     border-radius: 50%;
     padding: 5px;
     background-color: #354A21;
@@ -270,6 +270,7 @@ body {
     border-radius: 50%;
     border: none;
     position: absolute;
+
 }
 
 #offcanvas, .offcanvas-start, .w-25, .offcanvas {
@@ -463,6 +464,12 @@ option {
     max-width: 100%;
     width: 100%;
     filter: invert(100%);
+}
+.panierVet{
+    width: 1px;
+    filter: invert(100%);
+    box-sizing: border-box;
+    position: static;
 }
 
 #compte {
@@ -841,19 +848,13 @@ option {
 }
 
 .marginVetements {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
     height: 100%;
     display: flex;
-
 }
 
-.vetements {
-    flex: 1;
-    padding: 1em;
-    border: solid;
-}
 
 .bi-facebook, .bi-instagram, .bi-twitter, .bi-youtube {
     margin-right: 10px !important;
@@ -862,10 +863,11 @@ option {
 
 .vetement {
     potition: relative;
-    width: 40%;
+    width: 35%;
     margin: 5%;
     box-sizing: border-box;
     background-color: initial;
+    border: solid;
 
 }
 
@@ -877,7 +879,9 @@ option {
 #specsVet{
     margin: 5%;
     box-sizing: border-box;
-    color: black; 
+    color: black;
+    border: solid;
+    border-color: black;
 }
 
 .main {
@@ -888,8 +892,10 @@ option {
     flex-direction: row;
     justify-content: space-around;
     flex-flow: wrap;
-    color : white;
+    color : black;
 }
+
+
 
 
 
