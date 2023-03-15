@@ -38,6 +38,7 @@ $categories = '';
                 <button type="reset" class="btn green">Réinitialiser</button>
             </div>
     </div>
+
 <?php
 if (isset($_POST['envoi'])) {
     echo 'Bonjour' . $_POST['pseudo'];
