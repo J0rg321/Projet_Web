@@ -9,12 +9,6 @@ function alldata()
     echo $_POST['mail'];
 }
 
-if (isset($_POST['envoi'])) {
-    echo 'Bonjour' . $_POST['pseudo'];
-    echo 'Voici vos données : ';
-    echo alldata();
-}
-
 ?>
     <div class="div_centre">
         <h1>Veuillez créer votre compte : </h1>
@@ -26,7 +20,7 @@ if (isset($_POST['envoi'])) {
             </div>
             <div class="form-group">
                 <label for="userName">Nom d'utilisateur*</label>
-                <input type="text" name="username" id="userName" arias-describedby="userNameHelp"
+                <input type="text" name="username" id="userName" aria-describedby="userNameHelp"
                        placeholder="Votre nom d'utilisateur"
                        class="form-control" required>
             </div>
@@ -40,7 +34,7 @@ if (isset($_POST['envoi'])) {
                 <label for="inputPassword">Mot de passe*</label>
                 <input type="password" name="mdp" id="inputPassword" placeholder="Votre mot de passe"
                        class="form-control"
-                       minlength="14" maxlength="16" autocomplete="new-password"  required>
+                       minlength="14" maxlength="16" autocomplete="new-password" required>
             </div>
             <div id="envoi">
                 <button type="submit" class="btn green" name="envoi">Envoyer</button>
@@ -50,6 +44,11 @@ if (isset($_POST['envoi'])) {
             </div>
     </div>
 <?php
+if (isset($_POST['envoi'])) {
+    echo 'Bonjour' . $_POST['pseudo'];
+    echo 'Voici vos données : ';
+    echo alldata();
+}
 $content = ob_get_clean();
 require "gabarit.php";
 ?>
