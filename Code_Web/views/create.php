@@ -3,8 +3,16 @@ ob_start();
 $title = "Creation de compte";
 $categories = '';
 
-if (isset($_POST['envoi'])){
-    echo $_POST['pseudo'];
+function alldata()
+{
+    echo $_POST['username'];
+    echo $_POST['mail'];
+}
+
+if (isset($_POST['envoi'])) {
+    echo 'Bonjour' . $_POST['pseudo'];
+    echo 'Voici vos données : ';
+    echo alldata();
 }
 
 ?>
@@ -18,18 +26,21 @@ if (isset($_POST['envoi'])){
             </div>
             <div class="form-group">
                 <label for="userName">Nom d'utilisateur*</label>
-                <input type="text" id="userName" aria-describedby="userNameHelp" placeholder="Votre nom d'utilisateur"
+                <input type="text" name="username" id="userName" arias-describedby="userNameHelp"
+                       placeholder="Votre nom d'utilisateur"
                        class="form-control" required>
             </div>
             <div class="form-group">
                 <label for="inputEmail">Adresse-mail*</label>
-                <input type="email" id="inputEmail" aria-describedby="emailHelp" placeholder="Votre adresse mail"
+                <input type="email" name="mail" id="inputEmail" aria-describedby="emailHelp"
+                       placeholder="Votre adresse mail"
                        class="form-control" required>
             </div>
             <div class="form-group">
                 <label for="inputPassword">Mot de passe*</label>
-                <input type="password" id="inputPassword" placeholder="Votre mot de passe" class="form-control"
-                       required>
+                <input type="password" name="mdp" id="inputPassword" placeholder="Votre mot de passe"
+                       class="form-control"
+                       minlength="14" maxlength="16" autocomplete="new-password"  required>
             </div>
             <div id="envoi">
                 <button type="submit" class="btn green" name="envoi">Envoyer</button>
