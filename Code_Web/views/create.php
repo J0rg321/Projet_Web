@@ -3,11 +3,6 @@ ob_start();
 $title = "Creation de compte";
 $categories = '';
 
-function alldata()
-{
-    echo $_POST['username'];
-    echo $_POST['mail'];
-}
 
 ?>
     <div class="div_centre">
@@ -47,7 +42,12 @@ function alldata()
 if (isset($_POST['envoi'])) {
     echo 'Bonjour' . $_POST['pseudo'];
     echo 'Voici vos données : ';
-    echo alldata();
+    echo data();
+}
+if(isset($_GET['erreur'])){
+    $err = $_GET['erreur'];
+    if($err==1 || $err==2)
+        echo "<p style='color:red'>Utilisateur et/ou mot de passe incorrect</p>";
 }
 $content = ob_get_clean();
 require "gabarit.php";
