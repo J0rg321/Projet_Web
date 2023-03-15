@@ -77,7 +77,7 @@ $title = "Vêtements";
 
 
   // chemin d'accès à votre fichier JSON
-  $file = 'data.json';
+  $file = getcwd().'\statics\js\data.json';
   // mettre le contenu du fichier dans une variable
   $data = file_get_contents($file);
   // décoder le flux JSON
@@ -86,8 +86,9 @@ $title = "Vêtements";
 
 
   for ($i = 0;
-	   $i <= 9;
+	   $i <= count($obj);
 	   $i++) {
+      
   $imagesVetements = $obj[$i]['articleImg'];
   ?>
     <div class="vetement">

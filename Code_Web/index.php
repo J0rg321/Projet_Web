@@ -7,7 +7,7 @@ require "controllers/navigation.php";
 /*if (isset($_GET['action'])) {*/
 
 
-$action = $_GET['action'];
+$action = isset($_GET['action']) ? $_GET['action'] : 'home';
 switch ($action) {
   case 'home' :
 	home();
