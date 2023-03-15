@@ -88,7 +88,7 @@ $title = "Vêtements";
   for ($i = 0;
 	   $i <= count($obj);
 	   $i++) {
-      
+
   $imagesVetements = $obj[$i]['articleImg'];
   ?>
     <div class="vetement">
