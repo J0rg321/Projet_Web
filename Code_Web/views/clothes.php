@@ -86,7 +86,7 @@ $title = "Vêtements";
 
 
   for ($i = 0;
-	   $i <= count($obj);
+	   $i <= count($obj)-1;
 	   $i++) {
 
   $imagesVetements = $obj[$i]['articleImg'];
@@ -98,7 +98,7 @@ $title = "Vêtements";
 	  echo '</div> <div id="specsVet"';
 	  echo $obj[$i]['id'] . '<br>' .'<strong>'.$obj[$i]['articleName'].'</strong>'. '<br>' . "taille : " . $obj[$i]['size'] . '<br>' . "Couleur : " . $obj[$i]['color'] . '<br>' . "Genre : " . $obj[$i]['gender'] . '<br>' . "Prix : " . $obj[$i]['price'] . " CHF";
 	  echo "<div class='panierVet'><img src='../statics/images/trolley.png'>";
-      echo '</div></div> </div></div>';
+      echo '</div></div></div></div>';
 	  }; ?>
 
 

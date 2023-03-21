@@ -466,10 +466,11 @@ option {
     filter: invert(100%);
 }
 .panierVet{
-    width: 1px;
+    width: 10px;
     filter: invert(100%);
     box-sizing: border-box;
     position: static;
+    flex: border-box;
 }
 
 #compte {
