@@ -1,3 +1,13 @@
-<script src="bonhome.js"></script>
+<?php
+ob_start();
+$categories = '';
+$arrow = '';
+$title = "Lost X(";
+?>
+<div class="lds-heart"><div></div></div>
 
-<canvas></canvas>
+
+<?php
+$content = ob_get_clean();
+require "gabarit.php";
+?>
