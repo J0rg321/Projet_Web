@@ -9,11 +9,6 @@ $categories = '';
         <h1>Veuillez créer votre compte : </h1>
         <form action='user.json' method='post'>
             <div class="form-group">
-                <label for="pseudo">Pseudo*</label>
-                <input type="text" name='pseudo' id="pseudo" aria-describedby="pseudoHelp" placeholder="Votre pseudo"
-                       class="form-control" required>
-            </div>
-            <div class="form-group">
                 <label for="userName">Nom d'utilisateur*</label>
                 <input type="text" name="username" id="userName" aria-describedby="userNameHelp"
                        placeholder="Votre nom d'utilisateur"
