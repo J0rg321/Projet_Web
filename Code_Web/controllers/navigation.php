@@ -15,3 +15,6 @@ function login(){
 function create(){
   require "views/create.php";
 }
+function lost(){
+  require "views/lost.php";
+}

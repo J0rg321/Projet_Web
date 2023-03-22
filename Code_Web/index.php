@@ -25,7 +25,7 @@ switch ($action) {
 	create();
 	break;
   default :
-	home();
+	lost();
 }
 
 

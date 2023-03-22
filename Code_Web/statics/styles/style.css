@@ -468,9 +468,6 @@ option {
 .panierVet{
     width: 10px;
     filter: invert(100%);
-    box-sizing: border-box;
-    position: static;
-    flex: border-box;
 }
 
 #compte {
@@ -895,15 +892,6 @@ option {
     flex-flow: wrap;
     color : black;
 }
-
-
-
-
-
-
-
-
-
 
 
 

@@ -77,7 +77,7 @@ $title = "Vêtements";
 
 
   // chemin d'accès à votre fichier JSON
-  $file = getcwd().'\statics\js\data.json';
+  $file = getcwd() . '\statics\js\data.json';
   // mettre le contenu du fichier dans une variable
   $data = file_get_contents($file);
   // décoder le flux JSON
@@ -86,8 +86,8 @@ $title = "Vêtements";
 
 
   for ($i = 0;
-	   $i <= count($obj)-1;
-	   $i++) {
+  $i <= count($obj) - 1;
+  $i++) {
 
   $imagesVetements = $obj[$i]['articleImg'];
   ?>
@@ -96,16 +96,20 @@ $title = "Vêtements";
 	  echo '<div id="imageVet">';
 	  echo "<img class='img' style='height: 500px; margin: 5px;' src='../statics/images/Vêtements/$imagesVetements/1.jpg'";
 	  echo '</div> <div id="specsVet"';
-	  echo $obj[$i]['id'] . '<br>' .'<strong>'.$obj[$i]['articleName'].'</strong>'. '<br>' . "taille : " . $obj[$i]['size'] . '<br>' . "Couleur : " . $obj[$i]['color'] . '<br>' . "Genre : " . $obj[$i]['gender'] . '<br>' . "Prix : " . $obj[$i]['price'] . " CHF";
-	  echo "<div class='panierVet'><img src='../statics/images/trolley.png'>";
-      echo '</div></div></div></div>';
-	  }; ?>
+	  echo $obj[$i]['id'] . '<br>' . '<strong>' . $obj[$i]['articleName'] . '</strong>' . '<br>' . "taille : " . $obj[$i]['size'] . '<br>' . "Couleur : " . $obj[$i]['color'] . '<br>' . "Genre : " . $obj[$i]['gender'] . '<br>' . "Prix : " . $obj[$i]['price'] . " CHF";
+	  ?>
+        <div class="wrapper">
+            <a class="panierBtn" href="#">Hover Me!</a>
+        </div>
+    </div>
+<?php echo'</div></div></div>';
+}; ?>
 
 
 
 
 
-  <?php
-  $content = ob_get_clean();
-  require "gabarit.php";
-  ?>
+<?php
+$content = ob_get_clean();
+require "gabarit.php";
+?>
