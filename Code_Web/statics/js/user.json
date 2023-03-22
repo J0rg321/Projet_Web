@@ -1,0 +1,12 @@
+[
+  {
+    "nom" : "Jorge",
+    "email": "jorge@cpnv.ch",
+    "password": "123"
+  },
+  {
+    "nom" : "Max",
+    "email": "max@cpnv.ch",
+    "password": "1234"
+  }
+]

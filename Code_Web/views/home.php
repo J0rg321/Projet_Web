@@ -3,10 +3,10 @@ ob_start();
 $categories = '</div>';
 $arrow = '';
 $title="Accueil";
+$nomDeBienvenue = 'Bienvenue à toi' .$_POST;
 ?>
 
-<p>Teste</p>
+<p></p>
 <?php
 $content = ob_get_clean();
 require 'gabarit.php'; //appel du gabarit contenant le code pour l'accueil
-?>

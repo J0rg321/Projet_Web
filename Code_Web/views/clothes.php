@@ -98,9 +98,7 @@ $title = "Vêtements";
 	  echo '</div> <div id="specsVet"';
 	  echo $obj[$i]['id'] . '<br>' . '<strong>' . $obj[$i]['articleName'] . '</strong>' . '<br>' . "taille : " . $obj[$i]['size'] . '<br>' . "Couleur : " . $obj[$i]['color'] . '<br>' . "Genre : " . $obj[$i]['gender'] . '<br>' . "Prix : " . $obj[$i]['price'] . " CHF";
 	  ?>
-        <div class="wrapper">
-            <a class="panierBtn" href="#">Hover Me!</a>
-        </div>
+        <i class="bi bi-bag-heart-fill"></i>
     </div>
 <?php echo'</div></div></div>';
 }; ?>
