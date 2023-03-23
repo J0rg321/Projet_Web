@@ -3,15 +3,12 @@
 footer {
     bottom: 0;
     width: 100%;
-    height: 5cm;
-    background-color: #082f09;
+    height: 13%;
+    background: black;
     color: white;
     text-align: center;
-    position: static;
-}
-
-#bienvenu {
-    padding: 15px;
+    position: absolute;
+    border-top: solid;
 }
 
 #menu > div {
@@ -77,8 +74,7 @@ footer {
 }
 
 body {
-    background-image: url("wallpaper.jpg");
-    background-color: #cccccc;
+    background: linear-gradient(to bottom right, lightgreen, darkgreen);
 }
 .account {
     padding-left: 20px;
@@ -87,7 +83,6 @@ body {
 .d-flex {
     padding-left: 20px;
 }
-
 
 .loupe {
     width: 40px;
@@ -219,6 +214,7 @@ body {
     background-color: transparent;
     border-radius: 50%;
     border: none;
+    position: absolute;
     position: absolute;
 
 }
@@ -362,10 +358,6 @@ option {
     background-color: #3C3C3C;
     top: 0;
 }
-.panierVet{
-    width: 10px;
-    filter: invert(100%);
-}
 .icon {
     max-width: 2cm;
     border-radius: 50%;
@@ -487,8 +479,7 @@ option {
 
 
 .bi-facebook, .bi-instagram, .bi-twitter, .bi-youtube {
-    margin-right: 10px !important;
-
+    margin: 10px !important;
 }
 
 .vetement {
@@ -510,10 +501,13 @@ option {
     margin: 5%;
     box-sizing: border-box;
     color: black;
-    border: solid;
-    border-color: black;
+    float: left;
 }
-
+#panierVet{
+    float: left;
+    margin: 30px;
+    margin-left: 60px !important;
+}
 .main {
     position: static;
     margin-left: 10%;
@@ -523,4 +517,17 @@ option {
     justify-content: space-around;
     flex-flow: wrap;
     color : black;
+}
+.bienvenue{
+    font-size:500%;
+    left: 10%;
+    position : static;
+    -webkit-text-stroke: 2px black;
+    color: white;
+}
+.reseauxSociaux{
+    float:left;
+    left: 50%;
+    right: 50%;
+    position: static;
 }

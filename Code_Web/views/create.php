@@ -1,8 +1,7 @@
 <?php
 ob_start();
 $title = "Creation de compte";
-$categories = '';
-
+//$categories='</div>';
 
 ?>
     <div class="div_centre">
