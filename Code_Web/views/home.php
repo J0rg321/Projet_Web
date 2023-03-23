@@ -1,10 +1,10 @@
 <?php
 ob_start();
-$categories = '</div>';
-$arrow = '';
 $title="Accueil";
-$nomDeBienvenue = 'Bienvenue à toi' .$_POST;
+//$categories='</div>';
+echo '<p class="bienvenue">Bienvenue ' .$_SESSION['nom'] .' !!</p>';
 ?>
+
 
 <p></p>
 <?php

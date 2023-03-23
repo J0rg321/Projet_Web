@@ -1,10 +1,9 @@
 <?php
 ob_start();
-$categories = '</div>';
+
 $arrow = '';
 $title = "Login";
 $error = false;
-
 if (isset($_POST) && isset($_POST['email']) && isset($_POST['password'])) {
 
 // chemin d'accès à votre fichier JSON
@@ -20,6 +19,9 @@ if (isset($_POST) && isset($_POST['email']) && isset($_POST['password'])) {
 	  if (isset($obj[$i]['email']) && isset($obj[$i]['password']) && $obj[$i]['email'] == $_POST['email'] && $obj[$i]['password'] == $_POST['password']) {
 		//User exists,
 		header('location: /index.php/?action=clothes');
+		$_SESSION['nom'] = $obj[$i]['nom'];
+		$_SESSION['email'] = $obj[$i]['email'];
+		$_SESSION['email'] = $obj[$i]['password'];
 		exit;
 	  } else {
 		$error = true;
@@ -27,6 +29,7 @@ if (isset($_POST) && isset($_POST['email']) && isset($_POST['password'])) {
 	}
   }
 }
+
 
 
 ?>
