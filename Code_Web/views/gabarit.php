@@ -15,70 +15,66 @@
 
 </head>
 <body>
-<div style="position: fixed; background-color: transparent; width: 100%; height: 100%; padding-bottom: 5cm;">
-    <div id="container">
-        <div div="row">
-            <nav class="navbar navbar-expand-lg bg-brown">
-                <div class="container-fluid d-flex justify-content-between">
-                    <div>
-                        <a class="logo" href="../index.php/?action=home">
-                            <img src="../statics/images/logo.PNG" alt="WearYou" style="width:100px"
-                                 class="rounded-pill">
-                        </>
-                    </div>
-                    <div>
-                        <div class="navbar-nav me-auto mb-1 mb-lg-0">
-                            <ul class="navbar-nav me-auto mb-1 mb-lg-0">
-                                <div class="box-1">
-                                    <a href="../index.php/?action=home">
-                                        <div class="btn btn-one">
-                                            <span>ACCUEIL</span>
-                                        </div>
-                                    </a>
+<div id="container">
+    <nav class="navbar navbar-expand-lg bg-brown">
+        <div class="container-fluid d-flex justify-content-between">
+            <div>
+                <a class="logo" href="../index.php/?action=home">
+                    <img src="../statics/images/logo.PNG" alt="WearYou" style="width:100px"
+                         class="rounded-pill">
+                </>
+            </div>
+            <div>
+                <div class="navbar-nav me-auto mb-1 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+                        <div class="box-1">
+                            <a href="../index.php/?action=home">
+                                <div class="btn btn-one">
+                                    <span>ACCUEIL</span>
                                 </div>
-                                <div class="box-1">
-                                    <a href="../index.php/?action=clothes">
-                                        <div class="btn btn-one">
-                                            <span>VÊTEMENTS</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </ul>
-
-                            <form class="d-flex" role="search">
-                                <div class="search-box">
-                                    <button class="btn-search">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
-                                             fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                        </svg>
-                                    </button>
-                                    <input type="text" class="input-search" placeholder="Rechercher">
-                                </div>
-                            </form>
-
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <div class="col-6">
-                            <a href="../index.php/?action=cart">
-                                <img class="nav-link icon" src="../statics/images/trolley.png" aria-current="page"
-                                     style="width:100px">
                             </a>
                         </div>
-                        <div class="col-6 account">
-                            <a href="../index.php/?action=login">
-                                <img class="nav-link icon" src="../statics/images/account.png" alt="WearYou"
-                                     aria-current="page">
+                        <div class="box-1">
+                            <a href="../index.php/?action=clothes">
+                                <div class="btn btn-one">
+                                    <span>VÊTEMENTS</span>
+                                </div>
                             </a>
                         </div>
-                    </div>
+                    </ul>
+
+                    <form class="d-flex" role="search">
+                        <div class="search-box">
+                            <button class="btn-search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                     fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </button>
+                            <input type="text" class="input-search" placeholder="Rechercher">
+                        </div>
+                    </form>
+
                 </div>
-            </nav>
+            </div>
+            <div class="d-flex justify-content-end">
+                <div class="col-6">
+                    <a href="../index.php/?action=cart">
+                        <img class="nav-link icon" src="../statics/images/trolley.png" aria-current="page"
+                             style="width:100px">
+                    </a>
+                </div>
+                <div class="col-6 account">
+                    <a href="../index.php/?action=login">
+                        <img class="nav-link icon" src="../statics/images/account.png" alt="WearYou"
+                             aria-current="page">
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
+    </nav>
 </div>
-  <?= $content; ?>
+<?= $content; ?>
 
 
 </body>
