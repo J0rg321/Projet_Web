@@ -101,7 +101,7 @@ body {
     outline: none;
     border-radius: 25px;
     transition: all .5s ease-in-out;
-    background-color: #354A21;
+    background-color: grey;
     padding-right: 40px;
     color: #fff;
 }
@@ -175,7 +175,7 @@ body {
 
 .btn-one:hover span {
     letter-spacing: 2px;
-    color: #354A21;
+    color: grey;
 }
 
 .btn-one:hover::before {
@@ -219,7 +219,7 @@ body {
 
 .categories {
     width: 100%;
-    color: #354A21;
+    color: grey;
     left: 0;
     background-color: rgba(255, 255, 255, 0.5);;
     padding: 20px;
@@ -268,13 +268,13 @@ body {
 }
 
 .active {
-    background-color: #04AA6D;
+    background-color: grey;
     color: white;
 }
 
 
 input[name="categorie"] {
-    accent-color: #354A21;
+    accent-color: grey;
 }
 
 .vetementCat {
@@ -287,7 +287,7 @@ input[name="categorie"] {
     border-top: solid;
     padding-top: 6px;
     padding-bottom: 6px;
-    border-color: #354A21;
+    border-color: grey;
     padding-left: 32%;
     font-size: 20px;
 }
@@ -301,7 +301,7 @@ input[name="categorie"] {
     border-top: solid;
     padding-top: 6px;
     padding-bottom: 6px;
-    border-color: #354A21;
+    border-color: grey;
     padding-left: 32%;
     font-size: 20px;
 }
@@ -315,7 +315,7 @@ input[name="categorie"] {
     border-top: solid;
     padding-top: 6px;
     padding-bottom: 6px;
-    border-color: #354A21;
+    border-color: grey;
     padding-left: 32%;
     font-size: 20px;
 }
@@ -324,7 +324,7 @@ input[name="categorie"] {
     border-top: solid;
     padding-top: 20px;
     padding-bottom: 6px;
-    border-color: #354A21;
+    border-color: grey;
     padding-left: 0%;
     font-size: 20px;
 }
@@ -362,14 +362,14 @@ option {
     max-width: 2cm;
     border-radius: 50%;
     padding: 5px;
-    background-color: #354A21;
+    background-color: grey;
 }
 #envoi {
     width: 60px;
     display: block;
     padding: 15px;
     text-align: center;
-    color: #082f09;
+    color: darkgrey;
     position: relative;
 }
 
@@ -382,14 +382,14 @@ option {
 }
 
 .green {
-    background-color: #082f09;
-    border: #082f09;
+    background-color: darkgrey;
+    border: darkgrey;
     color: white;
 }
 
 .green :hover span {
-    background-color: #082f09;
-    border: #082f09;
+    background-color: darkgrey;
+    border: darkgrey;
 }
 
 .div_centre {
