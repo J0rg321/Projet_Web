@@ -20,7 +20,7 @@
         <div class="container-fluid d-flex justify-content-between">
             <div>
                 <a class="logo" href="../index.php/?action=home">
-                    <img src="../statics/images/logo.PNG" alt="WearYou" style="width:70px;>
+                    <img src="../statics/images/logo.PNG" alt="WearYou" style="width:100px";>
                 </>
             </div>
             <div>

@@ -1,7 +1,6 @@
 <?php
 ob_start();
 $title="Accueil";
-//$categories='</div>';
 echo '<p class="bienvenue">Bienvenue ' .$_SESSION['nom'] .' !!</p>';
 ?>
 <div class="main">
