@@ -106,7 +106,7 @@ body {
     transition: all .5s ease-in-out;
     background-color: black;
     padding-right: 40px;
-    color: black;
+    color: white;
 }
 
 
@@ -222,7 +222,7 @@ body {
 
 .categories {
     width: 100%;
-    color: white;
+    color: black;
     left: 0;
     background-color: rgba(255, 255, 255, 0.5);;
     padding: 20px;
@@ -256,8 +256,6 @@ body {
     font-size: 17px;
     display: block;
 }
-
-
 
 .topnav a:hover {
     background-color: #ddd;
@@ -546,7 +544,6 @@ option {
     from {opacity: .4}
     to {opacity: 1}
 }
-
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
     .text {font-size: 11px}
