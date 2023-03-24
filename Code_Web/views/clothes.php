@@ -80,16 +80,16 @@ $obj = json_decode($data, true);
 // accéder à l'élément approprié
 
 ?>
-<div class="main"><?php
+<div class="mainVetements" style="background-color: black;"><?php
   for ($i = 0;
   $i <= count($obj) - 1;
   $i++) {
   $imagesVetements = $obj[$i]['articleImg'];
   ?>
     <div class="vetement">
-        <?php echo '<p style="font-size: 50px; text-align: center"><strong>' . $obj[$i]['articleName'] . '</strong></p>' ?>
+	  <?php echo '<h1 style="text-align: center"><strong>' . $obj[$i]['articleName'] . '</strong></h1>'; ?>
         <div id="imageVet">
-		  <?php echo "<img class='img' style='height: 500px; margin: 5px;' src='../statics/images/Vêtements/$imagesVetements/1.jpg'"; ?>
+		  <?php echo "<img style='height: 500px; margin: 5px;' src='../statics/images/Vêtements/$imagesVetements/1.jpg'"; ?>
         </div>
         <div>
             <div id="specsVet">

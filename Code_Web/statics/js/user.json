@@ -8,5 +8,10 @@
     "nom" : "Max",
     "email": "max@cpnv.ch",
     "password": "1234"
+  },
+  {
+    "nom" : "Alessia Mavraj",
+    "email": "alessia.mavraj@cpnv.ch",
+    "password": "Pa$$w0rd"
   }
 ]

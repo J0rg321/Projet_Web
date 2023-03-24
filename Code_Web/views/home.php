@@ -1,13 +1,10 @@
 <?php
 ob_start();
 $title = "Accueil";
-/*isset($_SESSION['nom'] == false){
-  $_SESSION['nom']=
-}*/
-echo '<p class="bienvenue">Bienvenue ' . $_SESSION['nom'] . ' !!</p>';
 ?>
     <div class="main">
-
+	  <?php echo '<h1 class="bienvenue">Bienvenue ' . $_SESSION['nom'] . ' !!</h1>'; ?>
+        <br/>
         <div class="slideshow-container">
 		  <?php for ($i = 1; $i <= 3; $i++) { ?>
               <div class="mySlides fade">

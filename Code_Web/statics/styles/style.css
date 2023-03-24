@@ -3,12 +3,12 @@
 footer {
     width: 100%;
     height: 13px;
-    background: black;
+    background-color: black !important;
     color: white;
     text-align: center;
     border-top: solid;
-    position:absolute;
-    bottom:0;
+    position: absolute;
+    bottom: 0;
 }
 
 #menu > div {
@@ -69,10 +69,11 @@ footer {
 
 body {
     background-color: black;
-    margin:0;
-    padding:0;
-    height:100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
+
 .account {
     padding-left: 20px;
 }
@@ -132,6 +133,7 @@ body {
     text-align: center;
     width: 100px;
 }
+
 /*BOUTONS*/
 
 .btn {
@@ -344,7 +346,9 @@ option {
     height: 11.6%;
     background-color: black;
     top: 0;
+    border-bottom: solid darkgrey 2px;
 }
+
 .icon {
     max-width: 2cm;
     border-radius: 50%;
@@ -359,6 +363,7 @@ option {
     filter: invert(100%);
     background-color: black;
 }
+
 #envoi {
     width: 60px;
     display: block;
@@ -388,7 +393,6 @@ option {
 }
 
 
-
 .div_centre > h1 {
     font-size: 50px;
     text-align: center;
@@ -398,6 +402,7 @@ option {
 * {
     box-sizing: border-box;
 }
+
 .input-search::placeholder {
     color: rgba(255, 255, 255, .5);
     font-size: 18px;
@@ -409,6 +414,7 @@ option {
     position: absolute;
     margin: 20px;
 }
+
 .btn-search:hover ~ .input-search {
     width: 300px;
     border-radius: 0px;
@@ -442,9 +448,17 @@ option {
 }
 
 .mainVetements {
-    position: static;
-    width: 100%;
-    padding-top: 13.6%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    color: black;
+    background-color: white;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 100px; /* Hauteur du pied de page */
 
 }
 
@@ -460,63 +474,55 @@ option {
 .bi-facebook, .bi-instagram, .bi-twitter, .bi-youtube {
     margin: 10px !important;
 }
-
-.vetement {
-    potition: relative;
-    width: 35%;
-    margin: 5%;
-    box-sizing: border-box;
-    background-color: initial;
+.vetement{
     border: solid;
-
+    margin-top: 6px;
+    margin-bottom: 6px;
+    background-color: white;
 }
-
-#imageVet{
-    margin-left: 17%;
+#imageVet {
     box-sizing: border-box;
 }
 
-#specsVet{
+#specsVet {
     margin: 5%;
     box-sizing: border-box;
     color: black;
     float: left;
     font-size: 25px;
 }
-#panierVet{
+
+#panierVet {
     float: left;
     margin: 30px;
     margin-top: 50px;
     margin-left: 40px !important;
 }
+
 .main {
     margin-left: 10%;
     margin-right: 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-flow: wrap;
-    color : black;
+    color: black;
     background-color: white;
-    min-height:100%;
-    position:relative;
-    padding-bottom:100px;   /* Hauteur du pied de page */
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 100px; /* Hauteur du pied de page */
 }
-.bienvenue{
-    font-size:500%;
+
+.bienvenue {
     left: 10%;
-    position : static;
+    position: static;
     -webkit-text-stroke: 2px black;
     color: white;
+    text-align: center;
 }
-.reseauxSociaux{
-    float:left;
+
+.reseauxSociaux {
+    float: left;
     left: 50%;
     right: 50%;
     position: static;
 }
-
-
 
 
 /*-----------------------------------SLIDER------------------------------------*/
@@ -529,6 +535,11 @@ option {
 }
 
 @keyframes fade {
-    from {opacity: .2}
-    to {opacity: 3}
+    from {
+        opacity: .2
+    }
+    to {
+        opacity: 3
+    }
 }
+
