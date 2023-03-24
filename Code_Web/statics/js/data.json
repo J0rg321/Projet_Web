@@ -4,7 +4,7 @@
         "articleName": "Casquette noire",
         "articleImg": "Casquette_noire",
         "size": "unique",
-        "color": "black",
+        "color": "noir",
         "price": 9.95,
         "gender": "mixte"
     },
@@ -13,7 +13,7 @@
         "articleName": "Jupe en jean",
         "articleImg": "Jupe_en_jean",
         "size": "S,M,L,XL",
-        "color": "bleue foncée",
+        "color": "bleu",
         "price": 15.95,
         "gender": "femme"
     },
@@ -22,7 +22,7 @@
         "articleName": "Jupe noire",
         "articleImg": "Jupe_noire",
         "size": "S,M,L,XL",
-        "color": "noire",
+        "color": "noir",
         "price": 15.95,
         "gender": "femme"
     },
@@ -31,7 +31,7 @@
         "articleName": "Pantalon bleu",
         "articleImg": "Pantalon_bleu",
         "size": "S,M,L,XL",
-        "color": "bleu foncé",
+        "color": "bleu",
         "price": 19.95,
         "gender": "femme"
     },
@@ -58,7 +58,7 @@
         "articleName": "Robe bleue",
         "articleImg": "Robe_bleue",
         "size": "S,M,L,XL",
-        "color": "bleu clair",
+        "color": "bleu",
         "price": 25.95,
         "gender": "femme"
     },
@@ -67,7 +67,7 @@
         "articleName": "Robe rose",
         "articleImg": "Robe_rose",
         "size": "S,M,L,XL",
-        "color": "rose clair",
+        "color": "rose",
         "price": 25.95,
         "gender": "femme"
     },
@@ -103,7 +103,7 @@
         "articleName": "Combinaison noire",
         "articleImg": "Combinaison_noire",
         "size": "S,M,L,XL",
-        "color": "noire",
+        "color": "noir",
         "price": 49.95,
         "gender": "femme"
     },
@@ -112,7 +112,7 @@
         "articleName": "Veste grise",
         "articleImg": "Veste_grise",
         "size": "S,M,L,XL",
-        "color": "grise",
+        "color": "gris",
         "price": 49.95,
         "gender": "homme"
     },
@@ -121,7 +121,7 @@
         "articleName": "Veste jaune fluo",
         "articleImg": "Veste_jaune_fluo",
         "size": "S,M,L,XL",
-        "color": "jaune fluo",
+        "color": "jaune",
         "price": 59.95,
         "gender": "mixte"
     },
@@ -139,7 +139,7 @@
         "articleName": "Veste cuir",
         "articleImg": "Veste_cuir",
         "size": "S,M,L,XL",
-        "color": "noire",
+        "color": "noir",
         "price": 59.95,
         "gender": "femme"
     }

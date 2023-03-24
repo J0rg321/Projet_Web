@@ -87,12 +87,13 @@ $obj = json_decode($data, true);
   $imagesVetements = $obj[$i]['articleImg'];
   ?>
     <div class="vetement">
+        <?php echo '<p style="font-size: 50px; text-align: center"><strong>' . $obj[$i]['articleName'] . '</strong></p>' ?>
         <div id="imageVet">
 		  <?php echo "<img class='img' style='height: 500px; margin: 5px;' src='../statics/images/Vêtements/$imagesVetements/1.jpg'"; ?>
         </div>
         <div>
             <div id="specsVet">
-			  <?php echo '<strong style="font-size: 30px;">' . $obj[$i]['articleName'] . '</strong>' . '<br>' . "taille : " . $obj[$i]['size'] . '<br>' . "Couleur : " . $obj[$i]['color'] . '<br>' . "Genre : " . $obj[$i]['gender'] . '<br>' . "Prix : " . $obj[$i]['price'] . " CHF"; ?>
+			  <?php echo "Taille : " . $obj[$i]['size'] . '<br>' . "Couleur : " . $obj[$i]['color'] . '<br>' . "Genre : " . $obj[$i]['gender'] . '<br>' . "Prix : " . $obj[$i]['price'] . " CHF"; ?>
             </div>
             <div id="panierVet">
                 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
