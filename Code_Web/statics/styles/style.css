@@ -1,13 +1,14 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 
 footer {
-    bottom: 0;
     width: 100%;
     height: 13%;
     background: black;
     color: white;
     text-align: center;
     border-top: solid;
+    position:absolute;
+    bottom:0;
 }
 
 #menu > div {
@@ -68,6 +69,9 @@ footer {
 
 body {
     background-color: black;
+    margin:0;
+    padding:0;
+    height:100%;
 }
 .account {
     padding-left: 20px;
@@ -82,7 +86,6 @@ body {
     position: absolute;
     left: 1.47cm;
     bottom: 2.5mm;
-
 }
 
 .search-box {
@@ -101,9 +104,9 @@ body {
     outline: none;
     border-radius: 25px;
     transition: all .5s ease-in-out;
-    background-color: grey;
+    background-color: black;
     padding-right: 40px;
-    color: #fff;
+    color: black;
 }
 
 
@@ -175,7 +178,7 @@ body {
 
 .btn-one:hover span {
     letter-spacing: 2px;
-    color: grey;
+    color: white;
 }
 
 .btn-one:hover::before {
@@ -219,7 +222,7 @@ body {
 
 .categories {
     width: 100%;
-    color: grey;
+    color: white;
     left: 0;
     background-color: rgba(255, 255, 255, 0.5);;
     padding: 20px;
@@ -262,13 +265,13 @@ body {
 }
 
 .active {
-    background-color: grey;
+    background-color: white;
     color: white;
 }
 
 
 input[name="categorie"] {
-    accent-color: grey;
+    accent-color: white;
 }
 
 .vetementCat {
@@ -281,7 +284,7 @@ input[name="categorie"] {
     border-top: solid;
     padding-top: 6px;
     padding-bottom: 6px;
-    border-color: grey;
+    border-color: white;
     padding-left: 32%;
     font-size: 20px;
 }
@@ -295,7 +298,7 @@ input[name="categorie"] {
     border-top: solid;
     padding-top: 6px;
     padding-bottom: 6px;
-    border-color: grey;
+    border-color: white;
     padding-left: 32%;
     font-size: 20px;
 }
@@ -309,7 +312,7 @@ input[name="categorie"] {
     border-top: solid;
     padding-top: 6px;
     padding-bottom: 6px;
-    border-color: grey;
+    border-color: white;
     padding-left: 32%;
     font-size: 20px;
 }
@@ -318,7 +321,7 @@ input[name="categorie"] {
     border-top: solid;
     padding-top: 20px;
     padding-bottom: 6px;
-    border-color: grey;
+    border-color: white;
     padding-left: 0%;
     font-size: 20px;
 }
@@ -363,7 +366,7 @@ option {
     display: block;
     padding: 15px;
     text-align: center;
-    color: darkgrey;
+    color: white;
     position: relative;
 }
 
@@ -496,6 +499,9 @@ option {
     flex-flow: wrap;
     color : black;
     background-color: white;
+    min-height:100%;
+    position:relative;
+    padding-bottom:100px;   /* Hauteur du pied de page */
 }
 .bienvenue{
     font-size:500%;

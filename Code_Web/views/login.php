@@ -18,7 +18,7 @@ ob_start(); ?>
 		  for ($i = 0; $i <= count($obj) - 1; $i++) {
 			if (isset($obj[$i]['email']) && isset($obj[$i]['password']) && $obj[$i]['email'] == $_POST['email'] && $obj[$i]['password'] == $_POST['password']) {
 			  //User exists,
-			  header('location: /index.php/?action=clothes');
+			  header('location: /index.php/?action=home');
 			  $_SESSION['nom'] = $obj[$i]['nom'];
 			  $_SESSION['email'] = $obj[$i]['email'];
 			  $_SESSION['email'] = $obj[$i]['password'];

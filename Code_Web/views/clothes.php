@@ -88,7 +88,7 @@ $obj = json_decode($data, true);
   ?>
     <div class="vetement">
         <div id="imageVet">
-		  <?php echo "<img class='img' style='height: 500px; margin: 5px;' src='../statics/images/Vêtements/$imagesVetements/1.jpg'"; ?>
+		  <?php echo "<img class='img' style='height: 500px; border-left: solid;border-right: solid; margin: 5px;' src='../statics/images/Vêtements/$imagesVetements/1.jpg'"; ?>
         </div>
         <div>
             <div id="specsVet">
