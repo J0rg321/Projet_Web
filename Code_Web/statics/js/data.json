@@ -15,7 +15,7 @@
         "size": "S,M,L,XL",
         "color": "bleue foncée",
         "price": 15.95,
-        "gender": "mixte"
+        "gender": "femme"
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@
         "size": "S,M,L,XL",
         "color": "noire",
         "price": 15.95,
-        "gender": "mixte"
+        "gender": "femme"
     },
     {
         "id": 4,
@@ -33,7 +33,7 @@
         "size": "S,M,L,XL",
         "color": "bleu foncé",
         "price": 19.95,
-        "gender": "mixte"
+        "gender": "femme"
     },
     {
         "id": 5,
@@ -42,7 +42,7 @@
         "size": "S,M,L,XL",
         "color": "noir",
         "price": 19.95,
-        "gender": "mixte"
+        "gender": "femme"
     },
     {
         "id": 6,
@@ -60,7 +60,7 @@
         "size": "S,M,L,XL",
         "color": "bleu clair",
         "price": 25.95,
-        "gender": "mixte"
+        "gender": "femme"
     },
     {
         "id": 8,
@@ -69,7 +69,7 @@
         "size": "S,M,L,XL",
         "color": "rose clair",
         "price": 25.95,
-        "gender": "mixte"
+        "gender": "femme"
     },
     {
         "id": 10,
@@ -88,6 +88,60 @@
         "color": "rose",
         "price": 39.95,
         "gender": "mixte"
+    },
+    {
+        "id": 12,
+        "articleName": "Chemise verte",
+        "articleImg": "Chemise_verte",
+        "size": "S,M,L,XL",
+        "color": "kaki",
+        "price": 29.95,
+        "gender": "homme"
+    },
+    {
+        "id": 13,
+        "articleName": "Combinaison noire",
+        "articleImg": "Combinaison_noire",
+        "size": "S,M,L,XL",
+        "color": "noire",
+        "price": 49.95,
+        "gender": "femme"
+    },
+    {
+        "id": 14,
+        "articleName": "Veste grise",
+        "articleImg": "Veste_grise",
+        "size": "S,M,L,XL",
+        "color": "grise",
+        "price": 49.95,
+        "gender": "homme"
+    },
+    {
+        "id": 15,
+        "articleName": "Veste jaune fluo",
+        "articleImg": "Veste_jaune_fluo",
+        "size": "S,M,L,XL",
+        "color": "jaune fluo",
+        "price": 59.95,
+        "gender": "mixte"
+    },
+    {
+        "id": 16,
+        "articleName": "Trench beige",
+        "articleImg": "Trench_beige",
+        "size": "S,M,L,XL",
+        "color": "beige",
+        "price": 69.95,
+        "gender": "femme"
+    },
+    {
+        "id": 17,
+        "articleName": "Veste cuir",
+        "articleImg": "Veste_cuir",
+        "size": "S,M,L,XL",
+        "color": "noire",
+        "price": 59.95,
+        "gender": "femme"
     }
 ]
 
