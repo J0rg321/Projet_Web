@@ -20,8 +20,7 @@
         <div class="container-fluid d-flex justify-content-between">
             <div>
                 <a class="logo" href="../index.php/?action=home">
-                    <img src="../statics/images/logo.PNG" alt="WearYou" style="width:100px"
-                         class="rounded-pill">
+                    <img src="../statics/images/logo.PNG" alt="WearYou" style="width:70px;>
                 </>
             </div>
             <div>
@@ -82,7 +81,7 @@
     <h4 id="bienvenu">Bienvenu(e)s sur WearYou
         <i class="bi bi-emoji-smile"></i>
     </h4>
-    <div style="position: static; margin-left: 31%; margin-right: 31%;">
+    <div style="position: static; margin-left: 25%; margin-right: 25%; margin-bottom: 3px;">
         <h6>Retrouvez nos réseau sociaux ci-dessous</h6>
         <div class="reseauxSociaux"><i class="bi bi-twitter"></i> <a href="https://twitter.com/?lang=">Twitter -
                 WearYou</a></div>
