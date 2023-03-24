@@ -473,6 +473,7 @@ option {
 
 #imageVet{
     margin: 5%;
+    margin-left: 85px;
     box-sizing: border-box;
 }
 
@@ -486,7 +487,7 @@ option {
     float: left;
     margin: 30px;
     margin-top: 50px;
-    margin-left: 60px !important;
+    margin-left: 30px !important;
 }
 .main {
     margin-left: 10%;
