@@ -21,11 +21,15 @@
             <div class="navbar-brand">
                 <a class="logo" href="../index.php/?action=home">
                     <img src="../statics/images/logo.PNG" alt="WearYou" style="width:100px" ;>
-                </>
+                </a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                     viewBox="0 0 16 16" style="filter: invert(100%)">
+                    <path fill-rule="evenodd"
+                          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav me-auto mb-1 mb-lg-0">
@@ -73,8 +77,10 @@
                     </div>
                 </div>
             </div>
+        </div>
     </nav>
 </div>
+
 <?= $content; ?>
 
 
