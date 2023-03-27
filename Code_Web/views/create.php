@@ -4,6 +4,7 @@ $title = "Creation de compte";
 //$categories='</div>';
 
 ?>
+<div class="main">
     <div class="div_centre">
         <h1>Veuillez créer votre compte : </h1>
         <form action='user.json' method='post'>
@@ -32,7 +33,7 @@ $title = "Creation de compte";
                 <button type="reset" class="btn green">Réinitialiser</button>
             </div>
     </div>
-
+</div>
 <?php
 if (isset($_POST['envoi'])) {
     echo 'Bonjour' . $_POST['pseudo'];

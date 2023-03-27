@@ -37,13 +37,13 @@ ob_start(); ?>
             <form action="/index.php/?action=login" method="post">
                 <div class="formLogin" style="border:3px solid white" margin="5px">
 				  <?php if ($error) {
-					echo '<p>Votre compte n\'existe pas !!!</p>';
+					echo '<p>Ses information ne nous disent rien</p>';
 				  } ?>
                     <div id="mail">
                         E-mail : <input type="email" name="email" placeholder="e-mail" required/>
                     </div>
                     <div id="mdp">
-                        Mot de passe : <input type="password" id="password" name="password" placeholder="mot de passe"/>
+                        Mot de passe : <input type="password" id="password" name="password" placeholder="mot de passe" required/>
                     </div>
                     <div id="btn">
                         <button type="submit" class="btn-primary">Envoyer</button>
