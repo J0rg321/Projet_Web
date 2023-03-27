@@ -33,13 +33,10 @@ $title = "Accueil";
         </script>
 
         <h1><strong>Plus d'informations sure le site : </strong></h1>
-        <p>Le client est très important merci, le client sera suivi par le client. Énée n'a pas de justice, pas de
-            résultat, pas de ligula, et la vallée veut la sauce. Morbi mais qui veut vendre une couche de contenu triste
-            d'internet. Être ivre maintenant, mais ne pas être ivre maintenant, mon urne est d'une grande beauté, mais
-            elle n'est pas aussi bien faite que dans un livre. Mécène dans la vallée de l'orc, dans l'élément même.
-            Certaines des exigences faciles du budget, qu'il soit beaucoup de temps pour dignissim et. Je ne m'en fais
-            pas chez moi, ça va être moche dans le vestibule. Mais aussi des protéines de Pour avant la fin de la
-            semaine, qui connaît le poison, le résultat.</p>
+        <p>Notre site est issu d'un projet scolaire. Le but étant de créer un site de E - Commerce.
+        Notre choix s'est porté sur la vente de vêtements de prêt - à - porter.
+            Notre site comporte une page d'accueil, une page vêtements, une page pour le panier, et une page pour créer / et se connecter à son compte.
+        </p>
     </div>
 <?php
 $content = ob_get_clean();
