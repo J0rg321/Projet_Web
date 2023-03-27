@@ -15,25 +15,29 @@
 
 </head>
 <body>
-<div id="container">
-    <nav class="navbar navbar-expand-lg bg-brown">
+<div id="container navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid d-flex justify-content-between">
-            <div>
+            <div class="navbar-brand">
                 <a class="logo" href="../index.php/?action=home">
                     <img src="../statics/images/logo.PNG" alt="WearYou" style="width:100px" ;>
                 </>
             </div>
-            <div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav me-auto mb-1 mb-lg-0">
                     <ul class="navbar-nav me-auto mb-1 mb-lg-0">
-                        <div class="box-1">
+                        <div class="box-1 nav-item nav-link">
                             <a href="../index.php/?action=home">
                                 <div class="btn btn-one">
                                     <span>ACCUEIL</span>
                                 </div>
                             </a>
                         </div>
-                        <div class="box-1">
+                        <div class="box-1 nav-item nav-link">
                             <a href="../index.php/?action=clothes">
                                 <div class="btn btn-one">
                                     <span>VÊTEMENTS</span>
@@ -41,8 +45,7 @@
                             </a>
                         </div>
                     </ul>
-
-                    <form class="d-flex" role="search">
+                    <form class="d-flex nav-item nav-link" role="search">
                         <div class="search-box">
                             <button class="btn-search">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
@@ -55,22 +58,21 @@
                     </form>
 
                 </div>
-            </div>
-            <div class="d-flex justify-content-end">
-                <div class="col-6">
-                    <a href="../index.php/?action=cart">
-                        <img class="nav-link icon" src="../statics/images/trolley.png" aria-current="page"
-                             style="width:100px">
-                    </a>
+                <div class="d-flex justify-content-end">
+                    <div class="col-6 nav-item nav-link">
+                        <a href="../index.php/?action=cart">
+                            <img class="nav-link icon" src="../statics/images/trolley.png" aria-current="page"
+                                 style="width:100px">
+                        </a>
+                    </div>
+                    <div class="col-6 account nav-item nav-link">
+                        <a href="../index.php/?action=login">
+                            <img class="nav-link icon" src="../statics/images/account.png" alt="WearYou"
+                                 aria-current="page">
+                        </a>
+                    </div>
                 </div>
-                <div class="col-6 account">
-                    <a href="../index.php/?action=login">
-                        <img class="nav-link icon" src="../statics/images/account.png" alt="WearYou"
-                             aria-current="page">
-                    </a>
-                </div>
             </div>
-        </div>
     </nav>
 </div>
 <?= $content; ?>
