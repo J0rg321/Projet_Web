@@ -6,9 +6,9 @@ $title = "Accueil";
 	  <?php echo '<h1 class="bienvenue">Bienvenue ' . $_SESSION['nom'] . ' !!</h1>'; ?>
         <br/>
         <div class="slideshow-container">
-		  <?php for ($i = 1; $i <= 3; $i++) { ?>
+		  <?php for ($i = 1; $i <= 6; $i++) { ?>
               <div class="mySlides fade">
-				<?= "<img src='../statics/images/Slide/slider$i.png' style='width:100%'>" ?>
+				<?= "<img src='../statics/images/Slide/slider$i.jpg' style='width:100%'>" ?>
               </div>
 		  <?php } ?>
 
