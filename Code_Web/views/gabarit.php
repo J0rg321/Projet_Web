@@ -29,7 +29,7 @@
                 <span></span>
             </label>
         </div>
-        <div class="navbar-nav me-auto mb-1 mb-lg-0">
+        <div class="navbar-nav me-auto mb-1 mb-lg-0 navigation-links">
             <ul class="navbar-nav">
                 <div>
                     <a href="../index.php/?action=home">
