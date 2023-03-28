@@ -72,6 +72,7 @@ body {
     padding: 0;
     height: 100%;
 }
+
 .d-flex {
     padding-left: 20%;
 }
@@ -467,12 +468,14 @@ option {
 .bi-facebook, .bi-instagram, .bi-twitter, .bi-youtube {
     margin: 10px !important;
 }
-.vetement{
+
+.vetement {
     border: solid;
     margin-top: 6px;
     margin-bottom: 6px;
     background-color: white;
 }
+
 #imageVet {
     box-sizing: border-box;
 }
@@ -500,6 +503,13 @@ option {
     min-height: 100%;
     position: relative;
     padding-bottom: 100px; /* Hauteur du pied de page */
+}
+
+.mainLost {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
 }
 
 .bienvenue {
