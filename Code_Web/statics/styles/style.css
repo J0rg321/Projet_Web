@@ -506,10 +506,11 @@ option {
 }
 
 .mainLost {
+    padding: 70px 0;
+    text-align: center;
     margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    padding: 10px;
+    color: #c5c5c5;
+    border: solid;
 }
 
 .bienvenue {
