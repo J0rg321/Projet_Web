@@ -4,6 +4,9 @@ $categories = '';
 $arrow = '';
 $title = "Lost X(";
 ?>
+    <div class="main" style="text-align: center">
+        <h1>Vous êtes perdu(e) 😐</h1>
+    </div>
 <?php
 $content = ob_get_clean();
 require "gabarit.php";
