@@ -8,7 +8,7 @@ $title = "Accueil";
         <div class="slideshow-container">
 		  <?php for ($i = 1; $i <= 6; $i++) { ?>
               <div class="mySlides fade">
-				<?= "<img src='../statics/images/Slide/slider$i.jpg' style='width:100%'>" ?>
+				<?= "<img src='../statics/images/Slide/slider$i.jpg' style='width:100%;'>" ?>
               </div>
 		  <?php } ?>
 
@@ -34,8 +34,9 @@ $title = "Accueil";
 
         <h1><strong>Plus d'informations sure le site : </strong></h1>
         <p>Notre site est issu d'un projet scolaire. Le but étant de créer un site de E - Commerce.
-        Notre choix s'est porté sur la vente de vêtements de prêt - à - porter.
-            Notre site comporte une page d'accueil, une page vêtements, une page pour le panier, et une page pour créer / et se connecter à son compte.
+            Notre choix s'est porté sur la vente de vêtements de prêt - à - porter.
+            Notre site comporte une page d'accueil, une page vêtements, une page pour le panier, et une page pour créer
+            / et se connecter à son compte.
         </p>
     </div>
 <?php

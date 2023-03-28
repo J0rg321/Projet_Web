@@ -15,66 +15,57 @@
 
 </head>
 <body>
-<div id="container navbar navbar-expand-lg">
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid d-flex justify-content-between">
-            <div class="navbar-brand">
+<div id="container" style="border-bottom: solid white;">
+    <nav class=" navigation navbar navbar-expand-lg">
+        <div class="container-fluid justify-content-between">
+            <input type="checkbox" id="navigation-check">
+            <div class="navigation-header navigation-title">
                 <a class="logo" href="../index.php/?action=home">
                     <img src="../statics/images/logo.PNG" alt="WearYou" style="width:100px" ;>
                 </a>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
-                     viewBox="0 0 16 16" style="filter: invert(100%)">
-                    <path fill-rule="evenodd"
-                          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                </svg>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav me-auto mb-1 mb-lg-0">
-                    <ul class="navbar-nav me-auto mb-1 mb-lg-0">
-                        <div class="box-1 nav-item nav-link">
-                            <a href="../index.php/?action=home">
-                                <div class="btn btn-one">
-                                    <span>ACCUEIL</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="box-1 nav-item nav-link">
-                            <a href="../index.php/?action=clothes">
-                                <div class="btn btn-one">
-                                    <span>VÊTEMENTS</span>
-                                </div>
-                            </a>
-                        </div>
-                    </ul>
-                    <form class="d-flex nav-item nav-link" role="search">
-                        <div class="search-box">
-                            <button class="btn-search">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
-                                     fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                </svg>
-                            </button>
-                            <input type="text" class="input-search" placeholder="Rechercher">
-                        </div>
-                    </form>
+            <div class="navbar-nav me-auto mb-1 mb-lg-0">
+                <ul class="navbar-nav">
+                    <div>
+                        <a href="../index.php/?action=home">
+                            <div class="btn btn-one">
+                                <span>ACCUEIL</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="../index.php/?action=clothes">
+                            <div class="btn btn-one">
+                                <span>VÊTEMENTS</span>
+                            </div>
+                        </a>
+                    </div>
+                </ul>
+                <form class="d-flex nav-item nav-link" role="search">
+                    <div class="search-box">
+                        <button class="btn-search">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                 fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </button>
+                        <input type="text" class="input-search" placeholder="Rechercher">
+                    </div>
+                </form>
+            </div>
 
+            <div>
+                <div style="float:left;" class="nav-item nav-link">
+                    <a href="../index.php/?action=cart">
+                        <img class="nav-link icon" src="../statics/images/trolley.png" aria-current="page"
+                             style="width:100px">
+                    </a>
                 </div>
-                <div class="d-flex justify-content-end">
-                    <div class="col-6 nav-item nav-link">
-                        <a href="../index.php/?action=cart">
-                            <img class="nav-link icon" src="../statics/images/trolley.png" aria-current="page"
-                                 style="width:100px">
-                        </a>
-                    </div>
-                    <div class="col-6 account nav-item nav-link">
-                        <a href="../index.php/?action=login">
-                            <img class="nav-link icon" src="../statics/images/account.png" alt="WearYou"
-                                 aria-current="page">
-                        </a>
-                    </div>
+                <div style="float:left;" class="nav-item nav-link">
+                    <a href="../index.php/?action=login">
+                        <img class="nav-link icon" src="../statics/images/account.png" alt="WearYou"
+                             aria-current="page">
+                    </a>
                 </div>
             </div>
         </div>
