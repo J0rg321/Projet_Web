@@ -15,7 +15,7 @@ switch ($action) {
 	cart();
 	break;
   case 'login' :
-	login();
+	login($_POST);
 	break;
   case 'create' :
 	create();
