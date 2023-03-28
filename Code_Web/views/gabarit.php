@@ -17,10 +17,8 @@
 <body>
 <div id="container" style="border-bottom: solid white;">
     <nav class=" navigation navbar navbar-expand-lg">
-        <div class="container-fluid justify-content-between">
-            <input type="checkbox" id="navigation-check">
-            <div class="navigation-header navigation-title">
-                <a class="logo" href="../index.php/?action=home">
+            <div class="navigation-header">
+                <a class="logo navigation-title" href="../index.php/?action=home">
                     <img src="../statics/images/logo.PNG" alt="WearYou" style="width:100px" ;>
                 </a>
             </div>
@@ -68,7 +66,6 @@
                     </a>
                 </div>
             </div>
-        </div>
     </nav>
 </div>
 
