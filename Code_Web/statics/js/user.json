@@ -3,5 +3,10 @@
     "username": "user",
     "email": "12345@cpnv.ch",
     "password": "$2y$10$fMZwr88b8h75d8MuBZW4He1lCWq0\/qgPKcTE0yOaD35\/ffvabSkV2"
+  },
+  {
+    "username": "AMJ",
+    "email": "AMJ_AMJ@gmail.com",
+    "password": "$2y$10$zFaXuSQNVMX2JmnTsnn9EeJxiPwYiXxpJxPJXJO14BdvoSzpJA3Y6"
   }
 ]
