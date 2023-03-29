@@ -516,8 +516,7 @@ option {
 .bienvenue {
     left: 10%;
     position: static;
-    -webkit-text-stroke: 2px black;
-    color: white;
+    color: black;
     text-align: center;
 }
 
@@ -527,8 +526,6 @@ option {
     right: 50%;
     position: static;
 }
-
-
 /*-----------------------------------SLIDER------------------------------------*/
 
 

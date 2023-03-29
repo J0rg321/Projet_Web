@@ -1,11 +1,10 @@
 <?php
 ob_start();
-$categories = '';
-$arrow = '';
-$title = "Lost X(";
+$title = "Page perdue.
+";
 ?>
     <div class="mainLost">
-        <h1>Vous êtes perdu(e), retournez sur la page d'accueil : <a href="home.php">Ici</a></h1>
+        <h1><a href="index.php?action=home"></a>Vous êtes perdu(e), retournez sur la page d'accueil : <a href="home.php">Ici</a></h1>
     </div>
 <?php
 $content = ob_get_clean();

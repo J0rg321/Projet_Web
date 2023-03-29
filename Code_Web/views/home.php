@@ -3,7 +3,7 @@ ob_start();
 $title = "Accueil";
 ?>
     <div class="main">
-	  <?php echo '<h1 class="bienvenue">Bienvenue ' . $_SESSION['nom'] . ' !!</h1>'; ?>
+	  <?php echo '<h1 class="bienvenue">Bienvenue ' . $_SESSION['nom'] . ' 👋🏼</h1>'; ?>
         <br/>
         <div class="slideshow-container">
 		  <?php for ($i = 1; $i <= 6; $i++) { ?>
