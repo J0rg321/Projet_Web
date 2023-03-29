@@ -19,9 +19,8 @@ ob_start(); ?>
 			if (isset($obj[$i]['email']) && isset($obj[$i]['password']) && $obj[$i]['email'] == $_POST['email'] && $obj[$i]['password'] == $_POST['password']) {
 			  //User exists,
 			  header('location: /index.php/?action=home');
-			  $_SESSION['nom'] = $obj[$i]['nom'];
+			  $_SESSION['username'] = $obj[$i]['username'];
 			  $_SESSION['email'] = $obj[$i]['email'];
-			  $_SESSION['email'] = $obj[$i]['password'];
 			  exit;
 			} else {
 			  $error = true;
@@ -48,7 +47,7 @@ ob_start(); ?>
                     <div id="btn">
                         <button type="submit" class="btn-primary">Envoyer</button>
                     </div>
-                    <h5><a href="create.php">Créer un compte</a></h5>
+                    <h5><a href="index.php?action=create">Créer un compte</a></h5>
 
                 </div>
             </form>

@@ -3,7 +3,9 @@ ob_start();
 $title = "Accueil";
 ?>
     <div class="main">
-	  <?php echo '<h1 class="bienvenue">Bienvenue ' . $_SESSION['nom'] . ' 👋🏼</h1>'; ?>
+	  <?php if (isset($_SESSION['username'])) {
+		echo '<h1 class="bienvenue">Bienvenue ' . $_SESSION['username'] . ' 👋🏼</h1>';
+	  } ?>
         <br/>
         <div class="slideshow-container">
 		  <?php for ($i = 1; $i <= 6; $i++) { ?>
