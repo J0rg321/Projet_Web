@@ -33,13 +33,14 @@ $title = "Accueil";
                 setTimeout(showSlides, 2000); // Change image every 2 seconds
             }
         </script>
-
-        <h1><strong>Plus d'informations sure le site : </strong></h1>
+<div id="infos">
+        <h1><strong>Plus d'informations sur le site : </strong></h1>
         <p>Notre site est issu d'un projet scolaire. Le but étant de créer un site de E - Commerce.
             Notre choix s'est porté sur la vente de vêtements de prêt - à - porter.
             Notre site comporte une page d'accueil, une page vêtements, une page pour le panier, et une page pour créer
             / et se connecter à son compte.
         </p>
+</div>
     </div>
 <?php
 $content = ob_get_clean();
