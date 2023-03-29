@@ -16,7 +16,9 @@ ob_start(); ?>
 
 		if (!empty($obj)) {
 		  for ($i = 0; $i <= count($obj) - 1; $i++) {
-			if (isset($obj[$i]['email']) && isset($obj[$i]['password']) && $obj[$i]['email'] == $_POST['email'] && $obj[$i]['password'] == $_POST['password']) {
+			if (isset($obj[$i]['email']) && isset($obj[$i]['password'])
+                && strtolower($obj[$i]['email']) == strtolower($_POST['email'])
+                && password_verify($_POST['password'], $obj[$i]['password'])) {
 			  //User exists,
 			  header('location: /index.php/?action=home');
 			  $_SESSION['username'] = $obj[$i]['username'];
@@ -36,7 +38,7 @@ ob_start(); ?>
             <form action="/index.php/?action=login" method="post">
                 <div class="formLogin" style="border:3px solid white" margin="5px">
 				  <?php if ($error) {
-					echo '<p>Ses information ne nous disent rien</p>';
+					echo '<p>Ces informations ne nous disent rien</p>';
 				  } ?>
                     <div id="mail">
                         E-mail : <input type="email" name="email" placeholder="e-mail" required/>

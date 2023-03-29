@@ -22,7 +22,7 @@ if (isset($_POST) && isset($_POST['email']) && isset($_POST['password']) && isse
 
 	  $newData["username"] = $_POST['username'];
 	  $newData["email"] = $_POST['email'];
-	  $newData["password"] = $_POST['password'];
+	  $newData["password"] = password_hash($_POST['password'], PASSWORD_DEFAULT);
 	  $obj[] = $newData;
 	  file_put_contents($file, json_encode($obj));
 	  //User created,
