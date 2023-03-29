@@ -1,22 +1,7 @@
 [
   {
-    "username": "Jorge",
-    "email": "jorge@cpnv.ch",
-    "password": "123"
-  },
-  {
-    "username": "Max",
-    "email": "max@cpnv.ch",
-    "password": "1234"
-  },
-  {
-    "username": "Alessia Mavraj",
-    "email": "alessia.mavraj@cpnv.ch",
-    "password": "1234"
-  },
-  {
-    "username": "AMJ",
-    "email": "gor@cpnv.ch",
-    "password": "12345678"
+    "username": "user",
+    "email": "12345@cpnv.ch",
+    "password": "$2y$10$fMZwr88b8h75d8MuBZW4He1lCWq0\/qgPKcTE0yOaD35\/ffvabSkV2"
   }
 ]
