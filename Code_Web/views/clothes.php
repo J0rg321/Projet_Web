@@ -72,13 +72,14 @@ $title = "Vêtements";
 
 <?php
 // chemin d'accès à votre fichier JSON
-$file = getcwd() . '\statics\js\data.json';
+$file = join(DIRECTORY_SEPARATOR, array(getcwd(),'statics', 'js', 'data.json'));
+
+//$file = getcwd() . '\statics\js\data.json';
 // mettre le contenu du fichier dans une variable
 $data = file_get_contents($file);
 // décoder le flux JSON
 $obj = json_decode($data, true);
 // accéder à l'élément approprié
-
 ?>
 <div class="mainVetements" style="background-color: black;"><?php
   for ($i = 0;
