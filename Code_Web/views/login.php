@@ -36,18 +36,18 @@ ob_start(); ?>
         <div style="color: black;" class="div_centre">
             <h1>Veuillez vous logger : </h1>
             <form action="/index.php/?action=login" method="post">
-                <div class="formLogin" style="border:3px solid white" margin="5px">
+                <div class="formLogin">
 				  <?php if ($error) {
-					echo '<p>Ces informations ne nous disent rien</p>';
+					echo '<p style="color: orangered"><strong>Ces informations ne nous disent rien.</strong></p>';
 				  } ?>
-                    <div id="mail">
+                    <div>
                         E-mail : <input type="email" name="email" placeholder="e-mail" required/>
                     </div>
-                    <div id="mdp">
+                    <div>
                         Mot de passe : <input type="password" id="password" name="password" placeholder="mot de passe" required/>
                     </div>
-                    <div id="btn">
-                        <button type="submit" class="btn-primary">Envoyer</button>
+                    <div id="btn-login">
+                        <button type="submit">Envoyer</button>
                     </div>
                     <h5><a href="index.php?action=create">Créer un compte</a></h5>
 
