@@ -18,12 +18,16 @@ $title = "Vêtements";
             <div class="vetementCat">
                 <p style="text-align: center"><strong>Vêtement</strong></p>
                 <div>
+                    <input type="radio" id="casquette" name="categorie" value="casquette">
+                    <label for="casquette">Casquette</label>
+                </div>
+                <div>
                     <input type="radio" id="tshirt" name="categorie" value="tshirt">
                     <label for="tshirt">T-shirt</label>
                 </div>
                 <div>
                     <input type="radio" id="pantalong" name="categorie" value="pantalong">
-                    <label for="Tshirt">Pantalong</label>
+                    <label for="Tshirt">Pantalon</label>
                 </div>
                 <div>
                     <input type="radio" id="robe" name="categorie" value="robe">
@@ -34,18 +38,37 @@ $title = "Vêtements";
                     <label for="jupe">Jupe</label>
                 </div>
                 <div>
+                    <input class="radioButton" type="radio" id="pull" name="categorie" value="pull">
+                    <label for="pull">Pull</label>
+                </div>
+                <div>
                     <input class="radioButton" type="radio" id="chemise" name="categorie" value="chemise">
                     <label for="chemise">Chemise</label>
+                </div>
+                <div>
+                    <input class="radioButton" type="radio" id="veste" name="categorie" value="veste">
+                    <label for="veste">Veste</label>
+                </div>
+                <div>
+                    <input class="radioButton" type="radio" id="combinaison" name="categorie" value="combinaison">
+                    <label for="combinaison">Combinaison</label>
+                </div>
+                <div>
+                    <input class="radioButton" type="radio" id="trench" name="categorie" value="trench">
+                    <label for="trench">Trench</label>
                 </div>
             </div>
             <div class="couleurCat">
                 <p><strong>Couleur</strong></p>
                 <select name="Couleurs" id="couleur">
-                    <option value="rouge">Rouge</option>
-                    <option value="vert">Vert</option>
                     <option value="blanc">Blanc</option>
                     <option value="noir">Noir</option>
-                    <option value="violet">Violet</option>
+                    <option value="noir">Bleu</option>
+                    <option value="noir">Rose</option>
+                    <option value="noir">Kaki</option>
+                    <option value="noir">Gris</option>
+                    <option value="noir">Jaune</option>
+                    <option value="noir">Beige</option>
                 </select>
             </div>
             <div class="tailleCat">
@@ -59,7 +82,7 @@ $title = "Vêtements";
             </div>
             <div class="prixCat">
                 <p><strong>Prix min.</strong></p>
-                <input type="number" id="prixMax" name="tentacles" min="10" max="100">
+                <input type="number" id="prixMax" name="tentacles" min="9.95" max="69.95">
             </div>
             <div class="btnCat">
                 <button type="submit" class="boutonCat btn-primary">Confirmer</button>
