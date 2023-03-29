@@ -1,16 +1,10 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 
 footer {
-    width: 100%;
-    height: 13px;
-    background-color: black !important;
+text-align: center;
     color: white;
-    text-align: center;
-    border-top: solid;
-    position: absolute;
-    bottom: 0;
+    padding-top: 10px;
 }
-
 #menu > div {
     margin: 9px;
     width: 20%;
@@ -514,18 +508,14 @@ option {
 }
 
 .bienvenue {
-    left: 10%;
-    position: static;
-    color: black;
-    text-align: center;
+
 }
 
 .reseauxSociaux {
-    float: left;
     left: 50%;
     right: 50%;
-    position: static;
 }
+
 /*-----------------------------------SLIDER------------------------------------*/
 
 

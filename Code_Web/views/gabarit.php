@@ -85,10 +85,10 @@
 
 </body>
 <footer>
-    <h4 id="bienvenu">Bienvenu(e)s sur WearYou
+    <h4>Bienvenu(e)s sur WearYou
         <i class="bi bi-emoji-smile"></i>
     </h4>
-    <div style="position: static; margin-left: 25%; margin-right: 25%; margin-bottom: 3px;">
+    <div>
         <h6>Retrouvez nos réseau sociaux ci-dessous</h6>
         <div class="reseauxSociaux"><i class="bi bi-twitter"></i> <a href="https://twitter.com/?lang=">Twitter -
                 WearYou</a></div>
