@@ -19,7 +19,7 @@ if (isset($_POST) && isset($_POST['email']) && isset($_POST['password']) && isse
 	}
   if(!$error) {
 
-
+    /* AJOUTER PARTIE PANIER !!!!!!!!!!!!!*/
 	  $newData["username"] = $_POST['username'];
 	  $newData["email"] = $_POST['email'];
 	  $newData["password"] = password_hash($_POST['password'], PASSWORD_DEFAULT);
