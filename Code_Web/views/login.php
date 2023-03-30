@@ -45,8 +45,8 @@ if (isset($_POST) && isset($_POST['email']) && isset($_POST['password'])) {
                     Mot de passe : <input type="password" id="password" name="password" placeholder="mot de passe"
                                           required/>
                 </div>
-                <div id="btn-login" class="btn-primary">
-                    <button type="submit">Envoyer</button>
+                <div id="btn-login">
+                    <button type="submit" class="fv">Envoyer</button>
                 </div>
                 <h5><a href="index.php?action=create">Créer un compte</a></h5>
 
@@ -55,9 +55,10 @@ if (isset($_POST) && isset($_POST['email']) && isset($_POST['password'])) {
     </div>
 <?php
 if (isset($_SESSION['username'])) { ?>
-        <form method="post" action="index.php?action=logout" style="text-align: center">
-            <input type="submit" value="LogOut">
+        <form method="post" class="fv" action="index.php?action=logout" style="text-align: center">
+            <input type="submit" value="LogOut" >
         </form>
+    </div>
  <?php
         }
 $content = ob_get_clean();
