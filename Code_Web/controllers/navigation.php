@@ -18,3 +18,6 @@ function create(){
 function lost(){
   require "views/lost.php";
 }
+function logout(){
+    require "views/logout.php";
+}
