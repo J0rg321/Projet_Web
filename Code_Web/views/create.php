@@ -77,7 +77,7 @@ if (isset($_POST) && isset($_POST['email']) && isset($_POST['password']) && isse
                         <input type="password" name="password" id="inputPassword" placeholder="Votre mot de passe"
                                minlength="8" required>
                     </div>
-                    <div id="envoi">
+                    <div id="envoi" style="position: center">
                         <button type="submit" name="envoi">Envoyer</button>
                     </div>
                 </div>
