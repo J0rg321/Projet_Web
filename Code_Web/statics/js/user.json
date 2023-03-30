@@ -18,5 +18,15 @@
     "username": "jaaj",
     "email": "jaaj@cpnv.ch",
     "password": "$2y$10$Beba90UtTi\/THu809kwUpeoeJoUIdAJME\/msxaCA5qQf8cbmSPX2u"
+  },
+  {
+    "username": "Jorge",
+    "email": "JorgeM@cpnv.ch",
+    "password": "$2y$10$Cyzfm2g49iTIXSemjG7IhOCh3lxMNEqUkZro1CHGbMh7NkZ5NutZu"
+  },
+  {
+    "username": "123@gmail.com",
+    "email": "123@gmail.com",
+    "password": "$2y$10$sHBNmgjV9SzEf2NwN8T\/T.CXkJjPi8DM\/LARhokBFMEIJZWPtmM9O"
   }
 ]

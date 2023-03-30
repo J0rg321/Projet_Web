@@ -1,11 +1,9 @@
-[
-  {
-    "email": "12345@cpnv.ch"
+{
+  "0": {
+    "email": "JorgeM@cpnv.ch"
   },
-  {
-    "email": "jorge@cpnv.ch"
+  "1": {
+    "email": "123@gmail.com"
   },
-  {
-    "email": "jaaj@cpnv.ch"
-  }
-]
+  "id": 1
+}
