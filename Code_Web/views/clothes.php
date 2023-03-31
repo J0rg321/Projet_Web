@@ -103,6 +103,15 @@ $data = file_get_contents($file);
 $obj = json_decode($data, true);
 // accéder à l'élément approprié
 
+// chemin d'accès à votre fichier JSON
+$fileUser = join(DIRECTORY_SEPARATOR, array(getcwd(), 'statics', 'js', 'user.json'));
+//$file = getcwd() . '\statics\js\data.json';
+// mettre le contenu du fichier dans une variable
+$dataUser = file_get_contents($fileUser);
+// décoder le flux JSON
+$objUser = json_decode($dataUser, true);
+// accéder à l'élément approprié
+
 
 // chemin d'accès à votre fichier JSON
 $fileCart = join(DIRECTORY_SEPARATOR, array(getcwd(), 'statics', 'js', 'cart_content.json'));
@@ -114,26 +123,17 @@ $objCart = json_decode($dataCart, true);
 // accéder à l'élément approprié
 
 
-print_r($_POST['email']);
-
 if (isset($_POST['cart'])) {
   if (isset($_SESSION['email'])) {
-	if (!empty($obj[1])) {
 	  for ($i = 0; $i <= count($objCart) - 1; $i++) {
-		if ($objCart[$i]['email'] == $_POST['email']) {
-		  echo "<p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p><br>";
-
-		  print_r($_POST['id']);
-		  echo "<br>";
-
-		            $newCartData["email"] = $_POST['email'];
-					$newCartData['id'] = $_POST['id'];
+		if ($objCart[$i]['email'] == $_SESSION['email']) {
+                    $newCartData = $objCart;
+					$newCartData[$i]['id'] = $_POST['id'] + 1;
 
 					file_put_contents($fileCart, json_encode($newCartData));
 				  } else {
 		}
 	  }
-	}
   } else {
 	echo "<p style='color: red;'>Vous n'ettes pas encore connecté !!!</p>";
   }

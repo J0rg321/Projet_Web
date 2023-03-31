@@ -1,1 +1,17 @@
-{"email":null,"id":"1"}
+[
+  {
+    "email": "12345@cpnv.ch",
+    "id": 4
+  },
+  {
+    "email": "jorge@cpnv.ch",
+    "id": 4
+  },
+  {
+    "email": "jojo@123.ch"
+  },
+  {
+    "email": "lol@cpnv.ch",
+    "id": 2
+  }
+]

@@ -8,5 +8,15 @@
     "username": "user",
     "email": "jorge@cpnv.ch",
     "password": "$2y$10$nbBEikCoURVuqbIOFehSjOUkPxbHn2ej1vcd0yOdFb.PpnAFchkpm"
+  },
+  {
+    "username": "Jorge",
+    "email": "jojo@123.ch",
+    "password": "$2y$10$FMb55cvwRrpZSZNzdXDeme2f1TEwqjS4MOV44FFXsXAYKW3j7tLAu"
+  },
+  {
+    "username": "LOOL",
+    "email": "lol@cpnv.ch",
+    "password": "$2y$10$4x5bh1i8KtgrzKSkkDqNwO7dnLT6i\/5cTAHwmeRuZW1W1WHrxHuly"
   }
 ]
