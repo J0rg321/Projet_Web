@@ -35,7 +35,7 @@ if (isset($_SESSION['email'])) {
 
     ?>
 
-    <main>
+    <div id="mainVetements">
     <h1 id="titre">Voici le contenu de votre panier :</h1>
 
 
@@ -46,9 +46,9 @@ if (isset($_SESSION['email'])) {
             if ($objCart[$i]['email'] == $_SESSION['email']) {
                 $cartClothes = $objCart[$i]['id'];
                 for ($j = 0; $j <= count($obj) - 1; $j++) {
-                    if ($obj[$i]['id'] == $cartClothes) {
+                    if ($obj[$j]['id'] == $cartClothes) {
                         $imagesVetements = $obj[$j]['articleImg'];
-                        print_r($obj[$i]['id']);
+
                         ?>
                         <div class="vetement">
                             <?php echo '<h1 style="text-align: center"><strong>' . $obj[$j]['articleName'] . '</strong></h1>'; ?>
@@ -88,8 +88,7 @@ if (isset($_SESSION['email'])) {
 
 ?>
 
-
-    </main>
+    </div>
 <?php
 $content = ob_get_clean();
 require "gabarit.php";

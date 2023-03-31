@@ -7,7 +7,7 @@ $error = false;
 if (isset($_POST) && isset($_POST['email']) && isset($_POST['password'])) {
 
 // chemin d'accès à votre fichier JSON
-  $file = join(DIRECTORY_SEPARATOR, array(getcwd(), 'statics', 'js', 'data.json'));
+  $file = join(DIRECTORY_SEPARATOR, array(getcwd(), 'statics', 'js', 'user.json'));
 // mettre le contenu du fichier dans une variable
   $data = file_get_contents($file);
 // décoder le flux JSON
@@ -30,6 +30,7 @@ if (isset($_POST) && isset($_POST['email']) && isset($_POST['password'])) {
 	}
   }
 }
+if (!isset($_SESSION['username'])) {
 ?>
     <div style="color: black;" class="div_centre">
         <h1>Veuillez vous logger : </h1>
@@ -42,23 +43,21 @@ if (isset($_POST) && isset($_POST['email']) && isset($_POST['password'])) {
                     E-mail : <input type="email" name="email" placeholder="e-mail" required/>
                 </div>
                 <div>
-                    Mot de passe : <input type="password" id="password" name="password" placeholder="mot de passe"
-                                          required/>
+                    Mot de passe : <input type="password" id="password" name="password" placeholder="mot de passe" required/>
                 </div>
                 <div id="btn-login">
                     <button type="submit" class="fv">Envoyer</button>
                 </div>
                 <h5><a href="index.php?action=create">Créer un compte</a></h5>
-
             </div>
         </form>
     </div>
-<?php
+<?php }
 if (isset($_SESSION['username'])) { ?>
-    <form method="post" class="fv" action="index.php?action=logout" style="text-align: center">
+    <form method="post" class="fv" action="index.php?action=logout" style="text-align: center; border-top: 50px;">
         <input type="submit" value="LogOut">
     </form>
-    </div>
+</div>
   <?php
 }
 $content = ob_get_clean();
