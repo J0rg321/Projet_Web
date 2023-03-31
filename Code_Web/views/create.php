@@ -4,7 +4,7 @@ $title = "Creation de compte";
 $error = false;
 if (isset($_POST) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['username'])) {
 // chemin d'accès à votre fichier JSON
-  $file = getcwd() . '\statics\js\user.json';
+  $file = join(DIRECTORY_SEPARATOR, array(getcwd(), 'statics', 'js', 'user.json'));
 // mettre le contenu du fichier dans une variable
   $data = file_get_contents($file);
 // décoder le flux JSON
@@ -21,7 +21,7 @@ if (isset($_POST) && isset($_POST['email']) && isset($_POST['password']) && isse
 
 
 	// chemin d'accès à votre fichier JSON
-	  $fileCart = getcwd() . '\statics\js\cart_content.json';
+	  $fileCart = join(DIRECTORY_SEPARATOR, array(getcwd(), 'statics', 'js', 'cart_content.json'));
     // mettre le contenu du fichier dans une variable
 	  $dataCart = file_get_contents($fileCart);
     // décoder le flux JSON
