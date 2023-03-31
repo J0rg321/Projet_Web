@@ -7,7 +7,7 @@ $title = "Panier";
 if (isset($_SESSION['email'])) {
 //Cart file...
     // chemin d'accès à votre fichier JSON
-    $fileCart = getcwd() . '\statics\js\cart_content.json';
+    $fileCart = join(DIRECTORY_SEPARATOR, array(getcwd(), 'statics', 'js', 'cart_content.json'));
     // mettre le contenu du fichier dans une variable
     $dataCart = file_get_contents($fileCart);
     // décoder le flux JSON
@@ -16,7 +16,7 @@ if (isset($_SESSION['email'])) {
 
     //Data file...
     // chemin d'accès à votre fichier JSON
-    $file = getcwd() . '\statics\js\data.json';
+    $file = join(DIRECTORY_SEPARATOR, array(getcwd(), 'statics', 'js', 'data.json'));
     // mettre le contenu du fichier dans une variable
     $data = file_get_contents($file);
     // décoder le flux JSON
@@ -25,7 +25,7 @@ if (isset($_SESSION['email'])) {
 
     //User file...
     // chemin d'accès à votre fichier JSON
-    $fileUser = getcwd() . '\statics\js\user.json';
+    $fileUser = join(DIRECTORY_SEPARATOR, array(getcwd(), 'statics', 'js', 'user.json'));
     // mettre le contenu du fichier dans une variable
     $dataUser = file_get_contents($fileUser);
     // décoder le flux JSON
@@ -46,13 +46,8 @@ if (isset($_SESSION['email'])) {
             if ($objCart[$i]['email'] == $_SESSION['email']) {
                 $cartClothes = $objCart[$i]['id'];
                 for ($j = 0; $j <= count($obj) - 1; $j++) {
-                    echo "<p style='color:red;'>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>";
-                    echo "<br>";
-                    print_r($obj[$i]['id']);
-                    echo "<p style='color:red;'>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>";
-                    if ($obj[$i]['id'] + 1 == $cartClothes) {
+                    if ($obj[$i]['id'] == $cartClothes) {
                         $imagesVetements = $obj[$j]['articleImg'];
-
                         print_r($obj[$i]['id']);
                         ?>
                         <div class="vetement">
