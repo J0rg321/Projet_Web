@@ -7,7 +7,7 @@ $error = false;
 if (isset($_POST) && isset($_POST['email']) && isset($_POST['password'])) {
 
 // chemin d'accès à votre fichier JSON
-  $file = getcwd() . '\statics\js\user.json';
+  $file = join(DIRECTORY_SEPARATOR, array(getcwd(), 'statics', 'js', 'data.json'));
 // mettre le contenu du fichier dans une variable
   $data = file_get_contents($file);
 // décoder le flux JSON
