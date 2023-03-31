@@ -114,50 +114,57 @@ $objCart = json_decode($dataCart, true);
 // accéder à l'élément approprié
 
 
+print_r($_POST['email']);
+
 if (isset($_POST['cart'])) {
-    if (!empty($obj[1])) {
-        for ($i = 0; $i <= count($objCart) - 1; $i++) {
-            echo "<p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p><br>";
-            if (strtolower($objCart[$i]['email']) == $_SESSION['email']){
-                //User exists,
-                $newCartData['id'] = $obj[1]['id'];
-                file_put_contents($fileCart, json_encode($newCartData));
-                exit;
-            } else {
-                $error = true;
-            }
-        }
-    }
+  if (isset($_SESSION['email'])) {
+	if (!empty($obj[1])) {
+	  for ($i = 0; $i <= count($objCart) - 1; $i++) {
+		if ($objCart[$i]['email'] == $_POST['email']) {
+		  echo "<p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p><br>";
+
+		  print_r($_POST['id']);
+		  echo "<br>";
+
+		            $newCartData["email"] = $_POST['email'];
+					$newCartData['id'] = $_POST['id'];
+
+					file_put_contents($fileCart, json_encode($newCartData));
+				  } else {
+		}
+	  }
+	}
+  } else {
+	echo "<p style='color: red;'>Vous n'ettes pas encore connecté !!!</p>";
+  }
 }
 
 
 ?>
 
 <div class="mainVetements" style="background-color: black;"><?php
-    if($error == true){
-        echo "<p style='color: red'>Nous n'avons malheureusement pas pu placer cet élement dans le panier</p>";
-    }
-    for ($i = 0;
-    $i <= count($obj) - 1;
-    $i++) {
-    $imagesVetements = $obj[$i]['articleImg']; ?>
+
+  for ($i = 0;
+  $i <= count($obj) - 1;
+  $i++) {
+  $imagesVetements = $obj[$i]['articleImg']; ?>
     <div class="vetement">
-        <?php echo '<h1 style="text-align: center"><strong>' . $obj[$i]['articleName'] . '</strong></h1>'; ?>
+	  <?php echo '<h1 style="text-align: center"><strong>' . $obj[$i]['articleName'] . '</strong></h1>'; ?>
         <div id="imageVet">
-            <?php echo "<img style='height: 500px; margin: 5px;' src='../statics/images/Vêtements/$imagesVetements/1.jpg'"; ?>
+		  <?php echo "<img style='height: 500px; margin: 5px;' src='../statics/images/Vêtements/$imagesVetements/1.jpg'"; ?>
         </div>
         <div>
             <div id="specsVet">
-                <?php echo "Taille : " . $obj[$i]['size'] . '<br>'
-                    . "Couleur : " . $obj[$i]['color'] . '<br>'
-                    . "Genre : " . $obj[$i]['gender'] . '<br>'
-                    . "Prix : " . $obj[$i]['price'] . " CHF";
-                $_POST['id'] = $obj[$i]; ?>
+			  <?php echo "Taille : " . $obj[$i]['size'] . '<br>'
+				  . "Couleur : " . $obj[$i]['color'] . '<br>'
+				  . "Genre : " . $obj[$i]['gender'] . '<br>'
+				  . "Prix : " . $obj[$i]['price'] . " CHF"; ?>
             </div>
             <div id="panierVet">
                 <div class="box-1 nav-item">
                     <btn class="nav-item nav-link">
                         <form method="post">
+                            <input type="hidden" name="id" id="id" value="<?= $i ?>" >
                             <input type='submit' name='cart' value='cart'/>
                         </form>
                     </btn>
