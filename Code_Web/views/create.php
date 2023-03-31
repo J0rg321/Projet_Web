@@ -13,7 +13,7 @@ if (isset($_POST) && isset($_POST['email']) && isset($_POST['password']) && isse
 
   if (!empty($obj)) {
 	for ($i = 0; $i <= count($obj) - 1; $i++) {
-	  if (isset($obj[$i]['email']) && $obj[$i]['email'] == $_POST['email']) {
+	  if (isset($obj[$i]['email']) && strtolower($obj[$i]['email']) == strtolower($_POST['email'])) {
 		$error = true;
 	  }
 	}
@@ -29,7 +29,7 @@ if (isset($_POST) && isset($_POST['email']) && isset($_POST['password']) && isse
     // accéder à l'élément approprié
 
 
-	  $newCartData["email"] = $_POST['email'];
+	  $newCartData["email"] = strtolower($_POST['email']);
 
 	  $objCart[] = $newCartData;
 	  file_put_contents($fileCart, json_encode($objCart));
@@ -37,14 +37,14 @@ if (isset($_POST) && isset($_POST['email']) && isset($_POST['password']) && isse
 
 
 	  $newData["username"] = $_POST['username'];
-	  $newData["email"] = $_POST['email'];
+	  $newData["email"] = strtolower($_POST['email']);
 	  $newData["password"] = password_hash($_POST['password'], PASSWORD_DEFAULT);
 	  $obj[] = $newData;
 	  file_put_contents($file, json_encode($obj));
 	  //User created,
 	  header('location: /index.php/?action=home');
 	  $_SESSION['username'] = $obj[$i]['username'];
-	  $_SESSION['email'] = $obj[$i]['email'];
+	  $_SESSION['email'] = strtolower($obj[$i]['email']);
 	  exit;
 
 

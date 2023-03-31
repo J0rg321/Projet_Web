@@ -103,23 +103,49 @@ $data = file_get_contents($file);
 $obj = json_decode($data, true);
 // accéder à l'élément approprié
 
+// chemin d'accès à votre fichier JSON
+$fileUser = join(DIRECTORY_SEPARATOR, array(getcwd(), 'statics', 'js', 'user.json'));
+//$file = getcwd() . '\statics\js\data.json';
+// mettre le contenu du fichier dans une variable
+$dataUser = file_get_contents($fileUser);
+// décoder le flux JSON
+$objUser = json_decode($dataUser, true);
+// accéder à l'élément approprié
 
 
 // chemin d'accès à votre fichier JSON
-$fileCreate = join(DIRECTORY_SEPARATOR, array(getcwd(), 'statics', 'js', 'cart_content .json'));
+$fileCart = join(DIRECTORY_SEPARATOR, array(getcwd(), 'statics', 'js', 'cart_content.json'));
 //$file = getcwd() . '\statics\js\cart_content.json';
 // mettre le contenu du fichier dans une variable
-$dataCreate = file_get_contents($fileCreate);
+$dataCart = file_get_contents($fileCart);
 // décoder le flux JSON
-$objCreate = json_decode($dataCreate, true);
+$objCart = json_decode($dataCart, true);
 // accéder à l'élément approprié
+
+
+if (isset($_POST['cart'])) {
+  if (isset($_SESSION['email'])) {
+	  for ($i = 0; $i <= count($objCart) - 1; $i++) {
+		if ($objCart[$i]['email'] == $_SESSION['email']) {
+                    $newCartData = $objCart;
+					$newCartData[$i]['id'] = $_POST['id'] + 1;
+
+					file_put_contents($fileCart, json_encode($newCartData));
+				  } else {
+		}
+	  }
+  } else {
+	echo "<p style='color: red;'>Vous n'ettes pas encore connecté !!!</p>";
+  }
+}
 
 
 ?>
 
 <div class="mainVetements" style="background-color: black;"><?php
-  for ($i = 1;
-  $i <= count($obj);
+
+  for ($i = 0;
+  $i <= count($obj) - 1;
   $i++) {
   $imagesVetements = $obj[$i]['articleImg']; ?>
     <div class="vetement">
@@ -135,27 +161,22 @@ $objCreate = json_decode($dataCreate, true);
 				  . "Prix : " . $obj[$i]['price'] . " CHF"; ?>
             </div>
             <div id="panierVet">
-                <form action="/index.php/?action=clothes" method="post">
-                    <?php $newDataCart['id']= $_GET[$i]; ?>
-                    <div class="box-1 nav-item">
-                        <btn class="nav-item nav-link">
-                            <?php echo "<a href action=/index.php/?action=clothes&'$i' method='get'>"; ?>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
-                                 class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
-                                <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
-                            </svg>
-                        <?php echo "</a>"; ?>
-                        </btn>
-                    </div>
-                </form>
-			  <?php
-
-
-			  ?>
+                <div class="box-1 nav-item">
+                    <btn class="nav-item nav-link">
+                        <form method="post">
+                            <input type="hidden" name="id" id="id" value="<?= $i ?>" >
+                            <input type='submit' name='cart' value='cart'/>
+                        </form>
+                    </btn>
+                </div>
             </div>
         </div>
     </div>
 </div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+         class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+        <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+    </svg>
 
 
 <?php }
