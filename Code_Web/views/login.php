@@ -22,7 +22,7 @@ if (isset($_POST) && isset($_POST['email']) && isset($_POST['password'])) {
                 //User exists,
                 header('location: /index.php/?action=home');
                 $_SESSION['username'] = $obj[$i]['username'];
-                $_SESSION['email'] = $obj[$i]['email'];
+                $_SESSION['email'] = strtolower($obj[$i]['email']);
                 exit;
             } else {
                 $error = true;
@@ -36,7 +36,7 @@ if (isset($_POST) && isset($_POST['email']) && isset($_POST['password'])) {
         <form action="/index.php/?action=login" method="post">
             <div class="formLogin">
                 <?php if ($error) {
-                    echo '<p style="color: orangered"><strong>Ces informations ne nous disent rien.</strong></p>';
+                    echo '<p style="color: #ff0000"><strong>Ces informations ne nous disent rien.</strong></p>';
                 } ?>
                 <div>
                     E-mail : <input type="email" name="email" placeholder="e-mail" required/>

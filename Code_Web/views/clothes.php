@@ -115,12 +115,17 @@ $objCart = json_decode($dataCart, true);
 
 
 if (isset($_POST['cart'])) {
-    for ($i = 1; $i <= count($objCart); $i++) {
-        if ($objCart[$i]['email'] == $_SESSION['email']) {
-            $newCartData['id'] = $_POST['id'] + 1;
-            print_r($newCartData['id']);
-            $objCart['id'] = $newCartData['id'];
-            file_put_contents($fileCart, json_encode($objCart));
+    if (!empty($obj[1])) {
+        for ($i = 0; $i <= count($objCart) - 1; $i++) {
+            echo "<p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p><br>";
+            if (strtolower($objCart[$i]['email']) == $_SESSION['email']){
+                //User exists,
+                $newCartData['id'] = $obj[1]['id'];
+                file_put_contents($fileCart, json_encode($newCartData));
+                exit;
+            } else {
+                $error = true;
+            }
         }
     }
 }
@@ -129,6 +134,9 @@ if (isset($_POST['cart'])) {
 ?>
 
 <div class="mainVetements" style="background-color: black;"><?php
+    if($error == true){
+        echo "<p style='color: red'>Nous n'avons malheureusement pas pu placer cet élement dans le panier</p>";
+    }
     for ($i = 0;
     $i <= count($obj) - 1;
     $i++) {
