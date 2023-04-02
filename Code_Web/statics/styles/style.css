@@ -4,6 +4,7 @@ footer {
     text-align: center;
     color: white;
     padding-top: 10px;
+    position: sticky;
 }
 
 #menu > div {
@@ -463,7 +464,7 @@ option {
     justify-content: space-around;
     flex-flow: wrap;
     color: black;
-    background-color: white;
+    background-color: black;
     min-height: 100%;
     position: relative;
     padding-bottom: 100px; /* Hauteur du pied de page */

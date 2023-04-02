@@ -35,60 +35,61 @@ if (isset($_SESSION['email'])) {
 
     ?>
 
-    <div id="mainVetements">
+    <div class="mainVetements">
     <h1 id="titre">Voici le contenu de votre panier :</h1>
 
 
     <?php
+    for ($i = 0; $i <= count($objCart) - 1; $i++) {
+        if ($objCart[$i]['email'] == $_SESSION['email']) {
+            $clothesCount = count($obj);
+            while ($clothesCount != 0) {
+                if (isset($objCart[$i]['cloth_' . $clothesCount])) {
 
-    if (isset($_SESSION['email'])) {
-        for ($i = 0; $i <= count($objCart) - 1; $i++) {
-            if ($objCart[$i]['email'] == $_SESSION['email']) {
-                $cartClothes = $objCart[$i]['id'];
-                for ($j = 0; $j <= count($obj) - 1; $j++) {
-                    if ($obj[$j]['id'] == $cartClothes) {
-                        $imagesVetements = $obj[$j]['articleImg'];
+                   /* if(isset($_POST['remove'])){
+                        for( $j=0; $j >= count())
+                    } */
 
-                        ?>
-                        <div class="vetement">
-                            <?php echo '<h1 style="text-align: center"><strong>' . $obj[$j]['articleName'] . '</strong></h1>'; ?>
-                            <div id="imageVet">
-                                <?php echo "<img style='height: 500px; margin: 5px;' src='../statics/images/Vêtements/$imagesVetements/1.jpg'"; ?>
+                    $objClothes = $clothesCount - 1;
+                    $imagesVetements = $obj[$objClothes]['articleImg'];
+
+                    ?>
+                    <div class="vetement">
+                        <?php echo '<h1 style="text-align: center"><strong>' . $obj[$objClothes]['articleName'] . '</strong></h1>'; ?>
+                        <div id="imageVet">
+                            <?php echo "<img style='height: 500px; margin: 5px;' src='../statics/images/Vêtements/$imagesVetements/1.jpg'"; ?>
+                        </div>
+                        <div>
+                            <div id="specsVet">
+                                <?php echo "Taille : " . $obj[$objClothes]['size'] . '<br>'
+                                    . "Couleur : " . $obj[$objClothes]['color'] . '<br>'
+                                    . "Genre : " . $obj[$objClothes]['gender'] . '<br>'
+                                    . "Prix : " . $obj[$objClothes]['price'] . " CHF"; ?>
                             </div>
-                            <div>
-                                <div id="specsVet">
-                                    <?php echo "Taille : " . $obj[$j]['size'] . '<br>'
-                                        . "Couleur : " . $obj[$j]['color'] . '<br>'
-                                        . "Genre : " . $obj[$j]['gender'] . '<br>'
-                                        . "Prix : " . $obj[$j]['price'] . " CHF"; ?>
-                                </div>
-                                <div id="panierVet">
-                                    <div class="box-1 nav-item">
-                                        <btn class="nav-item nav-link">
-                                            <form method="post">
-                                                <input type="hidden" name="id" id="id" value="<?= $j ?>">
-                                                <input type='submit' name='takeBack' value='Retirer du panier'/>
-                                            </form>
-                                        </btn>
-                                    </div>
+                            <div id="panierVet">
+                                <div class="box-1 nav-item">
+                                    <btn class="nav-item nav-link">
+                                        <form method="post">
+                                            <input type="hidden" name="remove" id="remove" value="<?= $objClothes ?>">
+                                            <input type='submit' name='remove' value='Remove'/>
+                                        </form>
+                                    </btn>
                                 </div>
                             </div>
                         </div>
-                        <?php
-                        break;
-                    }
-                }
+                    </div>
+                    </div>
+                <?php }
+                $clothesCount--;
             }
         }
     }
 } else {
-    echo "<p style='color: darkgrey; text-align: center; margin-top: 150px; margin-bottom: 150px;'>Oops, il
-                semblerait que vous ne soyez pas encore connecté :/</p>";
+    echo "<p style='color: darkgrey; text-align: center; margin-top: 150px; margin-bottom: 150px;'>Oops, il semblerait que vous ne soyez pas encore connecté :/</p>";
 }
-
+echo "</div>";
 ?>
 
-    </div>
 <?php
 $content = ob_get_clean();
 require "gabarit.php";
