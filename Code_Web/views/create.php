@@ -61,23 +61,23 @@ if (isset($_POST) && isset($_POST['email']) && isset($_POST['password']) && isse
 			  } ?>
                 <div class="formLogin">
                     <div>
-                        <label for="userName">Nom d'utilisateur*</label>
+                        <label for="userName">Nom d'utilisateur : </label>
                         <input type="text" name="username" id="userName" aria-describedby="userNameHelp"
                                placeholder="Votre nom d'utilisateur"
                                required>
                     </div>
                     <div>
-                        <label for="inputEmail">Adresse-mail*</label>
+                        <label for="inputEmail">Adresse-mail : </label>
                         <input type="email" name="email" id="inputEmail" aria-describedby="emailHelp"
                                placeholder="Votre adresse mail"
                                required>
                     </div>
                     <div>
-                        <label for="inputPassword">Mot de passe*</label>
+                        <label for="inputPassword">Mot de passe : </label>
                         <input type="password" name="password" id="inputPassword" placeholder="Votre mot de passe"
                                minlength="8" required>
                     </div>
-                    <div id="envoi" style="position: center">
+                    <div style="position: center">
                         <button type="submit" name="envoi">Envoyer</button>
                     </div>
                 </div>
