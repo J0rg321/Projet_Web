@@ -8,7 +8,7 @@ $title = "Accueil";
 	  } ?>
         <br/>
         <div class="slideshow-container">
-		  <?php for ($i = 1; $i <= 6; $i++) { ?>
+		  <?php for ($i = 1; $i <= 5; $i++) { ?>
               <div class="mySlides fade">
 				<?= "<img src='../statics/images/Slide/slider$i.jpg' style='width:100%;'>" ?>
               </div>

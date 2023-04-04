@@ -39,15 +39,25 @@ if (isset($_SESSION['email'])) {
     <div class="mainVetements">
 
 
-
-
     <?php
+
+    if (isset($_POST['remove'])) {
+        for ($j = 0; $j <= count($objCart); $j++) {
+            if ($_SESSION['email'] == $objCart[$j]['email']) {
+                $takeBack = $_POST['takeBack']+ 1;
+                $objCart[$j]['cloth_' . $takeBack] = null;
+
+                file_put_contents($fileCart, json_encode($objCart));
+            }
+        }
+    }
+
+
     for ($i = 0; $i <= count($objCart) - 1; $i++) {
         if ($objCart[$i]['email'] == $_SESSION['email']) {
             $clothesCount = count($obj);
             while ($clothesCount != 0) {
                 if (isset($objCart[$i]['cloth_' . $clothesCount])) {
-
                     $objClothes = $clothesCount - 1;
                     $imagesVetements = $obj[$objClothes]['articleImg'];
 
@@ -68,7 +78,8 @@ if (isset($_SESSION['email'])) {
                                 <div class="box-1 nav-item">
                                     <btn class="nav-item nav-link">
                                         <form method="post">
-                                            <input type="hidden" name="remove" id="remove" value="<?= $objClothes ?>">
+                                            <input type="hidden" name="takeBack" id="takeBack"
+                                                   value="<?= $objClothes ?>">
                                             <input type='submit' name='remove' value='Remove'/>
                                         </form>
                                     </btn>
@@ -80,23 +91,9 @@ if (isset($_SESSION['email'])) {
                     </div>
                 <?php }
                 $clothesCount--;
-
-
             }
         }
     }
-
-
-    if (isset($_POST['remove'])) {
-        print_r($_POST['remove']);
-        /*if ($_POST['remove' . $obj['id']] == $_POST['id'] + 1) {
-            $newCartData = $objCart;
-            $newCartData['cloth_' . $_POST['remove' . $obj['id']]] = null;
-
-            file_put_contents($fileCart, json_encode($newCartData));
-        }*/
-    }
-
 } else {
     echo "<p style='color: darkgrey; text-align: center; margin-top: 150px; margin-bottom: 150px;'>Oops, il semblerait que vous ne soyez pas encore connecté :/</p>";
 }
