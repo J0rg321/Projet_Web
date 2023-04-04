@@ -1,9 +1,11 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 
 footer {
+    width: 100%;
     text-align: center;
     color: white;
     padding-top: 10px;
+    position: sticky;
 }
 
 #menu > div {
@@ -106,9 +108,10 @@ body {
 
 
 .formLogin {
-text-align: center;
-    padding: 10px;
-    margin: 20px;
+    text-align: left;
+    padding-left: 30%;
+    padding-right: 30%;
+    margin: 5px;
 }
 #btn-login{
     position: relative;
@@ -374,11 +377,8 @@ option {
 
 #envoi {
     width: 60px;
-    display: block;
-    padding: 15px;
     text-align: center;
     color: white;
-    position: relative;
 }
 
 #reini {
@@ -463,7 +463,7 @@ option {
     justify-content: space-around;
     flex-flow: wrap;
     color: black;
-    background-color: white;
+    background-color: black;
     min-height: 100%;
     position: relative;
     padding-bottom: 100px; /* Hauteur du pied de page */

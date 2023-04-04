@@ -4,12 +4,11 @@ $title = "Vêtements";
 
 
 <div style="filter: invert(100%)">
-    <button style="margin-top: 4.5%; positionh: fixed;" class="btn-fleche float-end" data-bs-toggle="offcanvas"
+    <button style="margin-top: 4.5%; position: fixed;" class="btn-fleche float-end" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvas" role="button">
         <img style="width: 30px; filter: invert(100%)" src="../statics/images/fleche.png">
         <p style="color: black; ">Catégories</p>
     </button>
-</div>
 </div>
 <div class="offcanvas offcanvas-start w-25" id="offcanvas">
     <div id="" class="categories">
@@ -124,48 +123,52 @@ $objCart = json_decode($dataCart, true);
 
 
 if (isset($_POST['cart'])) {
-  if (isset($_SESSION['email'])) {
-	  for ($i = 0; $i <= count($objCart) - 1; $i++) {
-		if ($objCart[$i]['email'] == $_SESSION['email']) {
-                    $newCartData = $objCart;
-					$newCartData[$i]['id'] = $_POST['id'] + 1;
+    if (isset($_SESSION['email'])) {
+        for ($i = 0; $i <= count($objCart) - 1; $i++) {
+            if ($objCart[$i]['email'] == $_SESSION['email']) {
+                $newCartData = $objCart;
+                $newCartData[$i]['cloth_' . $_POST['id'] + 1] = $_POST['id'] + 1;
 
-					file_put_contents($fileCart, json_encode($newCartData));
-				  } else {
-		}
-	  }
-  } else {
-	echo "<p style='color: red;'>Vous n'ettes pas encore connecté !!!</p>";
-  }
+                file_put_contents($fileCart, json_encode($newCartData));
+            }
+        }
+    } else {
+        echo "<p style='color: red;'>Vous n'ettes pas encore connecté !!!</p>";
+    }
 }
 
 
 ?>
 
-<div class="mainVetements" style="background-color: black;"><?php
+<div class="mainVetements"><?php
 
-  for ($i = 0;
-  $i <= count($obj) - 1;
-  $i++) {
-  $imagesVetements = $obj[$i]['articleImg']; ?>
+    for ($i = 0;
+    $i <= count($obj) - 1;
+    $i++) {
+    $imagesVetements = $obj[$i]['articleImg']; ?>
     <div class="vetement">
-	  <?php echo '<h1 style="text-align: center"><strong>' . $obj[$i]['articleName'] . '</strong></h1>'; ?>
+        <?php echo '<h1 style="text-align: center"><strong>' . $obj[$i]['articleName'] . '</strong></h1>'; ?>
         <div id="imageVet">
-		  <?php echo "<img style='height: 500px; margin: 5px;' src='../statics/images/Vêtements/$imagesVetements/1.jpg'"; ?>
+            <?php echo "<img style='height: 500px; margin: 5px;' src='../statics/images/Vêtements/$imagesVetements/1.jpg'"; ?>
         </div>
         <div>
             <div id="specsVet">
-			  <?php echo "Taille : " . $obj[$i]['size'] . '<br>'
-				  . "Couleur : " . $obj[$i]['color'] . '<br>'
-				  . "Genre : " . $obj[$i]['gender'] . '<br>'
-				  . "Prix : " . $obj[$i]['price'] . " CHF"; ?>
+                <?php echo "Taille : " . $obj[$i]['size'] . '<br>'
+                    . "Couleur : " . $obj[$i]['color'] . '<br>'
+                    . "Genre : " . $obj[$i]['gender'] . '<br>'
+                    . "Prix : " . $obj[$i]['price'] . " CHF"; ?>
             </div>
             <div id="panierVet">
                 <div class="box-1 nav-item">
                     <btn class="nav-item nav-link">
                         <form method="post">
-                            <input type="hidden" name="id" id="id" value="<?= $i ?>" >
-                            <input type='submit' name='cart' value='cart'/>
+                            <input type="hidden" name="id" id="id" value="<?= $i ?>">
+                            <button type='submit' name='cart' value='cart' style=" position: absolute; border: none; background-color: transparent;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor"
+                                     class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                                    <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                                </svg>
+                            </button>
                         </form>
                     </btn>
                 </div>
@@ -173,10 +176,6 @@ if (isset($_POST['cart'])) {
         </div>
     </div>
 </div>
-    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
-         class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
-        <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
-    </svg>
 
 
 <?php }
