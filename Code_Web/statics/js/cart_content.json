@@ -1,1 +1,37 @@
-[{"email":"12345@cpnv.ch","cloth_2":null,"cloth_1":null,"cloth_5":null},{"email":"jorge@cpnv.ch","cloth_8":8,"cloth_12":12,"cloth_15":15},{"email":"jojo@123.ch","cloth_2":null},{"email":"lol@cpnv.ch","cloth_8":8,"cloth_12":12,"cloth_15":15},{"email":"test1@cpnv.ch","cloth_1":1,"cloth_2":2,"cloth_6":6,"cloth_7":7},{"email":"jorgemiguel@cpnv.ch","cloth_2":2,"cloth_6":6,"cloth_7":7}]
+[
+  {
+    "email": "12345@cpnv.ch",
+    "cloth_2": 2,
+    "cloth_1": 1,
+    "cloth_5": null
+  },
+  {
+    "email": "jorge@cpnv.ch",
+    "cloth_8": 8,
+    "cloth_12": 12,
+    "cloth_15": 15
+  },
+  {
+    "email": "jojo@123.ch",
+    "cloth_2": null
+  },
+  {
+    "email": "lol@cpnv.ch",
+    "cloth_8": 8,
+    "cloth_12": 12,
+    "cloth_15": 15
+  },
+  {
+    "email": "test1@cpnv.ch",
+    "cloth_1": 1,
+    "cloth_2": 2,
+    "cloth_6": 6,
+    "cloth_7": 7
+  },
+  {
+    "email": "jorgemiguel@cpnv.ch",
+    "cloth_2": 2,
+    "cloth_6": 6,
+    "cloth_7": 7
+  }
+]

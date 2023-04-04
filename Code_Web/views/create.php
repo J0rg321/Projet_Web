@@ -11,13 +11,13 @@ if (isset($_POST) && isset($_POST['email']) && isset($_POST['password']) && isse
   $obj = json_decode($data, true);
 // accéder à l'élément approprié
 
-  if (!empty($obj)) {
+  if (!empty($obj)) {       //Si le Json contenant les utilisateurs n'est pas vide...
 	for ($i = 0; $i <= count($obj) - 1; $i++) {
-	  if (isset($obj[$i]['email']) && strtolower($obj[$i]['email']) == strtolower($_POST['email'])) {
-		$error = true;
+	  if (isset($obj[$i]['email']) && strtolower($obj[$i]['email']) == strtolower($_POST['email'])) { //Chercher pour voir si le mail n'existe pas déjà dans le Json
+		$error = true;      //Si oui, affiche un message d'erreur...
 	  }
 	}
-	if (!$error) {
+	if (!$error) {      //Sinon, le compte de l'utilisateur est créé
 
 
 	// chemin d'accès à votre fichier JSON
@@ -29,14 +29,14 @@ if (isset($_POST) && isset($_POST['email']) && isset($_POST['password']) && isse
     // accéder à l'élément approprié
 
 
-	  $newCartData["email"] = strtolower($_POST['email']);
+	  $newCartData["email"] = strtolower($_POST['email']);      //Creation d'une partie du fichier Cart de Json qui permet de stocker quels articles sont dans le panier de cet utilisateur
 
 	  $objCart[] = $newCartData;
 	  file_put_contents($fileCart, json_encode($objCart));
 	  //User created,
 
 
-	  $newData["username"] = $_POST['username'];
+	  $newData["username"] = $_POST['username'];            //Insertion des données de l'utilisateur dans les fichier Json
 	  $newData["email"] = strtolower($_POST['email']);
 	  $newData["password"] = password_hash($_POST['password'], PASSWORD_DEFAULT);
 	  $obj[] = $newData;
@@ -85,5 +85,5 @@ if (isset($_POST) && isset($_POST['email']) && isset($_POST['password']) && isse
     </div>
 <?php
 $content = ob_get_clean();
-require "gabarit.php";
+require "gabarit.php";      //appel du gabarit contenant la NavBar et le Footer
 ?>

@@ -84,8 +84,8 @@ $title = "Vêtements";
                 <input type="number" id="prixMax" name="tentacles" min="9.95" max="69.95">
             </div>
             <div class="btnCat">
-                <button type="submit" class="boutonCat btn-primary">Confirmer</button>
-                <button type="reset" class="boutonCat btn-primary">Annuler</button>
+                <button type="submit" class="boutonCat btn-primary" disabled>Confirmer</button>
+                <button type="reset" class="boutonCat btn-primary" disabled>Annuler</button>
             </div>
         </form>
     </div>
@@ -122,18 +122,18 @@ $objCart = json_decode($dataCart, true);
 // accéder à l'élément approprié
 
 
-if (isset($_POST['cart'])) {
-    if (isset($_SESSION['email'])) {
+if (isset($_POST['cart'])) {                //Si le bouton d'ajout au panier est appuié...
+    if (isset($_SESSION['email'])) {                //Et que l'utilisateur est connecté...
         for ($i = 0; $i <= count($objCart) - 1; $i++) {
             if ($objCart[$i]['email'] == $_SESSION['email']) {
-                $newCartData = $objCart;
-                $newCartData[$i]['cloth_' . $_POST['id'] + 1] = $_POST['id'] + 1;
+                $newCartData = $objCart;                        //Les informations précédentes seront reinscrites
+                $newCartData[$i]['cloth_' . $_POST['id'] + 1] = $_POST['id'] + 1;       //Une nouvelle variable se crée en indiquant qu'un vetement est dans le panier
 
-                file_put_contents($fileCart, json_encode($newCartData));
+                file_put_contents($fileCart, json_encode($newCartData));        //Donner l'empllacement du Json et Ajouter toutes les données
             }
         }
-    } else {
-        echo "<p style='color: red;'>Vous n'ettes pas encore connecté !!!</p>";
+    } else {            //Si l'utilisateur n'est pas connecté...
+        echo "<p style='color: red;'>Vous n'ettes pas encore connecté !!!</p>";     //Affiche le message suivant...
     }
 }
 
@@ -142,9 +142,7 @@ if (isset($_POST['cart'])) {
 
 <div class="mainVetements"><?php
 
-    for ($i = 0;
-    $i <= count($obj) - 1;
-    $i++) {
+    for ($i = 0; $i <= count($obj) - 1; $i++) {  //affiche les différentes données dans l'ordre donné dans le fichier...
     $imagesVetements = $obj[$i]['articleImg']; ?>
     <div class="vetement">
         <?php echo '<h1 style="text-align: center"><strong>' . $obj[$i]['articleName'] . '</strong></h1>'; ?>
@@ -153,10 +151,11 @@ if (isset($_POST['cart'])) {
         </div>
         <div>
             <div id="specsVet">
-                <?php echo "Taille : " . $obj[$i]['size'] . '<br>'
-                    . "Couleur : " . $obj[$i]['color'] . '<br>'
-                    . "Genre : " . $obj[$i]['gender'] . '<br>'
-                    . "Prix : " . $obj[$i]['price'] . " CHF"; ?>
+                <?php echo "Taille : " . $obj[$i]['size'] . '<br>'      //Taille de l'article
+                    . "Couleur : " . $obj[$i]['color'] . '<br>'         //Couleur de l'article
+                    . "Genre : " . $obj[$i]['gender'] . '<br>'          //Genre de l'article
+                    . "Prix : " . $obj[$i]['price'] . " CHF";           //Prix de l'article
+                ?>
             </div>
             <div id="panierVet">
                 <div class="box-1 nav-item">
@@ -180,5 +179,5 @@ if (isset($_POST['cart'])) {
 
 <?php }
 $content = ob_get_clean();
-require "gabarit.php";
+require "gabarit.php";      //appel du gabarit contenant la NavBar et le Footer
 ?>

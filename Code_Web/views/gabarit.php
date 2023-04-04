@@ -80,7 +80,7 @@
     </nav>
 </div>
 
-<?= $content; ?>
+<?= $content;       //Permet de mettre le contenu des differentes pages entre la NavBar et le Footer?>
 
 
 </body>

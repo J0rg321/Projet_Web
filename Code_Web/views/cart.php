@@ -41,23 +41,23 @@ if (isset($_SESSION['email'])) {
 
     <?php
 
-    if (isset($_POST['remove'])) {
+    if (isset($_POST['remove'])) {                  //Si le bouton d'enlèvement de l'article est appuié...
         for ($j = 0; $j <= count($objCart); $j++) {
-            if ($_SESSION['email'] == $objCart[$j]['email']) {
-                $takeBack = $_POST['takeBack']+ 1;
-                $objCart[$j]['cloth_' . $takeBack] = null;
+            if ($_SESSION['email'] == $objCart[$j]['email']) {      //Si le mail de session est le même que le mail dans le fichier Json...
+                $takeBack = $_POST['takeBack']+ 1;          //Definit la variable $takeBack avec l'id du bouton affin de savoir quel article on souhaite modifier
+                $objCart[$j]['cloth_' . $takeBack] = null;      //Definit l'article en question à null
 
-                file_put_contents($fileCart, json_encode($objCart));
+                file_put_contents($fileCart, json_encode($objCart));        //Insère toutes les données
             }
         }
     }
 
 
     for ($i = 0; $i <= count($objCart) - 1; $i++) {
-        if ($objCart[$i]['email'] == $_SESSION['email']) {
+        if ($objCart[$i]['email'] == $_SESSION['email']) {      //Si le mail de session est le même que le mail dans le fichier Json...
             $clothesCount = count($obj);
             while ($clothesCount != 0) {
-                if (isset($objCart[$i]['cloth_' . $clothesCount])) {
+                if (isset($objCart[$i]['cloth_' . $clothesCount])) {        //Si l'article est dans le panier...Affiche toutes ses informations
                     $objClothes = $clothesCount - 1;
                     $imagesVetements = $obj[$objClothes]['articleImg'];
 
@@ -72,14 +72,14 @@ if (isset($_SESSION['email'])) {
                                 <?php echo "Taille : " . $obj[$objClothes]['size'] . '<br>'
                                     . "Couleur : " . $obj[$objClothes]['color'] . '<br>'
                                     . "Genre : " . $obj[$objClothes]['gender'] . '<br>'
-                                    . "Prix : " . $obj[$objClothes]['price'] . " CHF"; ?>
+                                    . "Prix : " . $obj[$objClothes]['price'] . " CHF";
+                                ?>
                             </div>
                             <div id="panierVet">
                                 <div class="box-1 nav-item">
                                     <btn class="nav-item nav-link">
                                         <form method="post">
-                                            <input type="hidden" name="takeBack" id="takeBack"
-                                                   value="<?= $objClothes ?>">
+                                            <input type="hidden" name="takeBack" id="takeBack" value="<?= $objClothes ?>">
                                             <input type='submit' name='remove' value='Remove'/>
                                         </form>
                                     </btn>
@@ -90,7 +90,7 @@ if (isset($_SESSION['email'])) {
                     </div>
                     </div>
                 <?php }
-                $clothesCount--;
+                $clothesCount--;        //Décrémente la variable
             }
         }
     }
@@ -102,5 +102,5 @@ echo "</div>";
 
 <?php
 $content = ob_get_clean();
-require "gabarit.php";
+require "gabarit.php";      //appel du gabarit contenant la NavBar et le Footer
 ?>

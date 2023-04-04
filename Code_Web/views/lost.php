@@ -8,5 +8,5 @@ $title = "Page perdue.
     </div>
 <?php
 $content = ob_get_clean();
-require "gabarit.php";
+require "gabarit.php";      //appel du gabarit contenant la NavBar et le Footer
 ?>

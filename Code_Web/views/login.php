@@ -14,9 +14,9 @@ if (isset($_POST) && isset($_POST['email']) && isset($_POST['password'])) {
     $obj = json_decode($data, true);
 // accéder à l'élément approprié
 
-    if (!empty($obj)) {
+    if (!empty($obj)) {         //Si le fichier user.json existe n'est pas vide
         for ($i = 0; $i <= count($obj) - 1; $i++) {
-            if (isset($obj[$i]['email']) && isset($obj[$i]['password'])
+            if (isset($obj[$i]['email']) && isset($obj[$i]['password'])     //Si le mail écrit et le meme qui se trouve dans le fichier et de même pour le mot de passe, alors l'utilisateur se connecte.
                 && strtolower($obj[$i]['email']) == strtolower($_POST['email'])
                 && password_verify($_POST['password'], $obj[$i]['password'])) {
                 //User exists,
@@ -24,13 +24,13 @@ if (isset($_POST) && isset($_POST['email']) && isset($_POST['password'])) {
                 $_SESSION['username'] = $obj[$i]['username'];
                 $_SESSION['email'] = strtolower($obj[$i]['email']);
                 exit;
-            } else {
+            } else {                //Sinon, un message d'erreur s'affiche
                 $error = true;
             }
         }
     }
 }
-if (!isset($_SESSION['username'])) {
+if (!isset($_SESSION['username'])) {            //Si l'utilisateur est connecté...
     ?>
     <div style="color: black;" class="div_centre">
         <h1>Veuillez vous logger : </h1>
@@ -55,7 +55,7 @@ if (!isset($_SESSION['username'])) {
     </div>
     </div>
 <?php }
-if (isset($_SESSION['username'])) { ?>
+if (isset($_SESSION['username'])) {             //Sinon affiche le bouton de LogOut?>
     <form method="post" class="fv" action="index.php?action=logout" style="text-align: center; border-top: 50px;">
         <input type="submit" value="LogOut">
     </form>
@@ -63,5 +63,5 @@ if (isset($_SESSION['username'])) { ?>
     <?php
 }
 $content = ob_get_clean();
-require "gabarit.php";
+require "gabarit.php";      //appel du gabarit contenant la NavBar et le Footer
 ?>

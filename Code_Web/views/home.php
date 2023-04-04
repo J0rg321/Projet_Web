@@ -8,7 +8,8 @@ $title = "Accueil";
 	  } ?>
         <br/>
         <div class="slideshow-container">
-		  <?php for ($i = 1; $i <= 5; $i++) { ?>
+		  <?php for ($i = 1; $i <= 5; $i++) {       //Affiche les 5 differentes images en indiquant leur différent cemin d'accès
+              ?>
               <div class="mySlides fade">
 				<?= "<img src='../statics/images/Slide/slider$i.jpg' style='width:100%;'>" ?>
               </div>
@@ -44,4 +45,4 @@ $title = "Accueil";
     </div>
 <?php
 $content = ob_get_clean();
-require 'gabarit.php'; //appel du gabarit contenant le code pour l'accueil
+require 'gabarit.php'; //appel du gabarit contenant la NavBar et le Footer

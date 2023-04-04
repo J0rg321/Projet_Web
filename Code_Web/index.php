@@ -26,8 +26,3 @@ switch ($action) {
     default :
         lost();
 }
-
-
-/*} else {
-  home();
-}*/
