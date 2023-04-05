@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="utf-8">
@@ -27,4 +27,4 @@
     </ul>
 </div>
 </body>
-</html>
+</html>-->
