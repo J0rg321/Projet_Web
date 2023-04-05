@@ -9,8 +9,6 @@ if (isset($_SESSION['username']))       //Si l'utilisateur est connecté
     unset($_SESSION['email']);
     unset($_SESSION['password']);
 }
-header(join(DIRECTORY_SEPARATOR, array(getcwd(), 'index.php')));
-exit;
 ?>
 
 
