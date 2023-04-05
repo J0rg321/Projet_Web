@@ -57,9 +57,13 @@ if (!isset($_SESSION['username'])) {            //Si l'utilisateur est connecté
 <?php }
 if (isset($_SESSION['username'])) {             //Sinon affiche le bouton de LogOut?>
     <form method="post" class="fv" action="index.php?action=logout" style="text-align: center; border-top: 50px;">
-        <input type="submit" value="LogOut">
-        <?php header('location: /index.php/?action=home');
-        exit(); ?>
+        <input type="submit" id="logOut" value="LogOut">
+    <?php
+        if((isset($_POST['logOut']))){
+         header('location: /index.php/?action=home');
+            exit();
+        }?>
+
     </form>
     </div>
     <?php

@@ -99,7 +99,6 @@
         <div class="reseauxSociaux"><i class="bi bi-facebook"></i> <a href=https://fr-fr.facebook.com/>Facebook -
                 WearYou</a></i></div>
     </div>
-    <p style="padding: 0px; margin: 0px; bottom:0px; text-align: right; color: grey; font-size: 10px;">Un grand merci à Mr. Meylan pour son aide précieuse !</p>
 </footer>
 
 </html>
