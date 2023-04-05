@@ -57,12 +57,10 @@ if (!isset($_SESSION['username'])) {            //Si l'utilisateur est connecté
 <?php }
 if (isset($_SESSION['username'])) {             //Sinon affiche le bouton de LogOut?>
     <form method="post" class="fv" action="index.php?action=logout" style="text-align: center; border-top: 50px;">
-    <input type="hidden" name="logOut" id="logOut" value="<?= true ?>">
-        <input type="submit" id="logOut" value="LogOut">
-    </form><?php
-    if((isset($_POST['logOut'])))
-    header("Location: https://wareyou.mycpnv.ch/index.php/?action=home");
-    exit;
+        <input type="submit" value="LogOut">
+    </form>
+    </div>
+    <?php
 }
 $content = ob_get_clean();
 require "gabarit.php";      //appel du gabarit contenant la NavBar et le Footer
