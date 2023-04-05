@@ -8,7 +8,7 @@ if (isset($_SESSION['username']))       //Si l'utilisateur est connecté
     unset($_SESSION['username']);
     unset($_SESSION['email']);
     unset($_SESSION['password']);
-}
+}header("Refresh:1")
 ?>
 
 
